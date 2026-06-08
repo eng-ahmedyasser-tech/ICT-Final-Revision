@@ -1,0 +1,34 @@
+[
+  {
+    "topic": "Part 1: Problem-Solving Fundamentals",
+    "content": "Problem-solving involves identifying, analyzing, and resolving issues through systematic steps: Identify, Analyze, Generate Solutions, Evaluate/Select, Implement, and Evaluate Outcome. Techniques include Root Cause Analysis (RCA), Brainstorming, 5 Whys, SWOT, and Trial/Error. Logic is visualized via Flowcharts (Oval: Start/End, Parallelogram: I/O, Rectangle: Process, Diamond: Decision). Algorithms are finite, step-by-step instructions characterized by definiteness and effectiveness. Common mistake: Confusing the algorithm (the logic plan) with the program (the code implementation)."
+  },
+  {
+    "topic": "Part 2: Introduction to C Programming",
+    "content": "C is a high-level, structured, and modular language. Programming paradigms include Structured Programming (functions/modules) vs. Object-Oriented Programming (objects/encapsulation). The development lifecycle involves writing code, compiling (Syntax Analysis), and executing (Runtime). C programs start at the `main()` function. Key rules: Every statement ends in a semicolon (;); the compiler ignores white space. Common mistake: Forgetting the semicolon or confusing a Compiler (entire code) with an Interpreter (line-by-line). Example: `#include \u003cstdio.h\u003e` is the header for standard I/O."
+  },
+  {
+    "topic": "Part 3: Data Types, Operators, and Conversion",
+    "content": "Basic types: `char` (1 byte), `int` (2/4 bytes), `float` (4 bytes), `double` (8 bytes). Modifiers like `unsigned` extend positive ranges. Type conversion includes Implicit (automatic) and Explicit (casting, e.g., `(float)x`). Operators: Arithmetic (+, -, *, /, %), Relational (==, !=, \u003e), Logical (\u0026\u0026, ||, !), and Bitwise (\u0026, |, ^). Prefix/Postfix increment/decrement have different timing impacts. Common mistake: Integer division (5/2 = 2) vs. float division (5.0/2 = 2.5), and using `=` (assignment) instead of `==` (comparison). Example: `const int MIN = 0;` declares a read-only constant"
+  },
+  {
+    "topic": "Part 4: Control Statements and User Input",
+    "content": "User input is handled via `scanf(\"%\format\", \u0026variable);`, where the address-of operator (\u0026) is vital. Control logic uses `if`, `else if`, `else`, and the ternary operator `? :` for shortcuts. `switch` statements manage multi-way branching using integer/char constants. Common mistake: Missing the `break` statement in a `switch`, which triggers 'fall-through' (executing all subsequent cases). Example: A Travel Ticket Fare Calculator uses `switch` for transportation types (Bus/Train/Airplane) to apply specific rates per km."
+  },
+  {
+    "topic": "Part 5: Iteration and Looping Structures",
+    "content": "Loops repeat code blocks efficiently: `while` (entry-verified), `do-while` (exit-verified, executes at least once), and `for` (pre-defined iterations). `break` exits the loop entirely, while `continue` skips the current iteration. Common mistake: Creating an 'infinite loop' by failing to update the loop counter or setting an incorrect termination condition.  Example: A `for` loop to print a table: `for(int i=1; i\u003c=10; i++) printf(\"%d x %d = %d\\n\", num, i, num * i);`."
+  },
+  {
+    "topic": "Part 6: Arrays and Memory Representation",
+    "content": "Arrays store homogeneous data in contiguous memory, indexed 0 to N-1. Variable Length Arrays (VLA) allow size definition at runtime. Multi-dimensional arrays (e.g., 2D matrices) function as 'arrays of arrays.' Syntax errors (compile-time) violate language rules, while Semantic errors (runtime) cause incorrect behavior. Common mistake: 'Buffer Overflow' (accessing an index outside the declared size, such as `arr[5]` for an array of size 5).  Example: `int arr[5] = {0};` initializes all 5 elements to zero."
+  },
+  {
+    "topic": "Part 7: Structures and Functions",
+    "content": "Structures group heterogeneous data (structs) using the dot (.) operator. Functions encapsulate reusable logic via a Prototype (declaration) and Definition (body). Recursion is a function calling itself, requiring a 'base case' to prevent stack overflow. Common mistake: Attempting to assign strings directly to struct members instead of using `strcpy()`, or forgetting the base case in recursion. Example (Struct): `struct Product { int id; float price; };`. Example (Function): `float toCelsius(float f) { return (f - 32) * 5/9; }`."
+  },
+  {
+    "topic": "Part 8: Assessment and Course Structure",
+    "content": "The course is graded out of 150 marks: Final Exam (45), Assignment 1 (30), Assignment 2 (45), and Quizzes/Tasks (30). Success requires mastering C syntax, understanding the distinction between syntax and semantics, and applying problem-solving skills to real-world scenarios. Learning outcomes focus on writing, debugging, and optimizing C programs with a foundation for advanced memory management and modular design."
+  }
+]

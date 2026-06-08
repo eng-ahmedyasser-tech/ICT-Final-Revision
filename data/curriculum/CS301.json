@@ -1,0 +1,38 @@
+[
+  {
+    "topic": "Part 1: Cybersecurity Essentials – Definition \u0026 Scope",
+    "content": "Cybersecurity is the ongoing effort to protect individuals, organizations, and governments from digital attacks. It focuses on safeguarding organizational data, information systems, and online identities from threats like fraud, hackers, and data breaches. Protection operates at three levels: personal (identity, data, devices), organizational (reputation, data, customers), and governmental (national security, economic stability, citizen safety)."
+  },
+  {
+    "topic": "Part 2: The Cybersecurity Cube (McCumber Cube)",
+    "content": "A three-dimensional framework for evaluating information security initiatives. Dimension 1 – Foundational Principles: Confidentiality (prevent unauthorized disclosure via encryption, 2FA), Integrity (protect against modification via hashing/checksums), Availability (ensure access for authorized users via backups, updates). Dimension 2 – States of Data: Data at rest (storage on hard drives, USBs), Data in process (processing/updating), Data in transit (transmission between systems). Dimension 3 – Security Measures: Awareness/training/education for users, Technology solutions (firewalls, software), Policy and procedure (administrative controls like incident response plans)."
+  },
+  {
+    "topic": "Part 3: Organizational Data Types",
+    "content": "Organizations maintain three primary data types. Transactional data: details relating to buying/selling, production activities, and employment decisions. Financial data: income statements, balance sheets, cash flow statements providing insight into company health. Intellectual property: patents, trademarks, trade secrets, new product plans that provide economic advantage over competitors. Loss of IP can prove disastrous for a company's future."
+  },
+  {
+    "topic": "Part 4: Personal Data, Privacy \u0026 Tracking",
+    "content": "Personal data includes any information identifying you: name, SSN, driver's license, date of birth, mother's maiden name, photos, messages. Vulnerable records include medical (EHRs, fitness tracker data like heart rate/blood sugar), educational (attendance, disciplinary reports, IEPs), and employment/financial (paychecks, credit rating, bank details). Online activities are tracked by ISPs (may sell data to advertisers), advertisers (monitor shopping habits), search engines and social media (collect gender, geolocation, religion, politics via search histories), and websites (use cookies leaving data trails). Medical identity theft occurs when criminals steal insurance benefits, causing fraudulent procedures to be saved to your permanent medical records."
+  },
+  {
+    "topic": "Part 5: Cryptography – Caesar Cipher",
+    "content": "Encryption secures communications by transforming readable text into ciphertext. The Caesar Cipher is a simple substitution cipher shifting letters by a fixed number. Mathematical form: Encryption E_n(x) = (x + n) mod 26, Decryption D_n(x) = (x - n) mod 26, where A=0, B=1, ..., Z=25. Example: 'HELLO' with shift 3 becomes 'KHOOR'. With shift 13 (ROT13), 'HELLO' becomes 'URYYB'. The cipher wraps around after Z."
+  },
+  {
+    "topic": "Part 6: Cryptography – Vigenère Cipher",
+    "content": "A polyalphabetic substitution cipher using a keyword repeated cyclically. Encryption uses the Vigenère square (tabula recta): Ei = (Pi + Ki) mod 26. Decryption: Di = (Ei - Ki) mod 26, handling negative results by adding 26. Example: 'ATTACKATDAWN' with key 'LEMON' (repeated LEMONLEMONLE) produces 'LXFOPVEFRNHR'. When the key has one letter, Vigenère becomes equivalent to Caesar Cipher. Modular arithmetic for negatives: -22 mod 26 = 4 (because -22 = 26 × (-2) + 4)."
+  },
+  {
+    "topic": "Part 7: System Bugs \u0026 Malware",
+    "content": "Bugs are errors in code causing unexpected results. Syntax Errors: structure/grammar mistakes preventing execution. Logic Errors: flawed reasoning producing incorrect outputs. Runtime Errors: occur during execution (memory leaks, division by zero). Security Bugs: vulnerabilities allowing unauthorized access. Malware types include: Viruses (attach to clean files), Worms (self-replicate across networks), Trojans (disguised as legitimate, create backdoors), Spyware (monitor activity secretly), Adware (flood with unwanted ads), Ransomware (encrypt files, demand payment), Cryptojackers (mine cryptocurrency without consent)."
+  },
+  {
+    "topic": "Part 8: E-commerce Cybersecurity Risks",
+    "content": "E-commerce sites are prime targets because they store, process, and transfer large amounts of personal/financial data. Major risks: E-skimming (web skimming) – hackers inject malicious JavaScript into checkout pages to steal credit card data in real time through infiltration, code injection, skimming, while the purchase appears normal. Other risks include malware, phishing/smishing, and DDoS attacks. Consumer protection: use digital wallets (Apple Pay, Google Pay, PayPal) with tokenization, enable transaction alerts, use virtual/one-time cards. Merchant protection: PCI DSS 4.0 compliance, Content Security Policy (CSP), Subresource Integrity (SRI), regular updates for CMS and plugins."
+  },
+  {
+    "topic": "Part 9: Identity – Offline vs. Online",
+    "content": "Offline identity is your real-life persona presented daily at home, school, or work, including full name, age, address known to family and friends. Online identity is who you are and how you present yourself online, including usernames/aliases and social identity. Simply using the web establishes an online identity – even without social media accounts. Secure username guidelines: avoid full name, address, phone number, email username, birth year, department names, or password clues; avoid reusing 'super-odd' usernames across platforms as this makes tracking easier."
+  }
+]

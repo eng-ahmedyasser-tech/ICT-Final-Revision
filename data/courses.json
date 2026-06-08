@@ -1,0 +1,22 @@
+[
+  {
+    "id": "CS101",
+    "name": "Programming Essentials in C",
+    "description": "Programming basics, algorithms, problem solving"
+  },
+  {
+    "id": "CS201",
+    "name": "MS Office",
+    "description": "Word processing, spreadsheet analysis, document automation"
+  },
+  {
+    "id": "CS301",
+    "name": "Cybersecurity",
+    "description": "Cybersecurity protection, data privacy, cryptographic encryption"
+  },
+  {
+    "id": "CS302",
+    "name": "Technical English",
+    "description": "Technical terminology, professional workplace communication, and IT-related language proficiency."
+  }
+]
