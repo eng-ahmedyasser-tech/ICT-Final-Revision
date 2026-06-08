@@ -7,8 +7,10 @@ import (
 )
 
 func main() {
+    InitConfig() // استدعِ هذه الدالة هنا أولاً
     InitStorage()
     InitAIService()
+    
 
     // API Routes (أضف "/" قبل المسارات لضمان توافقها)
     http.HandleFunc("/api/courses", handleCourses)
