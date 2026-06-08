@@ -1,4 +1,4 @@
-const API_BASE = "";
+const API_BASE = "";  // سيتم التعامل مع المسارات النسبية تلقائياً
 
 async function request(endpoint, options = {}) {
   try {
@@ -6,13 +6,11 @@ async function request(endpoint, options = {}) {
       headers: { "Content-Type": "application/json" },
       ...options,
     });
-    
     if (!response.ok) {
       const errorText = await response.text();
       console.error(`HTTP ${response.status}: ${errorText}`);
       throw new Error(`HTTP ${response.status}: ${errorText}`);
     }
-    
     return await response.json();
   } catch (error) {
     console.error(`API Error on ${endpoint}:`, error);
@@ -45,33 +43,22 @@ async function getCourses() {
 async function getCurriculum(courseId) {
   const normalizedId = normalizeCourseId(courseId);
   console.log(`Fetching curriculum for: ${normalizedId}`);
-  
   try {
     const result = await request(`/api/curriculum?courseId=${normalizedId}`, { method: "GET" });
     console.log("Curriculum API response:", result);
-    
-    if (!result) {
-      console.warn("No curriculum data received");
-      return [];
-    }
-    
-    // Handle different response formats
+    if (!result) return [];
     if (Array.isArray(result)) {
-      // Ensure each item has topic and content fields
       return result.map(item => ({
         topic: item.topic || item.Topic || "Untitled Topic",
         content: item.content || item.Content || "No content available"
       }));
     }
-    
-    // If result is an object with data property
     if (result.data && Array.isArray(result.data)) {
       return result.data.map(item => ({
         topic: item.topic || item.Topic || "Untitled Topic",
         content: item.content || item.Content || "No content available"
       }));
     }
-    
     return [];
   } catch (error) {
     console.error(`Error fetching curriculum for ${normalizedId}:`, error);
@@ -85,15 +72,12 @@ async function generateExam(courseId, count, difficulty) {
     count: parseInt(count) || 10,
     difficulty: difficulty || "easy"
   };
-  
   console.log("Generating exam with payload:", payload);
-  
   try {
     const result = await request("/api/generate-exam", { 
       method: "POST", 
       body: JSON.stringify(payload) 
     });
-    
     if (!result) return [];
     if (Array.isArray(result)) return result;
     if (result.questions && Array.isArray(result.questions)) return result.questions;
@@ -109,19 +93,13 @@ async function submitExam(questions, answers) {
     questions: questions || [],
     answers: answers || {}
   };
-  
   console.log("Submitting exam with", Object.keys(answers).length, "answers");
-  
   try {
     const result = await request("/api/submit-exam", { 
       method: "POST", 
       body: JSON.stringify(payload) 
     });
-    
-    if (!result) {
-      return { score: 0, review: [] };
-    }
-    
+    if (!result) return { score: 0, review: [] };
     return {
       score: result.score || 0,
       review: result.review || [],
@@ -135,32 +113,20 @@ async function submitExam(questions, answers) {
 }
 
 async function sendChatMessage(courseId, message, mode = "chat") {
-  if (!message || message.trim() === "") {
-    return "Please enter a message.";
-  }
-  
+  if (!message || message.trim() === "") return "Please enter a message.";
   const payload = {
     courseId: normalizeCourseId(courseId),
     message: message.trim(),
     mode: mode
   };
-  
   console.log("Sending chat message:", { courseId: payload.courseId, messageLength: message.length, mode });
-  
   try {
     const data = await request("/api/chat", { 
       method: "POST", 
       body: JSON.stringify(payload) 
     });
-    
-    if (data && data.response) {
-      return data.response;
-    }
-    
-    if (data && data.message) {
-      return data.message;
-    }
-    
+    if (data && data.response) return data.response;
+    if (data && data.message) return data.message;
     return "I understand your question. Let me help you with that. Could you please provide more details about what you'd like to learn?";
   } catch (error) {
     console.error("Error sending chat message:", error);
@@ -168,7 +134,6 @@ async function sendChatMessage(courseId, message, mode = "chat") {
   }
 }
 
-// Export API functions
 window.api = { 
   getCourses, 
   getCurriculum, 
@@ -177,7 +142,6 @@ window.api = {
   sendChatMessage 
 };
 
-// Also attach to window for debugging
 window.apiDebug = {
   testGetCourses: async () => {
     const courses = await getCourses();

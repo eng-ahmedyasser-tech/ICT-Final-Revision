@@ -322,11 +322,12 @@ function renderExamConfig() {
         <div class="config-group">
           <label>📊 Number of Questions</label>
           <div class="button-group">
-            <button class="config-btn ${currentExamConfig.count === 5 ? 'active' : ''}" data-count="5">5</button>
-            <button class="config-btn ${currentExamConfig.count === 10 ? 'active' : ''}" data-count="10">10</button>
-            <button class="config-btn ${currentExamConfig.count === 20 ? 'active' : ''}" data-count="20">20</button>
+    <button class="config-btn ${currentExamConfig.count === 5 ? 'active' : ''}" data-count="5">5</button>
+    <button class="config-btn ${currentExamConfig.count === 10 ? 'active' : ''}" data-count="10">10</button>
+    <button class="config-btn ${currentExamConfig.count === 20 ? 'active' : ''}" data-count="20">20</button>
+    <button class="config-btn ${currentExamConfig.count === 30 ? 'active' : ''}" data-count="30">30</button>
+
           </div>
-        </div>
         
         <div class="config-group">
           <label>⚡ Difficulty Level</label>

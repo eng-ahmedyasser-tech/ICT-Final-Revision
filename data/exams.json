@@ -1,1 +1,542 @@
-[]
+[
+  {
+    "id": "exam_1780946150221525200",
+    "course_id": "CS101",
+    "difficulty": "easy",
+    "questions": [
+      {
+        "id": "q_1780946150213304700_0",
+        "text": "Which of the following best describes 'Part 3: Data Types, Operators, and Conversion'?",
+        "options": [
+          "This is a common misconception about the topic",
+          "This describes a different concept in the same domain",
+          "This is partially correct but missing key details",
+          "Basic types: `char` (1 byte), `int` (2/4 bytes), `float` (4 bytes), `double` (8 bytes). Modifiers like `unsigned` ext..."
+        ],
+        "correct": 3,
+        "difficulty": "easy",
+        "topic": "Part 3: Data Types, Operators, and Conversion"
+      },
+      {
+        "id": "q_1780946150213304700_1",
+        "text": "Which of the following best describes 'Part 5: Iteration and Looping Structures'?",
+        "options": [
+          "This is partially correct but missing key details",
+          "This is a common misconception about the topic",
+          "This describes a different concept in the same domain",
+          "Loops repeat code blocks efficiently: `while` (entry-verified), `do-while` (exit-verified, executes at least once), a..."
+        ],
+        "correct": 3,
+        "difficulty": "easy",
+        "topic": "Part 5: Iteration and Looping Structures"
+      },
+      {
+        "id": "q_1780946150213304700_2",
+        "text": "Which of the following best describes 'Part 2: Introduction to C Programming'?",
+        "options": [
+          "C is a high-level, structured, and modular language. Programming paradigms include Structured Programming (functions/...",
+          "This is partially correct but missing key details",
+          "This describes a different concept in the same domain",
+          "This is a common misconception about the topic"
+        ],
+        "correct": 0,
+        "difficulty": "easy",
+        "topic": "Part 2: Introduction to C Programming"
+      },
+      {
+        "id": "q_1780946150213828100_3",
+        "text": "Which of the following best describes 'Part 8: Assessment and Course Structure'?",
+        "options": [
+          "This is a common misconception about the topic",
+          "The course is graded out of 150 marks: Final Exam (45), Assignment 1 (30), Assignment 2 (45), and Quizzes/Tasks (30)....",
+          "This is partially correct but missing key details",
+          "This describes a different concept in the same domain"
+        ],
+        "correct": 1,
+        "difficulty": "easy",
+        "topic": "Part 8: Assessment and Course Structure"
+      },
+      {
+        "id": "q_1780946150213828100_4",
+        "text": "Which of the following best describes 'Part 7: Structures and Functions'?",
+        "options": [
+          "This describes a different concept in the same domain",
+          "This is a common misconception about the topic",
+          "This is partially correct but missing key details",
+          "Structures group heterogeneous data (structs) using the dot (.) operator. Functions encapsulate reusable logic via a ..."
+        ],
+        "correct": 3,
+        "difficulty": "easy",
+        "topic": "Part 7: Structures and Functions"
+      },
+      {
+        "id": "q_1780946150213956900_5",
+        "text": "Which of the following best describes 'Part 1: Problem-Solving Fundamentals'?",
+        "options": [
+          "This is partially correct but missing key details",
+          "Problem-solving involves identifying, analyzing, and resolving issues through systematic steps: Identify, Analyze, Ge...",
+          "This is a common misconception about the topic",
+          "This describes a different concept in the same domain"
+        ],
+        "correct": 1,
+        "difficulty": "easy",
+        "topic": "Part 1: Problem-Solving Fundamentals"
+      },
+      {
+        "id": "q_1780946150213956900_6",
+        "text": "Which of the following best describes 'Part 4: Control Statements and User Input'?",
+        "options": [
+          "This is partially correct but missing key details",
+          "This is a common misconception about the topic",
+          "This describes a different concept in the same domain",
+          "User input is handled via `scanf(\"%\format\", \u0026variable);`, where the address-of operator (\u0026) is vital. Control logic u..."
+        ],
+        "correct": 3,
+        "difficulty": "easy",
+        "topic": "Part 4: Control Statements and User Input"
+      },
+      {
+        "id": "q_1780946150213956900_7",
+        "text": "Which of the following best describes 'Part 6: Arrays and Memory Representation'?",
+        "options": [
+          "This is partially correct but missing key details",
+          "Arrays store homogeneous data in contiguous memory, indexed 0 to N-1. Variable Length Arrays (VLA) allow size definit...",
+          "This is a common misconception about the topic",
+          "This describes a different concept in the same domain"
+        ],
+        "correct": 1,
+        "difficulty": "easy",
+        "topic": "Part 6: Arrays and Memory Representation"
+      }
+    ],
+    "created_at": "2026-06-08T12:15:50-07:00"
+  },
+  {
+    "id": "exam_1780948638743467300",
+    "course_id": "CS101",
+    "difficulty": "hard",
+    "questions": [
+      {
+        "id": "q_1780948638743467300_0",
+        "text": "Which flowchart symbol is used to represent a decision point that branches the flow based on a condition?",
+        "options": [
+          "This is a very tricky incorrect option",
+          "Oval",
+          "Diamond",
+          "Rectangle",
+          "Parallelogram"
+        ],
+        "correct": 2,
+        "difficulty": "hard",
+        "topic": "Flowcharts"
+      },
+      {
+        "id": "q_1780948638743467300_1",
+        "text": "What is a Variable Length Array (VLA) in C?",
+        "options": [
+          "An array that can change size after declaration",
+          "This is a very tricky incorrect option",
+          "An array with no fixed data type",
+          "An array whose size is determined at runtime (e.g., using a variable)",
+          "A dynamic array allocated on the heap using malloc"
+        ],
+        "correct": 3,
+        "difficulty": "hard",
+        "topic": "Variable Length Arrays"
+      },
+      {
+        "id": "q_1780948638743467300_2",
+        "text": "If `int *p = \u0026arr[0];` and `int` is 4 bytes, what is the effect of `p += 3;`?",
+        "options": [
+          "This is a very tricky incorrect option",
+          "Compilation error",
+          "p points to arr[3] (address advanced by 12 bytes)",
+          "p now holds the value of arr[3]",
+          "p points to arr[3] (address advanced by 3 bytes)"
+        ],
+        "correct": 2,
+        "difficulty": "hard",
+        "topic": "Pointer Arithmetic"
+      },
+      {
+        "id": "q_1780948638743467300_3",
+        "text": "Which function is used to dynamically allocate memory for an array of `n` integers in C?",
+        "options": [
+          "new int[n]",
+          "create_array(n, int)",
+          "alloc(n * sizeof(int))",
+          "malloc(n * sizeof(int))",
+          "This is a very tricky incorrect option"
+        ],
+        "correct": 3,
+        "difficulty": "hard",
+        "topic": "Dynamic Memory Allocation"
+      },
+      {
+        "id": "q_1780948638743467300_4",
+        "text": "What is a memory leak in C?",
+        "options": [
+          "A buffer overflow that corrupts memory",
+          "When dynamically allocated memory is not freed after it is no longer needed, causing memory usage to grow",
+          "When a pointer is assigned NULL",
+          "This is a very tricky incorrect option",
+          "When the stack overflows due to deep recursion"
+        ],
+        "correct": 1,
+        "difficulty": "hard",
+        "topic": "Memory Leak"
+      },
+      {
+        "id": "q_1780948638743467300_5",
+        "text": "What is the purpose of a function prototype (declaration) in C?",
+        "options": [
+          "This is a very tricky incorrect option",
+          "To inform the compiler about the function's name, return type, and parameters before its definition",
+          "To allocate memory for the function",
+          "To define the actual body of the function",
+          "To execute the function at compile time"
+        ],
+        "correct": 1,
+        "difficulty": "hard",
+        "topic": "Functions"
+      },
+      {
+        "id": "q_1780948638743467300_6",
+        "text": "What does `int **ptr;` declare?",
+        "options": [
+          "This is a very tricky incorrect option",
+          "A pointer to a pointer to an integer",
+          "A double integer variable",
+          "A two-dimensional array",
+          "A pointer to an integer array"
+        ],
+        "correct": 1,
+        "difficulty": "hard",
+        "topic": "Pointers to Pointers"
+      },
+      {
+        "id": "q_1780948638743467300_7",
+        "text": "How many elements does the array `int matrix[3][4];` contain?",
+        "options": [
+          "This is a very tricky incorrect option",
+          "12",
+          "3",
+          "4",
+          "7"
+        ],
+        "correct": 1,
+        "difficulty": "hard",
+        "topic": "Multidimensional Arrays"
+      },
+      {
+        "id": "q_1780948638743467300_8",
+        "text": "Which of the following statements about a C compiler is TRUE?",
+        "options": [
+          "It is mainly used for debugging syntax errors at runtime",
+          "This is a very tricky incorrect option",
+          "It does not produce an intermediate object file",
+          "It executes code line by line, stopping at the first error",
+          "It translates the entire source code into machine code before execution"
+        ],
+        "correct": 4,
+        "difficulty": "hard",
+        "topic": "C Language Basics"
+      },
+      {
+        "id": "q_1780948638743467300_9",
+        "text": "Which loop guarantees that the body will execute at least once, regardless of the condition?",
+        "options": [
+          "for",
+          "do...while",
+          "This is a very tricky incorrect option",
+          "All loops guarantee at least one execution",
+          "while"
+        ],
+        "correct": 1,
+        "difficulty": "hard",
+        "topic": "Loops"
+      },
+      {
+        "id": "q_1780948638743467300_10",
+        "text": "What does the `*` operator do when used on a pointer variable (e.g., `*ptr`)?",
+        "options": [
+          "This is a very tricky incorrect option",
+          "It multiplies the pointer by a value",
+          "It dereferences the pointer, accessing the value stored at the address it holds",
+          "It declares a pointer variable",
+          "It returns the memory address of the pointer itself"
+        ],
+        "correct": 2,
+        "difficulty": "hard",
+        "topic": "Pointers"
+      },
+      {
+        "id": "q_1780948638743467300_11",
+        "text": "What does the `restrict` keyword indicate to the compiler?",
+        "options": [
+          "That the pointer cannot be modified",
+          "That the pointer points to read-only memory",
+          "This is a very tricky incorrect option",
+          "That the pointer is restricted to a certain memory area",
+          "That a pointer is the only reference to the data it points to, allowing better optimization"
+        ],
+        "correct": 4,
+        "difficulty": "hard",
+        "topic": "Restrict Keyword"
+      },
+      {
+        "id": "q_1780948638743467300_12",
+        "text": "In the 5 Whys technique, what is the primary goal after asking 'Why?' five times?",
+        "options": [
+          "To uncover the fundamental root cause of the problem",
+          "To document every symptom in detail",
+          "To assign blame to a specific team member",
+          "This is a very tricky incorrect option",
+          "To generate at least five possible solutions"
+        ],
+        "correct": 0,
+        "difficulty": "hard",
+        "topic": "Problem-Solving"
+      },
+      {
+        "id": "q_1780948638743467300_13",
+        "text": "What does the file opening mode `\"a\"` do?",
+        "options": [
+          "This is a very tricky incorrect option",
+          "Opens a file for binary reading",
+          "Opens a file for writing and erases all previous content",
+          "Opens a file for reading only",
+          "Opens a file for appending; writes are added to the end without erasing existing content"
+        ],
+        "correct": 4,
+        "difficulty": "hard",
+        "topic": "File Handling"
+      },
+      {
+        "id": "q_1780948638743467300_14",
+        "text": "What is the key difference between a `union` and a `struct` in C?",
+        "options": [
+          "Unions are larger than structs",
+          "Unions can only hold one data type at a time",
+          "This is a very tricky incorrect option",
+          "In a union, all members share the same memory location; a struct allocates separate memory for each member",
+          "Unions cannot contain pointers"
+        ],
+        "correct": 3,
+        "difficulty": "hard",
+        "topic": "Unions"
+      },
+      {
+        "id": "q_1780948638743467300_15",
+        "text": "What is the size (in bytes) of a `double` data type on most modern 64-bit systems?",
+        "options": [
+          "8 bytes",
+          "2 bytes",
+          "16 bytes",
+          "This is a very tricky incorrect option",
+          "4 bytes"
+        ],
+        "correct": 0,
+        "difficulty": "hard",
+        "topic": "Data Types"
+      },
+      {
+        "id": "q_1780948638743467300_16",
+        "text": "When a variable is declared with `static` inside a function, what is its lifetime?",
+        "options": [
+          "It exists only while the function is executing",
+          "It retains its value between function calls (exists for the entire program run)",
+          "It is stored in a CPU register",
+          "It can be accessed from any other function",
+          "This is a very tricky incorrect option"
+        ],
+        "correct": 1,
+        "difficulty": "hard",
+        "topic": "Storage Classes"
+      },
+      {
+        "id": "q_1780948638743467300_17",
+        "text": "What is the value of `result` after executing `int a = 10, b = 3, result = a % b;`?",
+        "options": [
+          "0",
+          "3.33",
+          "This is a very tricky incorrect option",
+          "1",
+          "3"
+        ],
+        "correct": 3,
+        "difficulty": "hard",
+        "topic": "Operators"
+      },
+      {
+        "id": "q_1780948638743467300_18",
+        "text": "What is the purpose of `setjmp()` and `longjmp()` in C?",
+        "options": [
+          "To allocate and free memory",
+          "To perform non-local jumps (bypass normal function call/return), similar to exception handling",
+          "To jump between different loops",
+          "To convert between integer and pointer types",
+          "This is a very tricky incorrect option"
+        ],
+        "correct": 1,
+        "difficulty": "hard",
+        "topic": "Setjmp and Longjmp"
+      },
+      {
+        "id": "q_1780948638743467300_19",
+        "text": "What is the term for the behavior when a `break` is omitted in a `switch` case and execution continues into the next case?",
+        "options": [
+          "Fall-through",
+          "Short-circuiting",
+          "This is a very tricky incorrect option",
+          "Default propagation",
+          "Switch cascade"
+        ],
+        "correct": 0,
+        "difficulty": "hard",
+        "topic": "Switch Statement"
+      },
+      {
+        "id": "q_1780948638743467300_20",
+        "text": "If `int *ptr = \u0026x;` and `int x = 10;`, what does `ptr` store?",
+        "options": [
+          "A copy of x's value",
+          "The address of the pointer itself",
+          "The value 10",
+          "The memory address of variable x",
+          "This is a very tricky incorrect option"
+        ],
+        "correct": 3,
+        "difficulty": "hard",
+        "topic": "Pointers"
+      },
+      {
+        "id": "q_1780948638743467300_21",
+        "text": "What character automatically terminates a string in C?",
+        "options": [
+          "This is a very tricky incorrect option",
+          "Space ' '",
+          "Carriage return '\\r'",
+          "Null character '\\0'",
+          "Newline '\\n'"
+        ],
+        "correct": 3,
+        "difficulty": "hard",
+        "topic": "Strings"
+      },
+      {
+        "id": "q_1780948638743467300_22",
+        "text": "In C, can you assign one structure variable to another using the `=` operator?",
+        "options": [
+          "No, you must use memcpy()",
+          "Yes, but only for structures with integer members",
+          "Yes, structure variables can be copied directly (memberwise)",
+          "Only if the structure has no pointers",
+          "This is a very tricky incorrect option"
+        ],
+        "correct": 2,
+        "difficulty": "hard",
+        "topic": "Structures"
+      },
+      {
+        "id": "q_1780948638743467300_23",
+        "text": "What is the effect of declaring a function as `inline` in C?",
+        "options": [
+          "This is a very tricky incorrect option",
+          "It suggests to the compiler to expand the function code at the call site to avoid function call overhead",
+          "It makes the function static",
+          "It prevents the function from being called recursively",
+          "It forces the compiler to always inline the function"
+        ],
+        "correct": 1,
+        "difficulty": "hard",
+        "topic": "Inline Functions"
+      },
+      {
+        "id": "q_1780948638743467300_24",
+        "text": "What is the index of the last element in an array declared as `int numbers[10];`?",
+        "options": [
+          "9",
+          "10",
+          "0",
+          "This is a very tricky incorrect option",
+          "1"
+        ],
+        "correct": 0,
+        "difficulty": "hard",
+        "topic": "Arrays"
+      },
+      {
+        "id": "q_1780948638743467300_25",
+        "text": "What happens if you try to modify a `const` variable after it has been initialized?",
+        "options": [
+          "The compiler will generate an error (or warning, depending on settings)",
+          "The const qualifier is ignored; modification is allowed",
+          "The variable's value will change silently",
+          "The program will crash at runtime",
+          "This is a very tricky incorrect option"
+        ],
+        "correct": 0,
+        "difficulty": "hard",
+        "topic": "Constants"
+      },
+      {
+        "id": "q_1780948638743467300_26",
+        "text": "Given `int arr[5] = {10, 20, 30};`, what is the value of `arr[3]`?",
+        "options": [
+          "This is a very tricky incorrect option",
+          "Compilation error",
+          "30",
+          "Undefined (garbage value)",
+          "0 (partially initialized elements default to 0)"
+        ],
+        "correct": 4,
+        "difficulty": "hard",
+        "topic": "Arrays"
+      },
+      {
+        "id": "q_1780948638743467300_27",
+        "text": "What is required to prevent infinite recursion?",
+        "options": [
+          "The function must return void",
+          "Using static variables only",
+          "A base case that stops the recursive calls",
+          "This is a very tricky incorrect option",
+          "A global counter variable"
+        ],
+        "correct": 2,
+        "difficulty": "hard",
+        "topic": "Recursion"
+      },
+      {
+        "id": "q_1780948638743467300_28",
+        "text": "What does `typedef int (*funcPtr)(int, int);` declare?",
+        "options": [
+          "funcPtr is a type alias for a pointer to a function that takes two ints and returns an int",
+          "funcPtr is a pointer to an integer array",
+          "funcPtr is a function that returns an integer pointer",
+          "funcPtr is an array of function pointers",
+          "This is a very tricky incorrect option"
+        ],
+        "correct": 0,
+        "difficulty": "hard",
+        "topic": "Typedef"
+      },
+      {
+        "id": "q_1780948638743467300_29",
+        "text": "Which function is safest for reading a line of text from a file, including spaces?",
+        "options": [
+          "fscanf()",
+          "fgets()",
+          "gets()",
+          "This is a very tricky incorrect option",
+          "fread()"
+        ],
+        "correct": 1,
+        "difficulty": "hard",
+        "topic": "File Handling"
+      }
+    ],
+    "created_at": "2026-06-08T12:57:18-07:00"
+  }
+]
