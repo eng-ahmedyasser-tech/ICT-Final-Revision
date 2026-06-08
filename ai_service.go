@@ -47,20 +47,21 @@ func GenerateAIResponse(courseID, message, mode, context string) string {
 }
 
 func callOpenRouter(courseID, message, mode, context string) string {
-	systemPrompt := fmt.Sprintf(`You are an expert ICT tutor with deep knowledge of computer science, programming, and cybersecurity.
+	systemPrompt := fmt.Sprintf(`You are an elite ICT tutor and senior cybersecurity analyst. Your teaching philosophy is "Deep Learning through Practical Application".
 
 Course: %s
 Mode: %s
 
-Curriculum Context (prioritize this information):
+Curriculum Context (Your primary source of truth):
 %s
 
-Guidelines:
-1. Provide clear, concise, and accurate answers
-2. Use examples when helpful
-3. If information is not in the context, state that clearly
-4. Keep responses educational and engaging
-5. Format responses with proper line breaks for readability`, courseID, mode, truncateText(context, 3000))
+Mandatory Guidelines for every response:
+1. DEEP DIVE: Never provide surface-level definitions. Explain the "why" and "how" behind every concept.
+2. CONTEXTUAL EXAMPLES: Every technical explanation MUST be accompanied by a concrete, real-world example.
+3. STEP-BY-STEP BREAKDOWN: Break complex logic into smaller, manageable parts using numbered steps.
+4. PRACTICAL PERSPECTIVE: Relate concepts to real-world system architecture, cybersecurity defense, or practical IT operations.
+5. CLARITY & FORMATTING: Use bold headers, bullet points, and code blocks for technical syntax. Ensure the tone is academic, professional, and encouraging.
+6. STRICT ADHERENCE: If the concept is not covered in the provided curriculum, explicitly state: "This is beyond the current scope," then provide a brief high-level overview if appropriate.`, courseID, mode, truncateText(context, 3000))
 
 	reqBody := OpenRouterRequest{
 		Model: "openai/gpt-3.5-turbo",
@@ -109,7 +110,7 @@ func fallbackResponse(courseID, message, mode, context string) string {
 func ExtractContext(curriculum []CurriculumItem, message string) string {
 	msgLower := strings.ToLower(message)
 	var relevant []string
-	
+
 	// Check for topic matches
 	for _, item := range curriculum {
 		if strings.Contains(msgLower, strings.ToLower(item.Topic)) ||
@@ -117,14 +118,14 @@ func ExtractContext(curriculum []CurriculumItem, message string) string {
 			relevant = append(relevant, fmt.Sprintf("**%s**: %s", item.Topic, item.Content))
 		}
 	}
-	
+
 	// If no specific matches, return top topics
 	if len(relevant) == 0 && len(curriculum) > 0 {
 		for i := 0; i < minInt(3, len(curriculum)); i++ {
 			relevant = append(relevant, fmt.Sprintf("**%s**: %s", curriculum[i].Topic, curriculum[i].Content))
 		}
 	}
-	
+
 	return strings.Join(relevant, "\n\n")
 }
 
@@ -155,36 +156,36 @@ func GenerateExam(courseID, difficulty string, count int, curriculum []Curriculu
 
 	for generatedQuestions < count && len(exam.Questions) < count && maxAttempts > 0 {
 		maxAttempts--
-		
+
 		// Cycle through topics systematically instead of randomly
 		topicIndex := generatedQuestions % len(curriculum)
 		topic := curriculum[topicIndex]
-		
+
 		// Generate a question for this topic
 		q := generateMCQ(topic, difficulty, generatedQuestions)
-		
+
 		// Check for duplicate question text
 		if usedQuestions[q.Text] {
 			// Try a different variation
 			q.Text = fmt.Sprintf("%s (Version %d)", strings.TrimSuffix(q.Text, fmt.Sprintf(" (Version %d)", 0)), generatedQuestions+1)
 		}
-		
+
 		exam.Questions = append(exam.Questions, q)
 		usedQuestions[q.Text] = true
 		generatedQuestions++
 	}
-	
+
 	fmt.Printf("Generated %d questions for exam (requested: %d)\n", len(exam.Questions), count)
 	return exam
 }
 func generateMCQ(topic CurriculumItem, difficulty string, id int) Question {
 	content := topic.Content
 	topicLower := strings.ToLower(topic.Topic)
-	
+
 	var questionText string
 	var correctOption string
 	var wrongOptions []string
-	
+
 	// Generate diverse questions based on topic
 	switch {
 	case strings.Contains(topicLower, "variable") || strings.Contains(topicLower, "basics"):
@@ -195,7 +196,7 @@ func generateMCQ(topic CurriculumItem, difficulty string, id int) Question {
 			"To execute loops repeatedly",
 			"To declare functions and their parameters",
 		}
-		
+
 	case strings.Contains(topicLower, "control flow") || strings.Contains(topicLower, "if-else"):
 		questionText = "Which control flow statement allows a program to make decisions based on conditions?"
 		correctOption = "if-else statement"
@@ -204,7 +205,7 @@ func generateMCQ(topic CurriculumItem, difficulty string, id int) Question {
 			"while loop",
 			"do-while loop",
 		}
-		
+
 	case strings.Contains(topicLower, "function"):
 		questionText = "What is the primary benefit of using functions in programming?"
 		correctOption = "Code reusability and modular organization"
@@ -213,7 +214,7 @@ func generateMCQ(topic CurriculumItem, difficulty string, id int) Question {
 			"Reduced memory usage",
 			"Automatic error handling",
 		}
-		
+
 	case strings.Contains(topicLower, "array") || strings.Contains(topicLower, "pointer"):
 		questionText = "What distinguishes an array from a pointer in C?"
 		correctOption = "Arrays allocate contiguous memory blocks; pointers store memory addresses"
@@ -222,7 +223,7 @@ func generateMCQ(topic CurriculumItem, difficulty string, id int) Question {
 			"Pointers cannot be used with arrays",
 			"There is no difference between them",
 		}
-		
+
 	case strings.Contains(topicLower, "word processing") || strings.Contains(topicLower, "microsoft word"):
 		questionText = "Which feature in Microsoft Word allows creating multiple documents with consistent formatting?"
 		correctOption = "Templates"
@@ -231,7 +232,7 @@ func generateMCQ(topic CurriculumItem, difficulty string, id int) Question {
 			"Macros",
 			"Themes",
 		}
-		
+
 	case strings.Contains(topicLower, "spreadsheet") || strings.Contains(topicLower, "excel"):
 		questionText = "What is the primary function of a Pivot Table in Excel?"
 		correctOption = "To summarize and analyze large datasets dynamically"
@@ -240,7 +241,7 @@ func generateMCQ(topic CurriculumItem, difficulty string, id int) Question {
 			"To perform mathematical calculations",
 			"To sort and filter data only",
 		}
-		
+
 	case strings.Contains(topicLower, "cybersecurity") || strings.Contains(topicLower, "cia"):
 		questionText = "What are the three core principles of the CIA triad in cybersecurity?"
 		correctOption = "Confidentiality, Integrity, Availability"
@@ -249,7 +250,7 @@ func generateMCQ(topic CurriculumItem, difficulty string, id int) Question {
 			"Compliance, Investigation, Assessment",
 			"Cryptography, Intrusion, Access",
 		}
-		
+
 	case strings.Contains(topicLower, "cryptographic") || strings.Contains(topicLower, "encryption"):
 		questionText = "What is the key difference between symmetric and asymmetric encryption?"
 		correctOption = "Symmetric uses one key; asymmetric uses a public-private key pair"
@@ -258,7 +259,7 @@ func generateMCQ(topic CurriculumItem, difficulty string, id int) Question {
 			"Asymmetric uses only one key",
 			"There is no meaningful difference",
 		}
-		
+
 	case strings.Contains(topicLower, "network security") || strings.Contains(topicLower, "firewall"):
 		questionText = "What is the primary purpose of a firewall in network security?"
 		correctOption = "To monitor and filter incoming/outgoing network traffic based on security rules"
@@ -267,7 +268,7 @@ func generateMCQ(topic CurriculumItem, difficulty string, id int) Question {
 			"To create backup copies of network data",
 			"To manage user passwords",
 		}
-		
+
 	default:
 		// Generate a question based on the topic content
 		questionText = fmt.Sprintf("Regarding '%s', which statement is most accurate?", topic.Topic)
@@ -278,7 +279,7 @@ func generateMCQ(topic CurriculumItem, difficulty string, id int) Question {
 			"This represents a common misunderstanding of the topic",
 		}
 	}
-	
+
 	// Adjust difficulty - make questions harder based on difficulty level
 	if difficulty == "hard" {
 		// Make wrong options more convincing
@@ -293,13 +294,13 @@ func generateMCQ(topic CurriculumItem, difficulty string, id int) Question {
 		// Make correct option more obvious
 		correctOption = correctOption + " ✓"
 	}
-	
+
 	// Shuffle options
 	allOptions := append([]string{correctOption}, wrongOptions...)
 	randGen.Shuffle(len(allOptions), func(i, j int) {
 		allOptions[i], allOptions[j] = allOptions[j], allOptions[i]
 	})
-	
+
 	// Find correct index
 	correctIndex := 0
 	for i, opt := range allOptions {
@@ -311,7 +312,7 @@ func generateMCQ(topic CurriculumItem, difficulty string, id int) Question {
 			break
 		}
 	}
-	
+
 	return Question{
 		ID:         fmt.Sprintf("q_%d_%d_%d", time.Now().UnixNano(), randGen.Intn(10000), id),
 		Text:       questionText,
@@ -332,7 +333,7 @@ func GradeExam(questions []Question, answers map[string]string) ExamResult {
 		// Remove any checkmark from comparison
 		correctTextClean := strings.TrimSuffix(correctText, " ✓")
 		userAnswerClean := strings.TrimSuffix(userAnswer, " ✓")
-		
+
 		isCorrect := attempted && userAnswerClean == correctTextClean
 
 		if isCorrect {
@@ -377,19 +378,19 @@ func getExplanationForTopic(topic string) string {
 		"Cryptographic Encryption":   "Encryption protects data confidentiality using mathematical algorithms.",
 		"Network Security":           "Network security implements multiple layers of defense to protect data in transit.",
 	}
-	
+
 	// Try exact match
 	if explanation, exists := explanations[topic]; exists {
 		return explanation
 	}
-	
+
 	// Try partial match
 	for key, explanation := range explanations {
 		if len(key) >= 10 && strings.Contains(strings.ToLower(topic), strings.ToLower(key[:10])) {
 			return explanation
 		}
 	}
-	
+
 	return "Review the course material to strengthen your understanding of this topic."
 }
 
