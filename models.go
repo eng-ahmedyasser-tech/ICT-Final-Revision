@@ -72,10 +72,14 @@ type ChatResponse struct {
 	Response string `json:"response"`
 }
 
+// تعريف الهيكل فقط بدون قيم ابتدائية
 var CONFIG = struct {
 	AI_API_KEY  string
 	AI_PROVIDER string
-}{
-	apiKey := os.Getenv("OPENROUTER_API_KEY")
-	AI_PROVIDER: "openrouter",
+}{}
+
+// إضافة دالة لتهيئة القيم (يتم استدعاؤها في main)
+func InitConfig() {
+	CONFIG.AI_API_KEY = os.Getenv("OPENROUTER_API_KEY")
+	CONFIG.AI_PROVIDER = "openrouter"
 }
