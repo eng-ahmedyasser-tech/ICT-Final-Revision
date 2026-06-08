@@ -1,5 +1,6 @@
 [phases.build]
-cmds = ["go build -o out ./Back"]
+# تعديل المسار من ./Back إلى .
+cmds = ["go build -o out ."] 
 
 [start]
 cmd = "./out"
