@@ -17,21 +17,22 @@ import (
 // TYPES
 // ============================================================
 
-type OpenRouterRequest struct {
-	Model     string    `json:"model"`
-	Messages  []Message `json:"messages"`
-	MaxTokens int       `json:"max_tokens"`
+type GeminiRequest struct {
+	Contents []GeminiContent `json:"contents"`
 }
 
-type Message struct {
-	Role    string `json:"role"`
-	Content string `json:"content"`
+type GeminiContent struct {
+	Parts []GeminiPart `json:"parts"`
 }
 
-type OpenRouterResponse struct {
-	Choices []struct {
-		Message Message `json:"message"`
-	} `json:"choices"`
+type GeminiPart struct {
+	Text string `json:"text"`
+}
+
+type GeminiResponse struct {
+	Candidates []struct {
+		Content GeminiContent `json:"content"`
+	} `json:"candidates"`
 }
 
 // QuestionTemplate for JSON bank
@@ -57,7 +58,7 @@ func InitAIService() {
 	if err := godotenv.Load(); err != nil {
 		fmt.Println("⚠️  .env file not found — using system env")
 	}
-	apiKey := os.Getenv("OPENROUTER_API_KEY")
+	apiKey := os.Getenv("GEMINI_API_KEY")
 	if apiKey != "" {
 		CONFIG.AI_API_KEY = apiKey
 	}
@@ -83,63 +84,68 @@ func loadQuestionBank() {
 // ============================================================
 
 func GenerateAIResponse(courseID, message, mode, context string) string {
-	if aiEnabled && CONFIG.AI_PROVIDER == "openrouter" {
-		if resp := callOpenRouter(courseID, message, mode, context); resp != "" {
+	if aiEnabled && CONFIG.AI_PROVIDER == "gemini" {
+		if resp := callGemini(courseID, message, mode, context); resp != "" {
 			return resp
 		}
 	}
 	return fallbackResponse(courseID, message, mode, context)
 }
 
-func callOpenRouter(courseID, message, mode, context string) string {
-	systemPrompt := fmt.Sprintf(`You are an elite ICT tutor.
+func callGemini(courseID, message, mode, context string) string {
+	prompt := fmt.Sprintf(`You are an elite ICT tutor.
 Course: %s
 Mode: %s
 Curriculum Context:
 %s
 
-Guidelines: Provide detailed, step-by-step explanations with real-world examples.`, courseID, mode, truncateText(context, 3000))
+Student question: %s
 
-	reqBody := OpenRouterRequest{
-		Model: "openai/gpt-3.5-turbo",
-		Messages: []Message{
-			{Role: "system", Content: systemPrompt},
-			{Role: "user", Content: message},
+Provide a detailed, step-by-step explanation with real-world examples.`,
+		courseID, mode, truncateText(context, 3000), message)
+
+	reqBody := GeminiRequest{
+		Contents: []GeminiContent{
+			{Parts: []GeminiPart{{Text: prompt}}},
 		},
-		MaxTokens: 800,
 	}
+
 	jsonData, _ := json.Marshal(reqBody)
-	req, _ := http.NewRequest("POST", "https://openrouter.ai/api/v1/chat/completions", bytes.NewBuffer(jsonData))
+	url := fmt.Sprintf(
+		"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=%s",
+		CONFIG.AI_API_KEY,
+	)
+
+	req, _ := http.NewRequest("POST", url, bytes.NewBuffer(jsonData))
 	req.Header.Set("Content-Type", "application/json")
-	req.Header.Set("Authorization", "Bearer "+CONFIG.AI_API_KEY)
-	req.Header.Set("HTTP-Referer", "http://localhost:8080")
-	req.Header.Set("X-Title", "ICT Revision Hub")
 
 	client := &http.Client{Timeout: 30 * time.Second}
 	resp, err := client.Do(req)
 	if err != nil {
-		fmt.Printf("OpenRouter error: %v\n", err)
+		fmt.Printf("Gemini error: %v\n", err)
 		return ""
 	}
 	defer resp.Body.Close()
+
 	if resp.StatusCode != http.StatusOK {
-		fmt.Printf("OpenRouter status: %d\n", resp.StatusCode)
+		fmt.Printf("Gemini status: %d\n", resp.StatusCode)
 		return ""
 	}
-	var result OpenRouterResponse
+
+	var result GeminiResponse
 	if err := json.NewDecoder(resp.Body).Decode(&result); err != nil {
 		return ""
 	}
-	if len(result.Choices) > 0 {
-		return result.Choices[0].Message.Content
+
+	if len(result.Candidates) > 0 && len(result.Candidates[0].Content.Parts) > 0 {
+		return result.Candidates[0].Content.Parts[0].Text
 	}
 	return ""
 }
 
 func fallbackResponse(courseID, message, mode, context string) string {
-	// Use context to answer intelligently even without API key
 	if context != "" {
-		return fmt.Sprintf("📚 Based on the curriculum of %s:\n\n%s\n\n(Note: Configure OPENROUTER_API_KEY for enhanced AI responses.)", courseID, truncateText(context, 800))
+		return fmt.Sprintf("📚 Based on the curriculum of %s:\n\n%s\n\n(Note: Configure GEMINI_API_KEY for enhanced AI responses.)", courseID, truncateText(context, 800))
 	}
 	return fmt.Sprintf("I'm your AI tutor for %s. Please ask a specific question about the course material.", courseID)
 }
@@ -166,11 +172,10 @@ func ExtractContext(curriculum []CurriculumItem, message string) string {
 }
 
 // ============================================================
-// EXAM GENERATION (MAX 30 RANDOM QUESTIONS)
+// EXAM GENERATION
 // ============================================================
 
 func GenerateExam(courseID, difficulty string, count int, curriculum []CurriculumItem) Exam {
-	// تحديد العدد الفعلي بحد أقصى 30
 	requestedCount := count
 	if requestedCount > 30 {
 		fmt.Printf("⚠️ Requested %d questions, but maximum allowed is 30. Capping to 30.\n", requestedCount)
@@ -182,7 +187,6 @@ func GenerateExam(courseID, difficulty string, count int, curriculum []Curriculu
 
 	var questions []Question
 
-	// 1. محاولة استخدام question bank
 	var available []QuestionTemplate
 	for _, q := range questionBank {
 		if q.CourseID == courseID {
@@ -191,46 +195,32 @@ func GenerateExam(courseID, difficulty string, count int, curriculum []Curriculu
 	}
 
 	if len(available) > 0 {
-		// خلط عشوائي لقائمة الأسئلة المتاحة
 		randGen.Shuffle(len(available), func(i, j int) { available[i], available[j] = available[j], available[i] })
-		
-		// عدد الأسئلة التي سنأخذها = أقل قيمة بين (المطلوب، المتاح)
 		take := requestedCount
 		if take > len(available) {
 			take = len(available)
 			fmt.Printf("⚠️ Only %d questions available in bank for course %s. Using all of them.\n", len(available), courseID)
 		}
-		
-		// أخذ أول 'take' سؤال من القائمة المخلوطة (عشوائي)
 		for i := 0; i < take; i++ {
 			questions = append(questions, questionFromTemplate(available[i], difficulty, i))
 		}
 		fmt.Printf("✅ Generated %d random questions from question bank (total bank: %d)\n", len(questions), len(available))
 	}
 
-	// 2. إذا لم يكن هناك أسئلة في البنك (أو لا يوجد أسئلة كافية؟)
-	//    ملاحظة: إذا كان البنك يحتوي على أسئلة أقل من المطلوب، استخدمنا كل ما هو متاح.
-	//    أما إذا كان البنك فارغاً تماماً، ننتقل إلى المنهج.
 	if len(questions) == 0 && len(curriculum) > 0 {
 		fmt.Printf("⚠️ No questions in bank for course %s. Generating randomly from curriculum.\n", courseID)
-		
-		// خلط المنهج
 		randGen.Shuffle(len(curriculum), func(i, j int) { curriculum[i], curriculum[j] = curriculum[j], curriculum[i] })
-		
 		take := requestedCount
 		if take > len(curriculum) {
 			take = len(curriculum)
 			fmt.Printf("⚠️ Only %d curriculum topics available. Using all.\n", len(curriculum))
 		}
-		
 		for i := 0; i < take; i++ {
-			item := curriculum[i]
-			questions = append(questions, questionFromCurriculum(item, difficulty, i))
+			questions = append(questions, questionFromCurriculum(curriculum[i], difficulty, i))
 		}
 		fmt.Printf("✅ Generated %d random questions from curriculum\n", len(questions))
 	}
 
-	// 3. في حال عدم وجود أي شيء (لا بنك ولا منهج) – أسئلة وهمية (ولن يتجاوز عددها 30)
 	if len(questions) == 0 {
 		fmt.Printf("⚠️ No curriculum or question bank found. Generating placeholder questions.\n")
 		for i := 0; i < requestedCount; i++ {
@@ -245,18 +235,16 @@ func GenerateExam(courseID, difficulty string, count int, curriculum []Curriculu
 		}
 	}
 
-	exam := Exam{
+	return Exam{
 		ID:         fmt.Sprintf("exam_%d", time.Now().UnixNano()),
 		CourseID:   courseID,
 		Difficulty: difficulty,
 		Questions:  questions,
 		CreatedAt:  time.Now().Format(time.RFC3339),
 	}
-	return exam
 }
-// Helper to build a Question from a curriculum item
+
 func questionFromCurriculum(item CurriculumItem, difficulty string, id int) Question {
-	// Generate a plausible question from topic and content
 	questionText := fmt.Sprintf("Which of the following best describes '%s'?", item.Topic)
 	correctAnswer := truncateText(item.Content, 120)
 	wrongAnswers := []string{
@@ -264,7 +252,6 @@ func questionFromCurriculum(item CurriculumItem, difficulty string, id int) Ques
 		"This describes a different concept in the same domain",
 		"This is partially correct but missing key details",
 	}
-	// Adjust difficulty
 	if difficulty == "hard" {
 		wrongAnswers = append(wrongAnswers, "This is a trick option closely related but incorrect")
 	}
@@ -287,7 +274,6 @@ func questionFromCurriculum(item CurriculumItem, difficulty string, id int) Ques
 	}
 }
 
-// Helper to build a Question from a template
 func questionFromTemplate(tmpl QuestionTemplate, difficulty string, id int) Question {
 	correct := tmpl.Correct
 	wrong := make([]string, len(tmpl.Wrong))
@@ -327,12 +313,10 @@ func GradeExam(questions []Question, answers map[string]string) ExamResult {
 	for idx, q := range questions {
 		userAnswer, attempted := answers[fmt.Sprintf("%d", idx)]
 		correctText := q.Options[q.Correct]
-		// Clean any markers
 		cleanCorrect := strings.TrimSuffix(correctText, " (correct)")
 		cleanCorrect = strings.TrimSuffix(cleanCorrect, " ✓")
 		userClean := strings.TrimSuffix(userAnswer, " (correct)")
 		userClean = strings.TrimSuffix(userClean, " ✓")
-
 		isCorrect := attempted && userClean == cleanCorrect
 		if isCorrect {
 			score++
