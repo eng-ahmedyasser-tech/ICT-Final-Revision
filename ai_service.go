@@ -1,5 +1,5 @@
 package main
-
+ 
 import (
 	"bytes"
 	"encoding/json"
@@ -9,32 +9,32 @@ import (
 	"os"
 	"strings"
 	"time"
-
+ 
 	"github.com/joho/godotenv"
 )
-
+ 
 // ============================================================
 // TYPES
 // ============================================================
-
+ 
 type GeminiRequest struct {
 	Contents []GeminiContent `json:"contents"`
 }
-
+ 
 type GeminiContent struct {
 	Parts []GeminiPart `json:"parts"`
 }
-
+ 
 type GeminiPart struct {
 	Text string `json:"text"`
 }
-
+ 
 type GeminiResponse struct {
 	Candidates []struct {
 		Content GeminiContent `json:"content"`
 	} `json:"candidates"`
 }
-
+ 
 // QuestionTemplate for JSON bank
 type QuestionTemplate struct {
 	CourseID string   `json:"course_id"`
@@ -43,30 +43,41 @@ type QuestionTemplate struct {
 	Correct  string   `json:"correct"`
 	Wrong    []string `json:"wrong"`
 }
-
+ 
 var (
 	aiEnabled    bool
 	randGen      *rand.Rand
 	questionBank []QuestionTemplate
 )
-
+ 
 // ============================================================
 // INIT
 // ============================================================
-
+ 
 func InitAIService() {
 	if err := godotenv.Load(); err != nil {
 		fmt.Println("⚠️  .env file not found — using system env")
 	}
+ 
 	apiKey := os.Getenv("GEMINI_API_KEY")
+ 
+	// DEBUG — هنشيله بعد ما نتأكد
+	fmt.Printf("🔍 DEBUG: GEMINI_API_KEY length=%d\n", len(apiKey))
+	if len(apiKey) > 4 {
+		fmt.Printf("🔍 DEBUG: key starts with: %s...\n", apiKey[:4])
+	}
+ 
 	if apiKey != "" {
 		CONFIG.AI_API_KEY = apiKey
 	}
+ 
 	aiEnabled = CONFIG.AI_API_KEY != "" && !strings.Contains(CONFIG.AI_API_KEY, "xxxxx")
+	fmt.Printf("🔍 DEBUG: aiEnabled=%v, provider=%s\n", aiEnabled, CONFIG.AI_PROVIDER)
+ 
 	randGen = rand.New(rand.NewSource(time.Now().UnixNano()))
 	loadQuestionBank()
 }
-
+ 
 func loadQuestionBank() {
 	data, err := os.ReadFile("questions.json")
 	if err != nil {
@@ -78,12 +89,14 @@ func loadQuestionBank() {
 	}
 	fmt.Printf("✅ Loaded %d questions from questions.json\n", len(questionBank))
 }
-
+ 
 // ============================================================
 // CHAT
 // ============================================================
-
+ 
 func GenerateAIResponse(courseID, message, mode, context string) string {
+	fmt.Printf("🔍 DEBUG: GenerateAIResponse called — aiEnabled=%v, provider=%s\n", aiEnabled, CONFIG.AI_PROVIDER)
+ 
 	if aiEnabled && CONFIG.AI_PROVIDER == "gemini" {
 		if resp := callGemini(courseID, message, mode, context); resp != "" {
 			return resp
@@ -91,69 +104,77 @@ func GenerateAIResponse(courseID, message, mode, context string) string {
 	}
 	return fallbackResponse(courseID, message, mode, context)
 }
-
+ 
 func callGemini(courseID, message, mode, context string) string {
+	fmt.Println("🔍 DEBUG: Calling Gemini API...")
+ 
 	prompt := fmt.Sprintf(`You are an elite ICT tutor.
 Course: %s
 Mode: %s
 Curriculum Context:
 %s
-
+ 
 Student question: %s
-
+ 
 Provide a detailed, step-by-step explanation with real-world examples.`,
 		courseID, mode, truncateText(context, 3000), message)
-
+ 
 	reqBody := GeminiRequest{
 		Contents: []GeminiContent{
 			{Parts: []GeminiPart{{Text: prompt}}},
 		},
 	}
-
+ 
 	jsonData, _ := json.Marshal(reqBody)
 	url := fmt.Sprintf(
 		"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=%s",
 		CONFIG.AI_API_KEY,
 	)
-
+ 
 	req, _ := http.NewRequest("POST", url, bytes.NewBuffer(jsonData))
 	req.Header.Set("Content-Type", "application/json")
-
+ 
 	client := &http.Client{Timeout: 30 * time.Second}
 	resp, err := client.Do(req)
 	if err != nil {
-		fmt.Printf("Gemini error: %v\n", err)
+		fmt.Printf("❌ Gemini error: %v\n", err)
 		return ""
 	}
 	defer resp.Body.Close()
-
+ 
+	fmt.Printf("🔍 DEBUG: Gemini HTTP status: %d\n", resp.StatusCode)
+ 
 	if resp.StatusCode != http.StatusOK {
-		fmt.Printf("Gemini status: %d\n", resp.StatusCode)
+		fmt.Printf("❌ Gemini status: %d\n", resp.StatusCode)
 		return ""
 	}
-
+ 
 	var result GeminiResponse
 	if err := json.NewDecoder(resp.Body).Decode(&result); err != nil {
+		fmt.Printf("❌ Gemini decode error: %v\n", err)
 		return ""
 	}
-
+ 
 	if len(result.Candidates) > 0 && len(result.Candidates[0].Content.Parts) > 0 {
+		fmt.Println("✅ Gemini response received successfully")
 		return result.Candidates[0].Content.Parts[0].Text
 	}
+ 
+	fmt.Println("❌ Gemini: empty candidates")
 	return ""
 }
-
+ 
 func fallbackResponse(courseID, message, mode, context string) string {
 	if context != "" {
 		return fmt.Sprintf("📚 Based on the curriculum of %s:\n\n%s\n\n(Note: Configure GEMINI_API_KEY for enhanced AI responses.)", courseID, truncateText(context, 800))
 	}
 	return fmt.Sprintf("I'm your AI tutor for %s. Please ask a specific question about the course material.", courseID)
 }
-
+ 
 // ============================================================
-// CONTEXT EXTRACTION (for chat)
+// CONTEXT EXTRACTION
 // ============================================================
-
+ 
 func ExtractContext(curriculum []CurriculumItem, message string) string {
 	msgLower := strings.ToLower(message)
 	var relevant []string
@@ -170,11 +191,11 @@ func ExtractContext(curriculum []CurriculumItem, message string) string {
 	}
 	return strings.Join(relevant, "\n\n")
 }
-
+ 
 // ============================================================
 // EXAM GENERATION
 // ============================================================
-
+ 
 func GenerateExam(courseID, difficulty string, count int, curriculum []CurriculumItem) Exam {
 	requestedCount := count
 	if requestedCount > 30 {
@@ -184,16 +205,16 @@ func GenerateExam(courseID, difficulty string, count int, curriculum []Curriculu
 	if requestedCount < 1 {
 		requestedCount = 5
 	}
-
+ 
 	var questions []Question
-
+ 
 	var available []QuestionTemplate
 	for _, q := range questionBank {
 		if q.CourseID == courseID {
 			available = append(available, q)
 		}
 	}
-
+ 
 	if len(available) > 0 {
 		randGen.Shuffle(len(available), func(i, j int) { available[i], available[j] = available[j], available[i] })
 		take := requestedCount
@@ -206,7 +227,7 @@ func GenerateExam(courseID, difficulty string, count int, curriculum []Curriculu
 		}
 		fmt.Printf("✅ Generated %d random questions from question bank (total bank: %d)\n", len(questions), len(available))
 	}
-
+ 
 	if len(questions) == 0 && len(curriculum) > 0 {
 		fmt.Printf("⚠️ No questions in bank for course %s. Generating randomly from curriculum.\n", courseID)
 		randGen.Shuffle(len(curriculum), func(i, j int) { curriculum[i], curriculum[j] = curriculum[j], curriculum[i] })
@@ -220,7 +241,7 @@ func GenerateExam(courseID, difficulty string, count int, curriculum []Curriculu
 		}
 		fmt.Printf("✅ Generated %d random questions from curriculum\n", len(questions))
 	}
-
+ 
 	if len(questions) == 0 {
 		fmt.Printf("⚠️ No curriculum or question bank found. Generating placeholder questions.\n")
 		for i := 0; i < requestedCount; i++ {
@@ -234,7 +255,7 @@ func GenerateExam(courseID, difficulty string, count int, curriculum []Curriculu
 			})
 		}
 	}
-
+ 
 	return Exam{
 		ID:         fmt.Sprintf("exam_%d", time.Now().UnixNano()),
 		CourseID:   courseID,
@@ -243,7 +264,7 @@ func GenerateExam(courseID, difficulty string, count int, curriculum []Curriculu
 		CreatedAt:  time.Now().Format(time.RFC3339),
 	}
 }
-
+ 
 func questionFromCurriculum(item CurriculumItem, difficulty string, id int) Question {
 	questionText := fmt.Sprintf("Which of the following best describes '%s'?", item.Topic)
 	correctAnswer := truncateText(item.Content, 120)
@@ -273,7 +294,7 @@ func questionFromCurriculum(item CurriculumItem, difficulty string, id int) Ques
 		Topic:      item.Topic,
 	}
 }
-
+ 
 func questionFromTemplate(tmpl QuestionTemplate, difficulty string, id int) Question {
 	correct := tmpl.Correct
 	wrong := make([]string, len(tmpl.Wrong))
@@ -302,11 +323,11 @@ func questionFromTemplate(tmpl QuestionTemplate, difficulty string, id int) Ques
 		Topic:      tmpl.Topic,
 	}
 }
-
+ 
 // ============================================================
 // EXAM GRADING
 // ============================================================
-
+ 
 func GradeExam(questions []Question, answers map[string]string) ExamResult {
 	score := 0
 	var reviews []QuestionReview
@@ -343,7 +364,7 @@ func GradeExam(questions []Question, answers map[string]string) ExamResult {
 		Review:     reviews,
 	}
 }
-
+ 
 func getExplanationForTopic(topic string) string {
 	explanations := map[string]string{
 		"C Programming Basics":       "Variables are fundamental to programming as they store data that can be modified during program execution.",
@@ -367,18 +388,18 @@ func getExplanationForTopic(topic string) string {
 	}
 	return "Review the course material to strengthen your understanding of this topic."
 }
-
+ 
 // ============================================================
 // HELPERS
 // ============================================================
-
+ 
 func truncateText(s string, max int) string {
 	if len(s) <= max {
 		return s
 	}
 	return s[:max-3] + "..."
 }
-
+ 
 func minInt(a, b int) int {
 	if a < b {
 		return a
