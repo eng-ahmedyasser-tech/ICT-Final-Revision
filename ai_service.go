@@ -1,5 +1,5 @@
 package main
- 
+
 import (
 	"bytes"
 	"encoding/json"
@@ -8,11 +8,12 @@ import (
 	"net/http"
 	"os"
 	"strings"
+	"sync"
 	"time"
- 
+
 	"github.com/joho/godotenv"
 )
- 
+
 type QuestionTemplate struct {
 	CourseID string   `json:"course_id"`
 	Topic    string   `json:"topic"`
@@ -20,36 +21,42 @@ type QuestionTemplate struct {
 	Correct  string   `json:"correct"`
 	Wrong    []string `json:"wrong"`
 }
- 
+
 var (
 	aiEnabled    bool
 	randGen      *rand.Rand
 	questionBank []QuestionTemplate
+	
+	// Rate limiting variables
+	lastGroqCall    time.Time
+	groqMutex       sync.Mutex
+	groqCallCount   int
+	groqWindowStart time.Time
 )
- 
+
 func InitAIService() {
 	if err := godotenv.Load(); err != nil {
 		fmt.Println("⚠️  .env file not found — using system env")
 	}
- 
+
 	apiKey := os.Getenv("GROQ_API_KEY")
- 
+
 	fmt.Printf("🔍 DEBUG: GROQ_API_KEY length=%d\n", len(apiKey))
 	if len(apiKey) > 4 {
 		fmt.Printf("🔍 DEBUG: key starts with: %s...\n", apiKey[:4])
 	}
- 
+
 	if apiKey != "" {
 		CONFIG.AI_API_KEY = apiKey
 	}
- 
+
 	aiEnabled = CONFIG.AI_API_KEY != "" && !strings.Contains(CONFIG.AI_API_KEY, "xxxxx")
 	fmt.Printf("🔍 DEBUG: aiEnabled=%v, provider=%s\n", aiEnabled, CONFIG.AI_PROVIDER)
- 
+
 	randGen = rand.New(rand.NewSource(time.Now().UnixNano()))
 	loadQuestionBank()
 }
- 
+
 func loadQuestionBank() {
 	data, err := os.ReadFile("questions.json")
 	if err != nil {
@@ -61,30 +68,58 @@ func loadQuestionBank() {
 	}
 	fmt.Printf("✅ Loaded %d questions from questions.json\n", len(questionBank))
 }
- 
-func GenerateAIResponse(courseID, message, mode, context string) string {
-	fmt.Printf("🔍 DEBUG: GenerateAIResponse called — aiEnabled=%v, provider=%s\n", aiEnabled, CONFIG.AI_PROVIDER)
- 
-	if aiEnabled && CONFIG.AI_PROVIDER == "groq" {
-		if resp := callGroq(courseID, message, mode, context); resp != "" {
-			return resp
-		}
+
+func callGroqWithRateLimit(courseID, message, mode, context string) string {
+	groqMutex.Lock()
+	defer groqMutex.Unlock()
+
+	now := time.Now()
+
+	// Reset counter every minute
+	if groqWindowStart.IsZero() || now.Sub(groqWindowStart) > 60*time.Second {
+		groqWindowStart = now
+		groqCallCount = 0
 	}
-	return fallbackResponse(courseID, message, mode, context)
+
+	// Check if we exceeded 20 requests per minute (leaving buffer for 30 limit)
+	if groqCallCount >= 20 {
+		waitTime := 60*time.Second - now.Sub(groqWindowStart)
+		if waitTime > 0 {
+			fmt.Printf("⏳ Rate limit: %d requests in last minute. Waiting %v...\n", groqCallCount, waitTime)
+			time.Sleep(waitTime)
+		}
+		// Reset after waiting
+		groqWindowStart = time.Now()
+		groqCallCount = 0
+	}
+
+	// Minimum 2 seconds between calls
+	if !lastGroqCall.IsZero() && now.Sub(lastGroqCall) < 2*time.Second {
+		sleepTime := 2*time.Second - now.Sub(lastGroqCall)
+		fmt.Printf("⏳ Too fast! Waiting %v between calls...\n", sleepTime)
+		time.Sleep(sleepTime)
+	}
+
+	lastGroqCall = time.Now()
+	groqCallCount++
+
+	fmt.Printf("🔍 Groq call #%d in current minute\n", groqCallCount)
+
+	return callGroq(courseID, message, mode, context)
 }
- 
+
 func callGroq(courseID, message, mode, context string) string {
 	fmt.Println("🔍 DEBUG: Calling Groq API...")
- 
+
 	systemPrompt := fmt.Sprintf(`You are an elite ICT tutor.
 Course: %s
 Mode: %s
 Curriculum Context:
 %s
- 
+
 Provide a detailed, step-by-step explanation with real-world examples.`,
 		courseID, mode, truncateText(context, 3000))
- 
+
 	reqBody := map[string]any{
 		"model": "llama-3.3-70b-versatile",
 		"messages": []map[string]string{
@@ -93,12 +128,12 @@ Provide a detailed, step-by-step explanation with real-world examples.`,
 		},
 		"max_tokens": 800,
 	}
- 
+
 	jsonData, _ := json.Marshal(reqBody)
 	req, _ := http.NewRequest("POST", "https://api.groq.com/openai/v1/chat/completions", bytes.NewBuffer(jsonData))
 	req.Header.Set("Content-Type", "application/json")
 	req.Header.Set("Authorization", "Bearer "+CONFIG.AI_API_KEY)
- 
+
 	client := &http.Client{Timeout: 30 * time.Second}
 	resp, err := client.Do(req)
 	if err != nil {
@@ -106,36 +141,52 @@ Provide a detailed, step-by-step explanation with real-world examples.`,
 		return ""
 	}
 	defer resp.Body.Close()
- 
+
 	fmt.Printf("🔍 DEBUG: Groq HTTP status: %d\n", resp.StatusCode)
- 
+
+	if resp.StatusCode == 429 {
+		fmt.Printf("❌ Rate limit exceeded (429). Consider increasing delay or upgrading plan.\n")
+		return ""
+	}
+
 	if resp.StatusCode != http.StatusOK {
 		fmt.Printf("❌ Groq status: %d\n", resp.StatusCode)
 		return ""
 	}
- 
+
 	var result GroqResponse
 	if err := json.NewDecoder(resp.Body).Decode(&result); err != nil {
 		fmt.Printf("❌ Groq decode error: %v\n", err)
 		return ""
 	}
- 
+
 	if len(result.Choices) > 0 {
 		fmt.Println("✅ Groq response received successfully")
 		return result.Choices[0].Message.Content
 	}
- 
+
 	fmt.Println("❌ Groq: empty response")
 	return ""
 }
- 
+
+func GenerateAIResponse(courseID, message, mode, context string) string {
+	fmt.Printf("🔍 DEBUG: GenerateAIResponse called — aiEnabled=%v, provider=%s\n", aiEnabled, CONFIG.AI_PROVIDER)
+
+	if aiEnabled && CONFIG.AI_PROVIDER == "groq" {
+		if resp := callGroqWithRateLimit(courseID, message, mode, context); resp != "" {
+			return resp
+		}
+	}
+	return fallbackResponse(courseID, message, mode, context)
+}
+
 func fallbackResponse(courseID, message, mode, context string) string {
 	if context != "" {
 		return fmt.Sprintf("📚 Based on the curriculum of %s:\n\n%s\n\n(Note: Configure GROQ_API_KEY for enhanced AI responses.)", courseID, truncateText(context, 800))
 	}
 	return fmt.Sprintf("I'm your AI tutor for %s. Please ask a specific question about the course material.", courseID)
 }
- 
+
 func ExtractContext(curriculum []CurriculumItem, message string) string {
 	msgLower := strings.ToLower(message)
 	var relevant []string
@@ -152,7 +203,7 @@ func ExtractContext(curriculum []CurriculumItem, message string) string {
 	}
 	return strings.Join(relevant, "\n\n")
 }
- 
+
 func GenerateExam(courseID, difficulty string, count int, curriculum []CurriculumItem) Exam {
 	requestedCount := count
 	if requestedCount > 30 {
@@ -162,16 +213,16 @@ func GenerateExam(courseID, difficulty string, count int, curriculum []Curriculu
 	if requestedCount < 1 {
 		requestedCount = 5
 	}
- 
+
 	var questions []Question
- 
+
 	var available []QuestionTemplate
 	for _, q := range questionBank {
 		if q.CourseID == courseID {
 			available = append(available, q)
 		}
 	}
- 
+
 	if len(available) > 0 {
 		randGen.Shuffle(len(available), func(i, j int) { available[i], available[j] = available[j], available[i] })
 		take := requestedCount
@@ -184,7 +235,7 @@ func GenerateExam(courseID, difficulty string, count int, curriculum []Curriculu
 		}
 		fmt.Printf("✅ Generated %d random questions from question bank (total bank: %d)\n", len(questions), len(available))
 	}
- 
+
 	if len(questions) == 0 && len(curriculum) > 0 {
 		fmt.Printf("⚠️ No questions in bank for course %s. Generating randomly from curriculum.\n", courseID)
 		randGen.Shuffle(len(curriculum), func(i, j int) { curriculum[i], curriculum[j] = curriculum[j], curriculum[i] })
@@ -198,7 +249,7 @@ func GenerateExam(courseID, difficulty string, count int, curriculum []Curriculu
 		}
 		fmt.Printf("✅ Generated %d random questions from curriculum\n", len(questions))
 	}
- 
+
 	if len(questions) == 0 {
 		fmt.Printf("⚠️ No curriculum or question bank found. Generating placeholder questions.\n")
 		for i := 0; i < requestedCount; i++ {
@@ -212,7 +263,7 @@ func GenerateExam(courseID, difficulty string, count int, curriculum []Curriculu
 			})
 		}
 	}
- 
+
 	return Exam{
 		ID:         fmt.Sprintf("exam_%d", time.Now().UnixNano()),
 		CourseID:   courseID,
@@ -221,7 +272,7 @@ func GenerateExam(courseID, difficulty string, count int, curriculum []Curriculu
 		CreatedAt:  time.Now().Format(time.RFC3339),
 	}
 }
- 
+
 func questionFromCurriculum(item CurriculumItem, difficulty string, id int) Question {
 	questionText := fmt.Sprintf("Which of the following best describes '%s'?", item.Topic)
 	correctAnswer := truncateText(item.Content, 120)
@@ -251,7 +302,7 @@ func questionFromCurriculum(item CurriculumItem, difficulty string, id int) Ques
 		Topic:      item.Topic,
 	}
 }
- 
+
 func questionFromTemplate(tmpl QuestionTemplate, difficulty string, id int) Question {
 	correct := tmpl.Correct
 	wrong := make([]string, len(tmpl.Wrong))
@@ -280,7 +331,7 @@ func questionFromTemplate(tmpl QuestionTemplate, difficulty string, id int) Ques
 		Topic:      tmpl.Topic,
 	}
 }
- 
+
 func GradeExam(questions []Question, answers map[string]string) ExamResult {
 	score := 0
 	var reviews []QuestionReview
@@ -317,7 +368,7 @@ func GradeExam(questions []Question, answers map[string]string) ExamResult {
 		Review:     reviews,
 	}
 }
- 
+
 func getExplanationForTopic(topic string) string {
 	explanations := map[string]string{
 		"C Programming Basics":       "Variables are fundamental to programming as they store data that can be modified during program execution.",
@@ -341,14 +392,14 @@ func getExplanationForTopic(topic string) string {
 	}
 	return "Review the course material to strengthen your understanding of this topic."
 }
- 
+
 func truncateText(s string, max int) string {
 	if len(s) <= max {
 		return s
 	}
 	return s[:max-3] + "..."
 }
- 
+
 func minInt(a, b int) int {
 	if a < b {
 		return a

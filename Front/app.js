@@ -36,8 +36,8 @@ const state = {
 // Rate limiting variables
 let topicAnalysisTimeout = null;
 let lastChatCall = 0;
-const CHAT_DELAY_MS = 2000; // 2 seconds between chat messages
-const TOPIC_ANALYSIS_DELAY_MS = 1500; // 1.5 seconds delay before analyzing topic
+const CHAT_DELAY_MS = 3000; // 3 seconds between chat messages (increased for safety)
+const TOPIC_ANALYSIS_DELAY_MS = 2000; // 2 seconds delay before analyzing topic
 
 let currentExamConfig = { count: CONFIG.DEFAULT_QUESTION_COUNT, difficulty: CONFIG.DEFAULT_DIFFICULTY };
 let timerInterval = null;
@@ -62,7 +62,6 @@ function setView(view, data = {}) {
     activeSelectedTopicName = null;
     state.analysis.content = null;
     state.analysis.currentTopic = null;
-    // Cancel any pending topic analysis when leaving workspace
     if (topicAnalysisTimeout) {
       clearTimeout(topicAnalysisTimeout);
       topicAnalysisTimeout = null;
@@ -82,7 +81,6 @@ function setView(view, data = {}) {
     state.course = null;
     state.exam = { questions: [], answers: {}, score: null, review: [] };
     if (timerInterval) { clearInterval(timerInterval); timerInterval = null; }
-    // Cancel pending analysis
     if (topicAnalysisTimeout) {
       clearTimeout(topicAnalysisTimeout);
       topicAnalysisTimeout = null;
