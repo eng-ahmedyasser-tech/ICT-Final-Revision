@@ -2208,406 +2208,406 @@
 
 
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "The opposite of open source software is closed source hardware.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "Money is the most important reason that pushes organizations to use open source software.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "In open source software, organizations must follow the vendor's decisions.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "In proprietary software, vendors control software updates.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "Users can add features to proprietary software.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "Users can add features to open source software.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "Open source software stores data in special ways that only the vendor understands.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "With open source software, organizations have more control over their data.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "Moving data isn't a problem in open source as well as proprietary software.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "A LAN can be a part of a WAN.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "LAN stands for Large Area Network.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "In LANs, computers are close together. In contrast, WANs cover a larger area.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "In a ring system, there is a central cable and each computer is linked to it.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "In a star system, each computer is connected to a central server.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "It is difficult to break a mesh network.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "A network is a group of linked computers or other devices.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "The big advantage in a star system is that if one connection breaks, the data can use other connections.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "'Tera' is a prefix that means 1,000,000,000,000.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "Giga is a prefix which means a million.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "Nano is a prefix which means 1,000.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "A keyboard and a monitor are peripherals.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "Storage keeps data after switching off, but memory loses it.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "A USB flash drive is an internal component.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "A hard disk drive can be an internal component and a peripheral.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "The simplest database object is a table.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "A database has several parts; these are called fields.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "A table, a report, and a form are database objects.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "One field in each record must be unique. This field is called the primary key.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "Each row in a table is a spreadsheet.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "To retrieve a record is to enter data into tables.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "Uptime is the time when the service is not working.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "Shared hosting provides better security for websites than dedicated hosting.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "A system in which each server has only one client's websites on it is shared hosting.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "A unique number to identify a computer on the internet is an IP address.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "When you see a figure with a central cable and each computer linked to it, this refers to a bus system.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "In a ring network, if one connection breaks, the whole network fails easily.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "A database query is used to enter data, not to retrieve it.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "An operating system can be reinstalled by first setting the boot drive to DVD in the BIOS.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "BIOS stands for Basic Input/Output System and controls how a computer starts up.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "To 'partition' a hard drive means to copy data to another location for safety.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "In spreadsheet terminology, '8+2=10' is read as 'eight plus two is ten'.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "In a database, a form is used for printing data in a visually appealing way, not for entering data.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "A stylus is a pen-shaped device sometimes used with touch screens.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "A projector is an input device because it sends signals to the computer.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "Freemium pricing means the lowest level of software is free.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "With subscription pricing, the user pays a one-time fee and gets free updates forever.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "In a client-server system, the client requests data and the server sends it back.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "Cookies are small files that websites put on a user's computer to track items in a shopping basket.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "EDI (Electronic Data Interchange) makes it harder for accounting systems to accept data from e-commerce systems.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "A VPN (Virtual Private Network) is less secure than a regular internet connection.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "Optical character recognition (OCR) can read text from images, such as a car's registration number from a photograph.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "An accelerometer in a mobile device can automatically send a message if it detects a fall.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "In the past simple tense, regular verbs add '-ed' and irregular verbs do not change form.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "The past simple of 'can' is 'could'.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "Superlative adjectives like 'the most dangerous' are used to compare two things.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "We use 'How much' with uncountable nouns and 'How many' with countable plural nouns.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "The expression 'going to' is used only for predictions, not for plans.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "In English, comparative adjectives like 'bigger' are formed by adding '-er' to one-syllable adjectives, doubling the consonant if needed.",
     "correct": "true",
@@ -2615,70 +2615,70 @@
   },
 
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "In a mesh network, each computer is linked to only one other computer.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "A multi-function printer can scan and copy documents in addition to printing.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "In a database, a report is used only for entering new data, not for viewing existing data.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "Dedicated hosting means your website shares a server with many other clients' websites.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "A GPU (graphics card) is typically installed on the motherboard to handle visual output.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "The BIOS is software that is installed after the operating system is loaded.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "In a star network topology, if the central server fails, all connected devices lose connection.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "Open source software vendors do not explain their data storage methods clearly, making data migration difficult.",
     "correct": "false",
     "wrong": ["true"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "A URL (uniform resource locator) is another name for a web address.",
     "correct": "true",
     "wrong": ["false"]
   },
   {
-    "course_id": "ICT302",
+    "course_id": "CS302",
     "topic": "ICT Fundamentals",
     "question": "In a spreadsheet, a formula always begins with a plus sign (+) followed by the calculation.",
     "correct": "false",
