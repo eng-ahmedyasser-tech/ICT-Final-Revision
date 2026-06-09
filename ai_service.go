@@ -13,29 +13,6 @@ import (
 	"github.com/joho/godotenv"
 )
  
-// ============================================================
-// TYPES
-// ============================================================
- 
-type GeminiRequest struct {
-	Contents []GeminiContent `json:"contents"`
-}
- 
-type GeminiContent struct {
-	Parts []GeminiPart `json:"parts"`
-}
- 
-type GeminiPart struct {
-	Text string `json:"text"`
-}
- 
-type GeminiResponse struct {
-	Candidates []struct {
-		Content GeminiContent `json:"content"`
-	} `json:"candidates"`
-}
- 
-// QuestionTemplate for JSON bank
 type QuestionTemplate struct {
 	CourseID string   `json:"course_id"`
 	Topic    string   `json:"topic"`
@@ -50,19 +27,14 @@ var (
 	questionBank []QuestionTemplate
 )
  
-// ============================================================
-// INIT
-// ============================================================
- 
 func InitAIService() {
 	if err := godotenv.Load(); err != nil {
 		fmt.Println("⚠️  .env file not found — using system env")
 	}
  
-	apiKey := os.Getenv("GEMINI_API_KEY")
+	apiKey := os.Getenv("GROQ_API_KEY")
  
-	// DEBUG — هنشيله بعد ما نتأكد
-	fmt.Printf("🔍 DEBUG: GEMINI_API_KEY length=%d\n", len(apiKey))
+	fmt.Printf("🔍 DEBUG: GROQ_API_KEY length=%d\n", len(apiKey))
 	if len(apiKey) > 4 {
 		fmt.Printf("🔍 DEBUG: key starts with: %s...\n", apiKey[:4])
 	}
@@ -90,90 +62,79 @@ func loadQuestionBank() {
 	fmt.Printf("✅ Loaded %d questions from questions.json\n", len(questionBank))
 }
  
-// ============================================================
-// CHAT
-// ============================================================
- 
 func GenerateAIResponse(courseID, message, mode, context string) string {
 	fmt.Printf("🔍 DEBUG: GenerateAIResponse called — aiEnabled=%v, provider=%s\n", aiEnabled, CONFIG.AI_PROVIDER)
  
-	if aiEnabled && CONFIG.AI_PROVIDER == "gemini" {
-		if resp := callGemini(courseID, message, mode, context); resp != "" {
+	if aiEnabled && CONFIG.AI_PROVIDER == "groq" {
+		if resp := callGroq(courseID, message, mode, context); resp != "" {
 			return resp
 		}
 	}
 	return fallbackResponse(courseID, message, mode, context)
 }
  
-func callGemini(courseID, message, mode, context string) string {
-	fmt.Println("🔍 DEBUG: Calling Gemini API...")
+func callGroq(courseID, message, mode, context string) string {
+	fmt.Println("🔍 DEBUG: Calling Groq API...")
  
-	prompt := fmt.Sprintf(`You are an elite ICT tutor.
+	systemPrompt := fmt.Sprintf(`You are an elite ICT tutor.
 Course: %s
 Mode: %s
 Curriculum Context:
 %s
  
-Student question: %s
- 
 Provide a detailed, step-by-step explanation with real-world examples.`,
-		courseID, mode, truncateText(context, 3000), message)
+		courseID, mode, truncateText(context, 3000))
  
-	reqBody := GeminiRequest{
-		Contents: []GeminiContent{
-			{Parts: []GeminiPart{{Text: prompt}}},
+	reqBody := map[string]any{
+		"model": "llama-3.3-70b-versatile",
+		"messages": []map[string]string{
+			{"role": "system", "content": systemPrompt},
+			{"role": "user", "content": message},
 		},
+		"max_tokens": 800,
 	}
  
 	jsonData, _ := json.Marshal(reqBody)
-	url := fmt.Sprintf(
-		"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=%s",
-		CONFIG.AI_API_KEY,
-	)
- 
-	req, _ := http.NewRequest("POST", url, bytes.NewBuffer(jsonData))
+	req, _ := http.NewRequest("POST", "https://api.groq.com/openai/v1/chat/completions", bytes.NewBuffer(jsonData))
 	req.Header.Set("Content-Type", "application/json")
+	req.Header.Set("Authorization", "Bearer "+CONFIG.AI_API_KEY)
  
 	client := &http.Client{Timeout: 30 * time.Second}
 	resp, err := client.Do(req)
 	if err != nil {
-		fmt.Printf("❌ Gemini error: %v\n", err)
+		fmt.Printf("❌ Groq error: %v\n", err)
 		return ""
 	}
 	defer resp.Body.Close()
  
-	fmt.Printf("🔍 DEBUG: Gemini HTTP status: %d\n", resp.StatusCode)
+	fmt.Printf("🔍 DEBUG: Groq HTTP status: %d\n", resp.StatusCode)
  
 	if resp.StatusCode != http.StatusOK {
-		fmt.Printf("❌ Gemini status: %d\n", resp.StatusCode)
+		fmt.Printf("❌ Groq status: %d\n", resp.StatusCode)
 		return ""
 	}
  
-	var result GeminiResponse
+	var result GroqResponse
 	if err := json.NewDecoder(resp.Body).Decode(&result); err != nil {
-		fmt.Printf("❌ Gemini decode error: %v\n", err)
+		fmt.Printf("❌ Groq decode error: %v\n", err)
 		return ""
 	}
  
-	if len(result.Candidates) > 0 && len(result.Candidates[0].Content.Parts) > 0 {
-		fmt.Println("✅ Gemini response received successfully")
-		return result.Candidates[0].Content.Parts[0].Text
+	if len(result.Choices) > 0 {
+		fmt.Println("✅ Groq response received successfully")
+		return result.Choices[0].Message.Content
 	}
  
-	fmt.Println("❌ Gemini: empty candidates")
+	fmt.Println("❌ Groq: empty response")
 	return ""
 }
  
 func fallbackResponse(courseID, message, mode, context string) string {
 	if context != "" {
-		return fmt.Sprintf("📚 Based on the curriculum of %s:\n\n%s\n\n(Note: Configure GEMINI_API_KEY for enhanced AI responses.)", courseID, truncateText(context, 800))
+		return fmt.Sprintf("📚 Based on the curriculum of %s:\n\n%s\n\n(Note: Configure GROQ_API_KEY for enhanced AI responses.)", courseID, truncateText(context, 800))
 	}
 	return fmt.Sprintf("I'm your AI tutor for %s. Please ask a specific question about the course material.", courseID)
 }
- 
-// ============================================================
-// CONTEXT EXTRACTION
-// ============================================================
  
 func ExtractContext(curriculum []CurriculumItem, message string) string {
 	msgLower := strings.ToLower(message)
@@ -191,10 +152,6 @@ func ExtractContext(curriculum []CurriculumItem, message string) string {
 	}
 	return strings.Join(relevant, "\n\n")
 }
- 
-// ============================================================
-// EXAM GENERATION
-// ============================================================
  
 func GenerateExam(courseID, difficulty string, count int, curriculum []CurriculumItem) Exam {
 	requestedCount := count
@@ -324,10 +281,6 @@ func questionFromTemplate(tmpl QuestionTemplate, difficulty string, id int) Ques
 	}
 }
  
-// ============================================================
-// EXAM GRADING
-// ============================================================
- 
 func GradeExam(questions []Question, answers map[string]string) ExamResult {
 	score := 0
 	var reviews []QuestionReview
@@ -388,10 +341,6 @@ func getExplanationForTopic(topic string) string {
 	}
 	return "Review the course material to strengthen your understanding of this topic."
 }
- 
-// ============================================================
-// HELPERS
-// ============================================================
  
 func truncateText(s string, max int) string {
 	if len(s) <= max {
