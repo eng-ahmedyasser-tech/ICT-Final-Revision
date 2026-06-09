@@ -33,6 +33,12 @@ const state = {
   error: null
 };
 
+// Rate limiting variables
+let topicAnalysisTimeout = null;
+let lastChatCall = 0;
+const CHAT_DELAY_MS = 2000; // 2 seconds between chat messages
+const TOPIC_ANALYSIS_DELAY_MS = 1500; // 1.5 seconds delay before analyzing topic
+
 let currentExamConfig = { count: CONFIG.DEFAULT_QUESTION_COUNT, difficulty: CONFIG.DEFAULT_DIFFICULTY };
 let timerInterval = null;
 let secondsRemaining = 0;
@@ -56,6 +62,11 @@ function setView(view, data = {}) {
     activeSelectedTopicName = null;
     state.analysis.content = null;
     state.analysis.currentTopic = null;
+    // Cancel any pending topic analysis when leaving workspace
+    if (topicAnalysisTimeout) {
+      clearTimeout(topicAnalysisTimeout);
+      topicAnalysisTimeout = null;
+    }
   }
   if (view === "exam-config" && data.course) state.course = data.course;
   if (view === "exam-run") {
@@ -71,6 +82,11 @@ function setView(view, data = {}) {
     state.course = null;
     state.exam = { questions: [], answers: {}, score: null, review: [] };
     if (timerInterval) { clearInterval(timerInterval); timerInterval = null; }
+    // Cancel pending analysis
+    if (topicAnalysisTimeout) {
+      clearTimeout(topicAnalysisTimeout);
+      topicAnalysisTimeout = null;
+    }
   }
   render();
 }
@@ -214,10 +230,8 @@ async function renderWorkspace() {
   try {
     const curriculum = await window.api.getCurriculum(state.course.id);
     
-    // Debug: Log what we received
     console.log("Curriculum received:", curriculum);
     
-    // Check if curriculum is valid
     if (!curriculum || !Array.isArray(curriculum) || curriculum.length === 0) {
       return `
         <div class="workspace-header">
@@ -275,7 +289,6 @@ async function renderWorkspace() {
           <h3>📚 Syllabus Topics</h3>
           <ul class="topic-list">
             ${curriculum.map(item => {
-              // Handle both possible field names
               const topicName = item.topic || item.Topic || "Untitled Topic";
               const topicContent = item.content || item.Content || "No content available";
               const isActive = activeSelectedTopicName === topicName ? "active" : "";
@@ -322,13 +335,12 @@ function renderExamConfig() {
         <div class="config-group">
           <label>📊 Number of Questions</label>
           <div class="button-group">
-    <button class="config-btn ${currentExamConfig.count === 5 ? 'active' : ''}" data-count="5">5</button>
-    <button class="config-btn ${currentExamConfig.count === 10 ? 'active' : ''}" data-count="10">10</button>
-    <button class="config-btn ${currentExamConfig.count === 20 ? 'active' : ''}" data-count="20">20</button>
-    <button class="config-btn ${currentExamConfig.count === 30 ? 'active' : ''}" data-count="30">30</button>
-
+            <button class="config-btn ${currentExamConfig.count === 5 ? 'active' : ''}" data-count="5">5</button>
+            <button class="config-btn ${currentExamConfig.count === 10 ? 'active' : ''}" data-count="10">10</button>
+            <button class="config-btn ${currentExamConfig.count === 20 ? 'active' : ''}" data-count="20">20</button>
+            <button class="config-btn ${currentExamConfig.count === 30 ? 'active' : ''}" data-count="30">30</button>
           </div>
-        
+        </div>
         <div class="config-group">
           <label>⚡ Difficulty Level</label>
           <div class="difficulty-selector">
@@ -346,7 +358,6 @@ function renderExamConfig() {
             </label>
           </div>
         </div>
-        
         <button id="startExamBtn" class="btn-primary btn-large">🚀 Start Exam</button>
       </div>
     </div>
@@ -374,7 +385,6 @@ async function renderExamRun() {
           const timerEl = document.getElementById("examTimer");
           if (timerEl) timerEl.innerText = formatTime(secondsRemaining);
           
-          // Warning when 5 minutes left
           if (secondsRemaining === 300) {
             showError("⚠️ 5 minutes remaining!");
           }
@@ -535,7 +545,6 @@ function attachCourseEvents() {
     };
   });
 
-  // Config button handlers
   document.querySelectorAll("[data-count]")?.forEach(btn => {
     btn.onclick = () => {
       currentExamConfig.count = parseInt(btn.dataset.count);
@@ -558,7 +567,6 @@ function attachExamEvents() {
   document.querySelectorAll('input[name="question"]').forEach(input => {
     input.onchange = () => {
       state.exam.answers[currentQuestionIndex] = input.value;
-      // Auto-save progress
       localStorage.setItem('exam_progress', JSON.stringify({
         answers: state.exam.answers,
         currentIndex: currentQuestionIndex
@@ -589,7 +597,6 @@ async function triggerExamSubmission() {
     timerInterval = null; 
   }
   
-  // Check if all questions answered
   const unanswered = state.exam.questions.length - Object.keys(state.exam.answers).length;
   if (unanswered > 0) {
     if (!confirm(`You have ${unanswered} unanswered question(s). Submit anyway?`)) {
@@ -612,34 +619,58 @@ async function triggerExamSubmission() {
   }
 }
 
+// ============================================
+// ATTACH TOPIC EVENTS WITH DEBOUNCING
+// ============================================
 async function attachTopicEvents() {
   document.querySelectorAll(".topic-item").forEach(item => {
-    item.onclick = async () => {
-      activeSelectedTopicName = item.dataset.topic;
-      const encodedContent = item.dataset.content;
-      activeSelectedTopicContent = encodedContent ? decodeURIComponent(encodedContent) : "No content available";
-      state.analysis.currentTopic = activeSelectedTopicName;
-      state.analysis.loading = true;
-      render();
-
-      try {
-        const analysis = await window.api.sendChatMessage(
-          state.course.id, 
-          `Please analyze this topic for exam preparation. Provide key points and important concepts to remember:\n\nTopic: ${activeSelectedTopicName}\n\nContent: ${activeSelectedTopicContent}`, 
-          "chat"
-        );
-        state.analysis.content = analysis || "No analysis available for this topic.";
-      } catch (error) {
-        console.error("Error getting analysis:", error);
-        state.analysis.content = "⚠️ AI analysis temporarily unavailable. Please try again later.";
-      } finally {
-        state.analysis.loading = false;
-        render();
+    // Remove any existing listeners to avoid duplicates
+    const newItem = item.cloneNode(true);
+    item.parentNode.replaceChild(newItem, item);
+    
+    newItem.onclick = async () => {
+      // Cancel any pending analysis request
+      if (topicAnalysisTimeout) {
+        clearTimeout(topicAnalysisTimeout);
+        topicAnalysisTimeout = null;
       }
+      
+      // Store topic data
+      activeSelectedTopicName = newItem.dataset.topic;
+      const encodedContent = newItem.dataset.content;
+      activeSelectedTopicContent = encodedContent ? decodeURIComponent(encodedContent) : "No content available";
+      
+      // Update UI immediately (show notes content)
+      render();
+      
+      // Debounced AI analysis - wait before calling API
+      topicAnalysisTimeout = setTimeout(async () => {
+        state.analysis.currentTopic = activeSelectedTopicName;
+        state.analysis.loading = true;
+        render();
+        
+        try {
+          const analysis = await window.api.sendChatMessage(
+            state.course.id, 
+            `Please analyze this topic for exam preparation. Provide key points and important concepts to remember:\n\nTopic: ${activeSelectedTopicName}\n\nContent: ${activeSelectedTopicContent}`, 
+            "chat"
+          );
+          state.analysis.content = analysis || "No analysis available for this topic.";
+        } catch (error) {
+          console.error("Error getting analysis:", error);
+          state.analysis.content = "⚠️ AI analysis temporarily unavailable. Please try again later.";
+        } finally {
+          state.analysis.loading = false;
+          render();
+        }
+      }, TOPIC_ANALYSIS_DELAY_MS);
     };
   });
 }
 
+// ============================================
+// GLOBAL CHAT WITH RATE LIMITING (THROTTLING)
+// ============================================
 function attachGlobalChat() {
   if (document.querySelector(".global-chat")) return;
 
@@ -691,6 +722,21 @@ function attachGlobalChat() {
 
   const handleSend = async () => {
     if (isSending) return;
+    
+    // Rate limiting - Throttle requests
+    const now = Date.now();
+    if (now - lastChatCall < CHAT_DELAY_MS) {
+      const waitTime = Math.ceil((CHAT_DELAY_MS - (now - lastChatCall)) / 1000);
+      const errorMsg = document.createElement("div");
+      errorMsg.className = "message error";
+      errorMsg.innerText = `⏳ Please wait ${waitTime} second(s) before sending another message.`;
+      messagesContainer.appendChild(errorMsg);
+      messagesContainer.scrollTop = messagesContainer.scrollHeight;
+      setTimeout(() => errorMsg.remove(), 3000);
+      return;
+    }
+    lastChatCall = now;
+    
     const text = chatInput.value.trim();
     if (!text) return;
 
