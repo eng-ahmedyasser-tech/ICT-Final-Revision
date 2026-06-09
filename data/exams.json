@@ -1,117 +1,5 @@
 [
   {
-    "id": "exam_1780946150221525200",
-    "course_id": "CS101",
-    "difficulty": "easy",
-    "questions": [
-      {
-        "id": "q_1780946150213304700_0",
-        "text": "Which of the following best describes 'Part 3: Data Types, Operators, and Conversion'?",
-        "options": [
-          "This is a common misconception about the topic",
-          "This describes a different concept in the same domain",
-          "This is partially correct but missing key details",
-          "Basic types: `char` (1 byte), `int` (2/4 bytes), `float` (4 bytes), `double` (8 bytes). Modifiers like `unsigned` ext..."
-        ],
-        "correct": 3,
-        "difficulty": "easy",
-        "topic": "Part 3: Data Types, Operators, and Conversion"
-      },
-      {
-        "id": "q_1780946150213304700_1",
-        "text": "Which of the following best describes 'Part 5: Iteration and Looping Structures'?",
-        "options": [
-          "This is partially correct but missing key details",
-          "This is a common misconception about the topic",
-          "This describes a different concept in the same domain",
-          "Loops repeat code blocks efficiently: `while` (entry-verified), `do-while` (exit-verified, executes at least once), a..."
-        ],
-        "correct": 3,
-        "difficulty": "easy",
-        "topic": "Part 5: Iteration and Looping Structures"
-      },
-      {
-        "id": "q_1780946150213304700_2",
-        "text": "Which of the following best describes 'Part 2: Introduction to C Programming'?",
-        "options": [
-          "C is a high-level, structured, and modular language. Programming paradigms include Structured Programming (functions/...",
-          "This is partially correct but missing key details",
-          "This describes a different concept in the same domain",
-          "This is a common misconception about the topic"
-        ],
-        "correct": 0,
-        "difficulty": "easy",
-        "topic": "Part 2: Introduction to C Programming"
-      },
-      {
-        "id": "q_1780946150213828100_3",
-        "text": "Which of the following best describes 'Part 8: Assessment and Course Structure'?",
-        "options": [
-          "This is a common misconception about the topic",
-          "The course is graded out of 150 marks: Final Exam (45), Assignment 1 (30), Assignment 2 (45), and Quizzes/Tasks (30)....",
-          "This is partially correct but missing key details",
-          "This describes a different concept in the same domain"
-        ],
-        "correct": 1,
-        "difficulty": "easy",
-        "topic": "Part 8: Assessment and Course Structure"
-      },
-      {
-        "id": "q_1780946150213828100_4",
-        "text": "Which of the following best describes 'Part 7: Structures and Functions'?",
-        "options": [
-          "This describes a different concept in the same domain",
-          "This is a common misconception about the topic",
-          "This is partially correct but missing key details",
-          "Structures group heterogeneous data (structs) using the dot (.) operator. Functions encapsulate reusable logic via a ..."
-        ],
-        "correct": 3,
-        "difficulty": "easy",
-        "topic": "Part 7: Structures and Functions"
-      },
-      {
-        "id": "q_1780946150213956900_5",
-        "text": "Which of the following best describes 'Part 1: Problem-Solving Fundamentals'?",
-        "options": [
-          "This is partially correct but missing key details",
-          "Problem-solving involves identifying, analyzing, and resolving issues through systematic steps: Identify, Analyze, Ge...",
-          "This is a common misconception about the topic",
-          "This describes a different concept in the same domain"
-        ],
-        "correct": 1,
-        "difficulty": "easy",
-        "topic": "Part 1: Problem-Solving Fundamentals"
-      },
-      {
-        "id": "q_1780946150213956900_6",
-        "text": "Which of the following best describes 'Part 4: Control Statements and User Input'?",
-        "options": [
-          "This is partially correct but missing key details",
-          "This is a common misconception about the topic",
-          "This describes a different concept in the same domain",
-          "User input is handled via `scanf(\"%\format\", \u0026variable);`, where the address-of operator (\u0026) is vital. Control logic u..."
-        ],
-        "correct": 3,
-        "difficulty": "easy",
-        "topic": "Part 4: Control Statements and User Input"
-      },
-      {
-        "id": "q_1780946150213956900_7",
-        "text": "Which of the following best describes 'Part 6: Arrays and Memory Representation'?",
-        "options": [
-          "This is partially correct but missing key details",
-          "Arrays store homogeneous data in contiguous memory, indexed 0 to N-1. Variable Length Arrays (VLA) allow size definit...",
-          "This is a common misconception about the topic",
-          "This describes a different concept in the same domain"
-        ],
-        "correct": 1,
-        "difficulty": "easy",
-        "topic": "Part 6: Arrays and Memory Representation"
-      }
-    ],
-    "created_at": "2026-06-08T12:15:50-07:00"
-  },
-  {
     "id": "exam_1780948638743467300",
     "course_id": "CS101",
     "difficulty": "hard",
@@ -538,5 +426,431 @@
       }
     ],
     "created_at": "2026-06-08T12:57:18-07:00"
+  },
+  {
+    "id": "exam_1781008839989449400",
+    "course_id": "CS302",
+    "difficulty": "hard",
+    "questions": [
+      {
+        "id": "fallback_1781008839987635200_0",
+        "text": "Analyze and explain the following about 'Part 12: Final Exam Tips': Tip 1: For security questions (75-250), always choose 'Use strong unique pass...\n\nProvide a detailed technical explanation.",
+        "options": [
+          "A surface-level understanding missing key details",
+          "An oversimplified version that loses important nuance",
+          "A common misconception that contradicts the material",
+          "An unrelated technical concept",
+          "Tip 1: For security questions (75-250), always choose 'Use strong unique passwords' unless another option is clearly correct. Tip 2: 'Almost never' adverb = Hardly ever (not rarely, occasionally, o... This represents the complete technical understanding of the concept."
+        ],
+        "correct": 4,
+        "difficulty": "hard",
+        "topic": "Part 12: Final Exam Tips"
+      },
+      {
+        "id": "fallback_1781008839987635200_1",
+        "text": "Analyze and explain the following about 'Part 11: Miscellaneous – Cloud, Firewall, Router vs Switch, Task Manager, Storage': Cloud computing three service models: IaaS (Infrastructure as a Service – r...\n\nProvide a detailed technical explanation.",
+        "options": [
+          "An unrelated technical concept",
+          "A surface-level understanding missing key details",
+          "An oversimplified version that loses important nuance",
+          "Cloud computing three service models: IaaS (Infrastructure as a Service – rent servers/storage like AWS EC2), PaaS (Platform as a Service – rent development environment like Google App Engine),... This represents the complete technical understanding of the concept.",
+          "A common misconception that contradicts the material"
+        ],
+        "correct": 3,
+        "difficulty": "hard",
+        "topic": "Part 11: Miscellaneous – Cloud, Firewall, Router vs Switch, Task Manager, Storage"
+      },
+      {
+        "id": "fallback_1781008839987635200_2",
+        "text": "Analyze and explain the following about 'Part 2: Hardware \u0026 Peripherals': A peripheral is an external device that connects to a computer but is not par...\n\nProvide a detailed technical explanation.",
+        "options": [
+          "A surface-level understanding missing key details",
+          "A peripheral is an external device that connects to a computer but is not part of the core (CPU, RAM, motherboard). Examples: monitor (output), mouse (input), keyboard (input), printer (output), sc... This represents the complete technical understanding of the concept.",
+          "An oversimplified version that loses important nuance",
+          "A common misconception that contradicts the material",
+          "An unrelated technical concept"
+        ],
+        "correct": 1,
+        "difficulty": "hard",
+        "topic": "Part 2: Hardware \u0026 Peripherals"
+      },
+      {
+        "id": "fallback_1781008839987635200_3",
+        "text": "Analyze and explain the following about 'Part 5: Databases': Database: organized collection of structured data. Table: data organized in r...\n\nProvide a detailed technical explanation.",
+        "options": [
+          "A surface-level understanding missing key details",
+          "Database: organized collection of structured data. Table: data organized in rows and columns. Record (row): one complete entry. Field (column): one piece of data (e.g., name, age). Primary Key: uni... This represents the complete technical understanding of the concept.",
+          "An oversimplified version that loses important nuance",
+          "An unrelated technical concept",
+          "A common misconception that contradicts the material"
+        ],
+        "correct": 1,
+        "difficulty": "hard",
+        "topic": "Part 5: Databases"
+      },
+      {
+        "id": "fallback_1781008839987635200_4",
+        "text": "Analyze and explain the following about 'Part 3: Networking \u0026 Internet': Network: group of linked computers sharing resources. Router: device forwardi...\n\nProvide a detailed technical explanation.",
+        "options": [
+          "An oversimplified version that loses important nuance",
+          "Network: group of linked computers sharing resources. Router: device forwarding data between different networks. Firewall: security system blocking unauthorized access. VPN (Virtual Private Network... This represents the complete technical understanding of the concept.",
+          "A surface-level understanding missing key details",
+          "A common misconception that contradicts the material",
+          "An unrelated technical concept"
+        ],
+        "correct": 1,
+        "difficulty": "hard",
+        "topic": "Part 3: Networking \u0026 Internet"
+      },
+      {
+        "id": "fallback_1781008839988426200_5",
+        "text": "Analyze and explain the following about 'Part 7: Business \u0026 Communication in IT': Business English phrases: Launch a product (start selling new product to publ...\n\nProvide a detailed technical explanation.",
+        "options": [
+          "An oversimplified version that loses important nuance",
+          "A common misconception that contradicts the material",
+          "An unrelated technical concept",
+          "A surface-level understanding missing key details",
+          "Business English phrases: Launch a product (start selling new product to public), Maintain a server (keep server running with updates/security/repairs), Back up data (make copies to prevent loss), ... This represents the complete technical understanding of the concept."
+        ],
+        "correct": 4,
+        "difficulty": "hard",
+        "topic": "Part 7: Business \u0026 Communication in IT"
+      },
+      {
+        "id": "fallback_1781008839988426200_6",
+        "text": "Analyze and explain the following about 'Part 8: English Grammar – Adverbs of Frequency \u0026 Modal Verbs': Adverbs of frequency (how often): Always = 100%, Usually = 90%, Normally = 80...\n\nProvide a detailed technical explanation.",
+        "options": [
+          "Adverbs of frequency (how often): Always = 100%, Usually = 90%, Normally = 80-90%, Occasionally = 30-40%, Hardly ever = 5-10% (means 'almost never'), Rarely = 10-20%, Never = 0%. Frequency phrases:... This represents the complete technical understanding of the concept.",
+          "An oversimplified version that loses important nuance",
+          "A surface-level understanding missing key details",
+          "An unrelated technical concept",
+          "A common misconception that contradicts the material"
+        ],
+        "correct": 0,
+        "difficulty": "hard",
+        "topic": "Part 8: English Grammar – Adverbs of Frequency \u0026 Modal Verbs"
+      },
+      {
+        "id": "fallback_1781008839988426200_7",
+        "text": "Analyze and explain the following about 'Part 6: Security \u0026 Best Practices': Essential security practices: Use strong unique passwords prevents brute forc...\n\nProvide a detailed technical explanation.",
+        "options": [
+          "An oversimplified version that loses important nuance",
+          "An unrelated technical concept",
+          "A common misconception that contradicts the material",
+          "A surface-level understanding missing key details",
+          "Essential security practices: Use strong unique passwords prevents brute force and credential stuffing. Enable multifactor authentication – even if password stolen, attacker cannot login. Keep so... This represents the complete technical understanding of the concept."
+        ],
+        "correct": 4,
+        "difficulty": "hard",
+        "topic": "Part 6: Security \u0026 Best Practices"
+      },
+      {
+        "id": "fallback_1781008839988426200_8",
+        "text": "Analyze and explain the following about 'Part 1: IT Roles \u0026 Job Responsibilities': Understanding IT roles is essential for workplace communication. Database Adm...\n\nProvide a detailed technical explanation.",
+        "options": [
+          "An oversimplified version that loses important nuance",
+          "A surface-level understanding missing key details",
+          "Understanding IT roles is essential for workplace communication. Database Administrator (DBA) manages and secures databases: ensures performance/integrity/security, performs backups and recovery, c... This represents the complete technical understanding of the concept.",
+          "An unrelated technical concept",
+          "A common misconception that contradicts the material"
+        ],
+        "correct": 2,
+        "difficulty": "hard",
+        "topic": "Part 1: IT Roles \u0026 Job Responsibilities"
+      },
+      {
+        "id": "fallback_1781008839988426200_9",
+        "text": "Analyze and explain the following about 'Part 9: English Grammar – Verb Tenses \u0026 Conditionals': Verb tenses: Present simple for regular actions/facts/habits ('The server run...\n\nProvide a detailed technical explanation.",
+        "options": [
+          "An unrelated technical concept",
+          "A common misconception that contradicts the material",
+          "An oversimplified version that loses important nuance",
+          "Verb tenses: Present simple for regular actions/facts/habits ('The server runs 24/7'). Present continuous for actions happening now ('I am installing the software now'). Past simple for completed p... This represents the complete technical understanding of the concept.",
+          "A surface-level understanding missing key details"
+        ],
+        "correct": 3,
+        "difficulty": "hard",
+        "topic": "Part 9: English Grammar – Verb Tenses \u0026 Conditionals"
+      },
+      {
+        "id": "fallback_1781008839988426200_10",
+        "text": "Analyze and explain the following about 'Part 4: Software \u0026 Applications': Software types: Spreadsheet for numbers/calculations/charts (Excel, Google Sh...\n\nProvide a detailed technical explanation.",
+        "options": [
+          "An oversimplified version that loses important nuance",
+          "An unrelated technical concept",
+          "A surface-level understanding missing key details",
+          "Software types: Spreadsheet for numbers/calculations/charts (Excel, Google Sheets). Word processor for writing documents (Word, Google Docs). Database management for organizing structured data (MyS... This represents the complete technical understanding of the concept.",
+          "A common misconception that contradicts the material"
+        ],
+        "correct": 3,
+        "difficulty": "hard",
+        "topic": "Part 4: Software \u0026 Applications"
+      },
+      {
+        "id": "fallback_1781008839988426200_11",
+        "text": "Analyze and explain the following about 'Part 10: Acronyms \u0026 Abbreviations – Complete List': Computer startup: BIOS (Basic Input Output System). Memory: RAM (Random Acces...\n\nProvide a detailed technical explanation.",
+        "options": [
+          "A common misconception that contradicts the material",
+          "An oversimplified version that loses important nuance",
+          "An unrelated technical concept",
+          "Computer startup: BIOS (Basic Input Output System). Memory: RAM (Random Access Memory). User interface: GUI (Graphical User Interface). Web: URL (Uniform Resource Locator). Document scanning: OCR (... This represents the complete technical understanding of the concept.",
+          "A surface-level understanding missing key details"
+        ],
+        "correct": 3,
+        "difficulty": "hard",
+        "topic": "Part 10: Acronyms \u0026 Abbreviations – Complete List"
+      }
+    ],
+    "created_at": "2026-06-09T05:40:39-07:00"
+  },
+  {
+    "id": "exam_1781009450636027300",
+    "course_id": "CS302",
+    "difficulty": "easy",
+    "questions": [
+      {
+        "id": "q_1781009450634499000_8481",
+        "text": "Which is NOT cloud storage?",
+        "options": [
+          "External USB drive",
+          "Dropbox",
+          "Google Drive",
+          "OneDrive"
+        ],
+        "correct": 0,
+        "difficulty": "easy",
+        "topic": "Cloud Computing"
+      },
+      {
+        "id": "q_1781009450634499000_8809",
+        "text": "What does URL stand for?",
+        "options": [
+          "Universal Resource Link",
+          "Uniform Resource Locator",
+          "Uniform Resource Link",
+          "Universal Resource Locator"
+        ],
+        "correct": 1,
+        "difficulty": "easy",
+        "topic": "Web"
+      },
+      {
+        "id": "q_1781009450634499000_3492",
+        "text": "Who manages computer systems and servers?",
+        "options": [
+          "Systems Administrator",
+          "DBA",
+          "Helpdesk Supervisor",
+          "Project Manager"
+        ],
+        "correct": 0,
+        "difficulty": "easy",
+        "topic": "IT Roles"
+      },
+      {
+        "id": "q_1781009450634499000_3106",
+        "text": "What does MFA stand for?",
+        "options": [
+          "Main Factor Authentication",
+          "Multi-File Access",
+          "Multifactor Authentication",
+          "Multi-Form Authorization"
+        ],
+        "correct": 2,
+        "difficulty": "easy",
+        "topic": "Security"
+      },
+      {
+        "id": "q_1781009450634499000_6797",
+        "text": "What does SSD stand for?",
+        "options": [
+          "Super Speed Drive",
+          "Solid State Drive",
+          "System Storage Device",
+          "Secure Storage Drive"
+        ],
+        "correct": 1,
+        "difficulty": "easy",
+        "topic": "Hardware"
+      },
+      {
+        "id": "q_1781009450634499000_9138",
+        "text": "What does GUI stand for?",
+        "options": [
+          "Graphical Unit Interface",
+          "Graphical User Interface",
+          "Graphics User Input",
+          "General User Interface"
+        ],
+        "correct": 1,
+        "difficulty": "easy",
+        "topic": "Acronyms"
+      },
+      {
+        "id": "q_1781009450634499000_8247",
+        "text": "Which is an input device?",
+        "options": [
+          "Keyboard",
+          "Monitor",
+          "Printer",
+          "Speaker"
+        ],
+        "correct": 0,
+        "difficulty": "easy",
+        "topic": "Input Devices"
+      },
+      {
+        "id": "q_1781009450634499000_9319",
+        "text": "Which adverb means 0% of the time?",
+        "options": [
+          "Usually",
+          "Always",
+          "Never",
+          "Sometimes"
+        ],
+        "correct": 2,
+        "difficulty": "easy",
+        "topic": "Grammar"
+      },
+      {
+        "id": "q_1781009450634499000_7059",
+        "text": "What does LAN stand for?",
+        "options": [
+          "Limited Area Network",
+          "Long Area Network",
+          "Large Area Network",
+          "Local Area Network"
+        ],
+        "correct": 3,
+        "difficulty": "easy",
+        "topic": "Networking"
+      },
+      {
+        "id": "q_1781009450634499000_9038",
+        "text": "What does UPS stand for?",
+        "options": [
+          "Universal Power Supply",
+          "Uninterruptible Power Supply",
+          "Universal Power Source",
+          "Unified Power System"
+        ],
+        "correct": 1,
+        "difficulty": "easy",
+        "topic": "Acronyms"
+      }
+    ],
+    "created_at": "2026-06-09T05:50:50-07:00"
+  },
+  {
+    "id": "exam_1780946150221525200",
+    "course_id": "CS101",
+    "difficulty": "easy",
+    "questions": [
+      {
+        "id": "q_1780946150213304700_0",
+        "text": "Which of the following best describes 'Part 3: Data Types, Operators, and Conversion'?",
+        "options": [
+          "This is a common misconception about the topic",
+          "This describes a different concept in the same domain",
+          "This is partially correct but missing key details",
+          "Basic types: `char` (1 byte), `int` (2/4 bytes), `float` (4 bytes), `double` (8 bytes). Modifiers like `unsigned` ext..."
+        ],
+        "correct": 3,
+        "difficulty": "easy",
+        "topic": "Part 3: Data Types, Operators, and Conversion"
+      },
+      {
+        "id": "q_1780946150213304700_1",
+        "text": "Which of the following best describes 'Part 5: Iteration and Looping Structures'?",
+        "options": [
+          "This is partially correct but missing key details",
+          "This is a common misconception about the topic",
+          "This describes a different concept in the same domain",
+          "Loops repeat code blocks efficiently: `while` (entry-verified), `do-while` (exit-verified, executes at least once), a..."
+        ],
+        "correct": 3,
+        "difficulty": "easy",
+        "topic": "Part 5: Iteration and Looping Structures"
+      },
+      {
+        "id": "q_1780946150213304700_2",
+        "text": "Which of the following best describes 'Part 2: Introduction to C Programming'?",
+        "options": [
+          "C is a high-level, structured, and modular language. Programming paradigms include Structured Programming (functions/...",
+          "This is partially correct but missing key details",
+          "This describes a different concept in the same domain",
+          "This is a common misconception about the topic"
+        ],
+        "correct": 0,
+        "difficulty": "easy",
+        "topic": "Part 2: Introduction to C Programming"
+      },
+      {
+        "id": "q_1780946150213828100_3",
+        "text": "Which of the following best describes 'Part 8: Assessment and Course Structure'?",
+        "options": [
+          "This is a common misconception about the topic",
+          "The course is graded out of 150 marks: Final Exam (45), Assignment 1 (30), Assignment 2 (45), and Quizzes/Tasks (30)....",
+          "This is partially correct but missing key details",
+          "This describes a different concept in the same domain"
+        ],
+        "correct": 1,
+        "difficulty": "easy",
+        "topic": "Part 8: Assessment and Course Structure"
+      },
+      {
+        "id": "q_1780946150213828100_4",
+        "text": "Which of the following best describes 'Part 7: Structures and Functions'?",
+        "options": [
+          "This describes a different concept in the same domain",
+          "This is a common misconception about the topic",
+          "This is partially correct but missing key details",
+          "Structures group heterogeneous data (structs) using the dot (.) operator. Functions encapsulate reusable logic via a ..."
+        ],
+        "correct": 3,
+        "difficulty": "easy",
+        "topic": "Part 7: Structures and Functions"
+      },
+      {
+        "id": "q_1780946150213956900_5",
+        "text": "Which of the following best describes 'Part 1: Problem-Solving Fundamentals'?",
+        "options": [
+          "This is partially correct but missing key details",
+          "Problem-solving involves identifying, analyzing, and resolving issues through systematic steps: Identify, Analyze, Ge...",
+          "This is a common misconception about the topic",
+          "This describes a different concept in the same domain"
+        ],
+        "correct": 1,
+        "difficulty": "easy",
+        "topic": "Part 1: Problem-Solving Fundamentals"
+      },
+      {
+        "id": "q_1780946150213956900_6",
+        "text": "Which of the following best describes 'Part 4: Control Statements and User Input'?",
+        "options": [
+          "This is partially correct but missing key details",
+          "This is a common misconception about the topic",
+          "This describes a different concept in the same domain",
+          "User input is handled via `scanf(\"%\format\", \u0026variable);`, where the address-of operator (\u0026) is vital. Control logic u..."
+        ],
+        "correct": 3,
+        "difficulty": "easy",
+        "topic": "Part 4: Control Statements and User Input"
+      },
+      {
+        "id": "q_1780946150213956900_7",
+        "text": "Which of the following best describes 'Part 6: Arrays and Memory Representation'?",
+        "options": [
+          "This is partially correct but missing key details",
+          "Arrays store homogeneous data in contiguous memory, indexed 0 to N-1. Variable Length Arrays (VLA) allow size definit...",
+          "This is a common misconception about the topic",
+          "This describes a different concept in the same domain"
+        ],
+        "correct": 1,
+        "difficulty": "easy",
+        "topic": "Part 6: Arrays and Memory Representation"
+      }
+    ],
+    "created_at": "2026-06-08T12:15:50-07:00"
   }
 ]

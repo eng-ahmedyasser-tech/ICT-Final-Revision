@@ -1,2688 +1,2893 @@
 [
+ 
   {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "Using the Caesar Cipher, encrypt the plain text 'HELLO' with a shift key of 3. What is the ciphertext?",
-    "correct": "KHOOR",
-    "wrong": ["URYYB", "KHOOR", "IFMMP", "KHOORZRUOG"]
+    "course_id": "CS101",
+    "topic": "Problem-Solving Fundamentals",
+    "difficulty": "easy",
+    "question": "What is the first step in the problem-solving process according to the systematic steps?",
+    "correct": "Identify the problem",
+    "wrong": ["Analyze the problem", "Generate solutions", "Implement the solution"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "Using the Caesar Cipher, encrypt the plain text 'WORLD' with a shift key of 5. What is the ciphertext?",
-    "correct": "BTWQI",
-    "wrong": ["WORLD", "BVTQI", "BTWQJ", "XPSME"]
+    "course_id": "CS101",
+    "topic": "Problem-Solving Fundamentals",
+    "difficulty": "easy",
+    "question": "Which technique involves asking 'Why?' multiple times to find the root cause?",
+    "correct": "5 Whys",
+    "wrong": ["Brainstorming", "SWOT analysis", "Trial and error"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "Using the Caesar Cipher, encrypt the plain text 'CODE' with a shift key of 4. What is the ciphertext?",
-    "correct": "GSHI",
-    "wrong": ["CODE", "FSHI", "GSHJ", "GSGI"]
+    "course_id": "CS101",
+    "topic": "Problem-Solving Fundamentals",
+    "difficulty": "easy",
+    "question": "Which flowchart symbol represents the start or end of a process?",
+    "correct": "Oval",
+    "wrong": ["Rectangle", "Diamond", "Parallelogram"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "Using the Caesar Cipher, encrypt the plain text 'SECURITY' with a shift key of 10. What is the ciphertext?",
-    "correct": "COMEBSDCI",
-    "wrong": ["SECURITY", "COMECSDCI", "COMEBSDCI", "COMBSCDI"]
+    "course_id": "CS101",
+    "topic": "Problem-Solving Fundamentals",
+    "difficulty": "easy",
+    "question": "Which flowchart symbol represents a decision point?",
+    "correct": "Diamond",
+    "wrong": ["Oval", "Rectangle", "Parallelogram"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "Using the Caesar Cipher, encrypt the plain text 'HELLO' with a shift key of 13 (ROT13). What is the ciphertext?",
-    "correct": "URYYB",
-    "wrong": ["KHOOR", "URYYB", "URYYO", "HELLO"]
+    "course_id": "CS101",
+    "topic": "Problem-Solving Fundamentals",
+    "difficulty": "easy",
+    "question": "Which flowchart symbol represents an input/output operation?",
+    "correct": "Parallelogram",
+    "wrong": ["Oval", "Rectangle", "Diamond"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "Using the Caesar Cipher, encrypt the plain text 'HelloWorld' with a shift key of 3 (case-sensitive? The answer treats uppercase and lowercase separately). What is the ciphertext?",
-    "correct": "KhoorZruog",
-    "wrong": ["KHOORZRUOG", "KhoorZruog", "KhoorZruoh", "HelloWorld"]
+    "course_id": "CS101",
+    "topic": "Problem-Solving Fundamentals",
+    "difficulty": "easy",
+    "question": "Which flowchart symbol represents a process or calculation?",
+    "correct": "Rectangle",
+    "wrong": ["Oval", "Diamond", "Parallelogram"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "Using the Caesar Cipher, encrypt the plain text 'meet me' with a shift key of 3. What is the ciphertext?",
-    "correct": "phhw ph",
-    "wrong": ["meet me", "phhw ph", "phhwme", "phhwmp"]
+    "course_id": "CS101",
+    "topic": "C Programming Introduction",
+    "difficulty": "easy",
+    "question": "Where does every C program start execution?",
+    "correct": "main() function",
+    "wrong": ["printf() function", "scanf() function", "The first line of code"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "Using the Caesar Cipher, encrypt the plain text 'CRYPTOGRAPHY IS FUN' with a shift key of 5. What is the ciphertext?",
-    "correct": "HWDUYTLWFUMD NX KZS",
-    "wrong": ["CRYPTOGRAPHY", "HWDUYTLWFUMD NX KZS", "HWDUYTLWFUMDNXKZS", "HWDUYTLWFUMD NX KZA"]
+    "course_id": "CS101",
+    "topic": "C Programming Introduction",
+    "difficulty": "easy",
+    "question": "What character ends every statement in C?",
+    "correct": "Semicolon (;)",
+    "wrong": ["Colon (:)", "Period (.)", "Comma (,)"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "Using the Caesar Cipher, encrypt the plain text 'ZEBRA' with a shift key of 2. What is the ciphertext?",
-    "correct": "BGDTC",
-    "wrong": ["ZEBRA", "BGDTC", "BGDTA", "BGDTD"]
+    "course_id": "CS101",
+    "topic": "C Programming Introduction",
+    "difficulty": "easy",
+    "question": "Which header file is required for standard input/output operations?",
+    "correct": "#include <stdio.h>",
+    "wrong": ["#include <stdlib.h>", "#include <string.h>", "#include <math.h>"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Vigenère Cipher",
-    "question": "Using the Vigenère Cipher, encrypt 'ATTACKATDAWN' with key 'LEMON'. What is the ciphertext?",
-    "correct": "LXFOPVEFRNHR",
-    "wrong": ["ATTACKATDAWN", "LXFOPVEFRNHR", "LXFOPVEFRNHQ", "LXFOPVEFRNHS"]
+    "course_id": "CS101",
+    "topic": "Data Types in C",
+    "difficulty": "easy",
+    "question": "What is the size of a 'char' data type in C?",
+    "correct": "1 byte",
+    "wrong": ["2 bytes", "4 bytes", "8 bytes"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Vigenère Cipher",
-    "question": "Using the Vigenère Cipher, encrypt 'HELLO' with key 'KEY'. What is the ciphertext?",
-    "correct": "RIJVS",
-    "wrong": ["HELLO", "RIJVS", "RIJVT", "RIJUS"]
+    "course_id": "CS101",
+    "topic": "Data Types in C",
+    "difficulty": "easy",
+    "question": "What is the size of a 'float' data type in C?",
+    "correct": "4 bytes",
+    "wrong": ["2 bytes", "8 bytes", "1 byte"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Vigenère Cipher",
-    "question": "Using the Vigenère Cipher, encrypt 'CRYPTO' with key 'DOG'. What is the ciphertext?",
-    "correct": "FUMSHC",
-    "wrong": ["CRYPTO", "FUMSHC", "FUMSHB", "FUMCHC"]
+    "course_id": "CS101",
+    "topic": "Data Types in C",
+    "difficulty": "easy",
+    "question": "What is the size of a 'double' data type in C?",
+    "correct": "8 bytes",
+    "wrong": ["4 bytes", "2 bytes", "16 bytes"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Vigenère Cipher",
-    "question": "Using the Vigenère Cipher, encrypt 'SECURITY' with key 'SAFE'. What is the ciphertext?",
-    "correct": "KEHYIQXY",
-    "wrong": ["SECURITY", "KEHYIQXY", "KEHYIQXZ", "KEHYIQYA"]
+    "course_id": "CS101",
+    "topic": "Operators in C",
+    "difficulty": "easy",
+    "question": "What is the result of 10 % 3 in C?",
+    "correct": "1",
+    "wrong": ["3", "0", "10"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Vigenère Cipher",
-    "question": "What happens when the Vigenère cipher key has only one letter?",
-    "correct": "It becomes equivalent to the Caesar cipher",
-    "wrong": ["It becomes uncrackable", "It produces the same ciphertext as plaintext", "It causes a compilation error in C"]
+    "course_id": "CS101",
+    "topic": "Operators in C",
+    "difficulty": "easy",
+    "question": "Which operator is used for logical AND in C?",
+    "correct": "&&",
+    "wrong": ["&", "||", "!"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Cybersecurity Scope",
-    "question": "Which of the following best defines the scope of cybersecurity according to the provided material?",
-    "correct": "The effort to protect networked systems and data across individual, organizational and governmental levels",
-    "wrong": [
-      "A set of laws that only govern how the national government stores its paper records",
-      "The process of physical hardware maintenance to ensure computers do not overheat",
-      "A one-time setup of firewalls to prevent hackers from entering a local home network"
-    ]
+    "course_id": "CS101",
+    "topic": "Operators in C",
+    "difficulty": "easy",
+    "question": "Which operator is used for logical OR in C?",
+    "correct": "||",
+    "wrong": ["|", "&&", "!"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Organizational Cybersecurity",
-    "question": "At the organizational level, what is the primary motive for practicing robust cybersecurity?",
-    "correct": "To protect the organization's reputation, data, and customer information",
-    "wrong": [
-      "To ensure that the organization can sell customer data to third-party advertisers",
-      "To increase the speed of the internet connection within the office building",
-      "To monitor employee productivity and ensure everyone is working during office hours"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Online Identity",
-    "question": "Which statement regarding online identity is true based on the lecture material?",
-    "correct": "Simply using the web establishes an online identity, regardless of whether you have a social media account",
-    "wrong": [
-      "You only have an online identity if you have created at least one profile on a social networking site",
-      "Online identity is strictly limited to your legal full name and date of birth",
-      "Your online identity is exactly the same as the persona you present in real life at home"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Username Security",
-    "question": "Why is it discouraged to choose a 'super-odd' username and reuse it across multiple platforms?",
-    "correct": "It makes the user much easier for others to track across the internet",
-    "wrong": [
-      "Odd usernames are difficult for the user to remember over long periods",
-      "Reusing a unique username causes the computer's processor to slow down during login",
-      "Unique usernames are most likely to be flagged as spam by main servers"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Password Security",
-    "question": "What common advice is given regarding usernames and password clues?",
-    "correct": "Do not choose a username that includes a department name or the first part of a phrase",
-    "wrong": [
-      "Always use the same username and password combination to ensure you never get locked out",
-      "Use your email username as your account username to simplify your digital life",
-      "Include your social security number in your username so it is unique to you"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Medical Data Privacy",
-    "question": "In the context of medical records, why should data from fitness trackers be considered sensitive?",
-    "correct": "They collect clinical data like heart rate and blood sugar which is stored in the cloud",
-    "wrong": [
-      "They are the only way for hackers to find out your physical home address",
-      "Fitness trackers are required by law to be shared with your employer for insurance purposes",
-      "Hackers use fitness data to determine which physical houses are easiest to rob"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Educational Records",
-    "question": "Which of the following would be found in an educational record?",
-    "correct": "Immunization records and disciplinary reports",
-    "wrong": [
-      "A list of every book you have ever checked out from a public library",
-      "Your parents' bank account details and tax returns from their childhood",
-      "Future employment contracts from companies you haven't applied to yet"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Financial Data Privacy",
-    "question": "How can tax records specifically compromise a person's privacy if stolen by cybercriminals?",
-    "correct": "They contain bank account details, paychecks, and credit rating",
-    "wrong": [
-      "They provide a list of all your social media passwords",
-      "They allow hackers to change your official citizenship status remotely",
-      "They show hackers how to physically bypass the security system in your home"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Identity Theft",
-    "question": "What is the primary risk of cybercriminals obtaining sensitive information like a mother's maiden name or social security number?",
-    "correct": "They can use the information to identify and impersonate the individual",
-    "wrong": [
-      "They can use it to legally change the user's date of birth in all medical records",
-      "They can use the information to delete the user's entire internet history",
-      "They can use it to remotely format the user's hard drive"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Cybersecurity Basics",
-    "question": "True or False: Securing your offline identity is just as important as securing your online identity because physical theft can lead to data loss.",
-    "correct": "True",
-    "wrong": ["False"]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Data Tracking",
-    "question": "How do hackers and advertisers primarily benefit from your personal data differently?",
-    "correct": "Hackers seek direct financial gain and identity theft; advertisers use data for targeted marketing",
-    "wrong": [
-      "Both use data only to improve user experience",
-      "Hackers use data to send spam emails; advertisers use data to steal identities",
-      "There is no difference; both sell data to the highest bidder"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Cookies and Tracking",
-    "question": "What role do website cookies play in the digital ecosystem?",
-    "correct": "They create a data trail linked to your online identity that can be accessed by advertisers",
-    "wrong": [
-      "They encrypt your geolocation to prevent social media platforms from seeing it",
-      "They act as a firewall to block all incoming advertising traffic",
-      "They physically increase the processing speed of your mobile hardware"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "ISP Tracking",
-    "question": "Under what circumstances might an Internet Service Provider (ISP) share your personal information?",
-    "correct": "If they are legally required to do so by government surveillance agencies or when permitted by law to sell to advertisers",
-    "wrong": [
-      "Only when the user exceeds their monthly data download limit",
-      "Whenever a user visits a competitor's website for more than ten minutes",
-      "Only if the user gives explicit written consent for each individual search query"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Medical Identity Theft",
-    "question": "What is a significant long-term consequence of medical identity theft mentioned in the source material?",
-    "correct": "The victim's medical records may be altered with procedures they never actually received",
-    "wrong": [
-      "Hospitals will refuse to treat the victim in the future due to the breach",
-      "The cybercriminals are legally required to pay for the victim's future check-ups",
-      "Victims are automatically granted free lifetime medical insurance as compensation"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Identity Theft Consequences",
-    "question": "Beyond immediate financial theft, what else can an identity thief do with stolen private data?",
-    "correct": "File fraudulent tax returns to collect refunds in the victim's name",
-    "wrong": [
-      "Remotely upgrade the victim's mobile device software to the latest version",
-      "Provide the victim with higher levels of privacy protection on social media",
-      "Increase the victim's credit rating by making timely payments on new loans"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Data Collected by Platforms",
-    "question": "Which of the following is NOT a type of information search engines and social media platforms typically gather for profit?",
-    "correct": "The physical weight of the user's desktop computer monitor",
-    "wrong": [
-      "Geolocation and phone number",
-      "Political and religious ideologies",
-      "Gender and search histories"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Long-term Identity Theft",
-    "question": "How do cybercriminals often use stolen credit card and bank account data for long-term gain?",
-    "correct": "By taking out loans in the victim's name, potentially ruining their credit rating",
-    "wrong": [
-      "By paying off the victim's existing debts to avoid detection by the bank",
-      "By improving the security settings on the accounts they have hacked",
-      "By donating small amounts to charity to hide the trail of their larger thefts"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Offline vs Online Identity",
-    "question": "What is the fundamental difference between offline and online identity?",
-    "correct": "Offline identity is based on physical face-to-face interactions; online identity is how you portray yourself on the internet",
-    "wrong": [
-      "Offline identity is always fake; online identity is always real",
-      "Offline identity includes usernames; online identity includes full legal names",
-      "There is no difference; they are exactly the same"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Secure Username Guidelines",
-    "question": "Which of the following is a recommended practice for choosing a secure username?",
-    "correct": "Avoid using your birth year or department name",
-    "wrong": [
-      "Use your full name for easy recognition",
-      "Use your email username as your account username",
-      "Include a common password hint like 'password123'"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Vulnerable Records",
-    "question": "Which type of records are considered highly vulnerable because they contain a wealth of identifying information beyond academic achievements?",
-    "correct": "Educational records",
-    "wrong": [
-      "Medical records",
-      "Employment records",
-      "Financial records"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "What is the mathematical operation behind the Caesar cipher?",
-    "correct": "Shift each letter by a fixed number of positions in the alphabet (mod 26)",
-    "wrong": [
-      "Substitute each letter with a random symbol",
-      "Swap letters using a keyword",
-      "Reverse the order of letters in the word"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Vigenère Cipher",
-    "question": "The Vigenère cipher is an example of what type of cipher?",
-    "correct": "Polyalphabetic substitution cipher",
-    "wrong": [
-      "Monoalphabetic substitution cipher",
-      "Transposition cipher",
-      "Stream cipher"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Data Privacy",
-    "question": "Why might an employer review your social media presence?",
-    "correct": "To assess your professionalism and public behavior",
-    "wrong": [
-      "To steal your personal identity",
-      "To sell your data to advertisers",
-      "To monitor your physical location"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Cryptography Basics",
-    "question": "What is the original message called before encryption?",
-    "correct": "Plaintext",
-    "wrong": [
-      "Ciphertext",
-      "Keytext",
-      "Codetext"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Cryptography Basics",
-    "question": "What is the encrypted message called?",
-    "correct": "Ciphertext",
-    "wrong": [
-      "Plaintext",
-      "Keytext",
-      "Decoded text"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Cybersecurity Motivation",
-    "question": "At the governmental level, why is cybersecurity critical?",
-    "correct": "To protect national security, economic stability, and citizen safety",
-    "wrong": [
-      "To increase tax revenue from digital services",
-      "To monitor all citizens' private communications",
-      "To control the internet completely"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "Using the Caesar Cipher with shift 3, what is the ciphertext for 'ABC'?",
-    "correct": "DEF",
-    "wrong": ["ABC", "BCD", "CDE"]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Vigenère Cipher",
-    "question": "Using Vigenère with key 'A' (shift 0), what is the ciphertext for 'HELLO'?",
-    "correct": "HELLO",
-    "wrong": ["IFMMP", "HELLP", "HILLO"]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Data Brokers",
-    "question": "How do advertisers typically acquire your data from social media platforms?",
-    "correct": "Platforms sell or share customer data with marketing partners",
-    "wrong": [
-      "Advertisers hack into the platform's servers directly",
-      "Users voluntarily donate their data for charity",
-      "Governments mandate free data sharing"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Medical Identity Theft",
-    "question": "What type of information is often stored in the cloud from fitness trackers?",
-    "correct": "Heart rate, blood pressure, and blood sugar levels",
-    "wrong": [
-      "Home address and social security number",
-      "Bank account passwords",
-      "GPS location of your workplace"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Educational Data",
-    "question": "What is an Individualized Education Program (IEP) considered part of?",
-    "correct": "Special education records within educational records",
-    "wrong": [
-      "Medical records",
-      "Employment records",
-      "Financial records"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Financial Data",
-    "question": "Which document contains information about your income, expenditures, and tax records?",
-    "correct": "Tax returns",
-    "wrong": [
-      "Medical history",
-      "School transcript",
-      "Social media profile"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "What is the ciphertext for 'CS' with Caesar shift 3?",
-    "correct": "FV",
-    "wrong": ["CR", "CT", "FS"]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Cybersecurity Levels",
-    "question": "Which of the following is NOT a level of cybersecurity protection mentioned?",
-    "correct": "International level",
-    "wrong": [
-      "Personal level",
-      "Organizational level",
-      "Governmental level"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "ISP Data Selling",
-    "question": "In some countries, what do ISPs do with your browsing data for profit?",
-    "correct": "Sell it to advertisers",
-    "wrong": [
-      "Delete it immediately for privacy",
-      "Share it with your employer",
-      "Donate it to research institutions"
-    ]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Social Media Data",
-    "question": "What specific user information do search engines and social media gather based on search histories?",
-    "correct": "Political and religious ideologies",
-    "wrong": [
-      "Physical address and phone number only",
-      "Credit card numbers and passwords",
-      "Biometric fingerprints"
-    ]
-  }, {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "Using the Caesar Cipher, decrypt the ciphertext 'KHOOR' with a shift key of 3. What is the plaintext?",
-    "correct": "HELLO",
-    "wrong": ["WORLD", "KHOOR", "HELLP", "HALLO"]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "Using the Caesar Cipher, encrypt the plain text 'ATTACK' with a shift key of 7. What is the ciphertext?",
-    "correct": "HAAHJR",
-    "wrong": ["ATTACK", "HAAGJR", "HAAHIR", "HAZHJR"]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "Using the Caesar Cipher, encrypt the plain text 'XYZ' with a shift key of 3. What is the ciphertext (considering wrap-around)?",
-    "correct": "ABC",
-    "wrong": ["XYZ", "YZA", "ZAB", "BCD"]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "Using the Caesar Cipher, encrypt the plain text 'NETWORK' with a shift key of 11. What is the ciphertext?",
-    "correct": "YPEHZCV",
-    "wrong": ["NETWORK", "YPEHZBW", "YPEHZCU", "YOEHZCV"]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "Using the Caesar Cipher, what shift key would transform 'CYBER' into 'FREHU'?",
+    "course_id": "CS101",
+    "topic": "Operators in C",
+    "difficulty": "easy",
+    "question": "What is the result of 7 / 2 in C?",
     "correct": "3",
-    "wrong": ["5", "2", "4", "6"]
+    "wrong": ["3.5", "3.0", "4"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Vigenère Cipher",
-    "question": "Using the Vigenère Cipher, encrypt 'DANCE' with key 'BEAT'. What is the ciphertext?",
-    "correct": "EDPHI",
-    "wrong": ["DANCE", "EDPHG", "EDPHJ", "FDPHI"]
+    "course_id": "CS101",
+    "topic": "Control Statements",
+    "difficulty": "easy",
+    "question": "Which statement is used for multi-way branching in C?",
+    "correct": "switch",
+    "wrong": ["if", "else", "while"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Vigenère Cipher",
-    "question": "Using the Vigenère Cipher, decrypt 'LXFOPVEFRNHR' with key 'LEMON'. What is the plaintext?",
-    "correct": "ATTACKATDAWN",
-    "wrong": ["ATTACKATDAWN", "ATTACKATDAWZ", "ATTACKATDAVO", "ATTACKATDAWL"]
+    "course_id": "CS101",
+    "topic": "Control Statements",
+    "difficulty": "easy",
+    "question": "What problem occurs when 'break' is omitted in a switch case?",
+    "correct": "Fall-through to the next case",
+    "wrong": ["Compilation error", "Runtime error", "Infinite loop"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Vigenère Cipher",
-    "question": "Using the Vigenère Cipher, encrypt 'PYTHON' with key 'CODE'. What is the ciphertext?",
-    "correct": "RZVVSR",
-    "wrong": ["PYTHON", "RZVWSR", "RZVVSP", "RZVVQR"]
+    "course_id": "CS101",
+    "topic": "Loops in C",
+    "difficulty": "easy",
+    "question": "Which loop executes the body at least once regardless of condition?",
+    "correct": "do-while",
+    "wrong": ["while", "for", "All loops"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Identity Theft",
-    "question": "Which of the following is an example of a 'personally identifiable information' (PII) that cybercriminals target?",
-    "correct": "Driver's license number",
-    "wrong": ["Favorite color", "Pet's nickname (not used as a security answer)", "High school mascot"]
+    "course_id": "CS101",
+    "topic": "Loops in C",
+    "difficulty": "easy",
+    "question": "What does 'break' do inside a loop?",
+    "correct": "Exits the loop immediately",
+    "wrong": ["Skips the current iteration", "Continues to next iteration", "Restarts the loop"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Password Security",
-    "question": "According to best practices, which password is most secure against brute-force attacks?",
-    "correct": "C0rrectH0rseBatteryStaple",
-    "wrong": ["password123", "admin", "12345678", "qwertyuiop"]
-  }
-,{
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "Using the Caesar Cipher with a shift of 15, what is the ciphertext for 'PROTECT'?",
-    "correct": "GEGDITI",
-    "wrong": ["PROTECT", "GEGDJTI", "GEGDITJ", "GEGCITI"]
+    "course_id": "CS101",
+    "topic": "Loops in C",
+    "difficulty": "easy",
+    "question": "What does 'continue' do inside a loop?",
+    "correct": "Skips the rest of the current iteration",
+    "wrong": ["Exits the loop", "Restarts the loop", "Breaks the loop"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "Using the Caesar Cipher, decrypt 'WKH TXLFN EURZQ IRA' with a shift of 3. What is the plaintext?",
-    "correct": "THE QUICK BROWN FOX",
-    "wrong": ["THE QUICK BROWN DOG", "THE SLOW BROWN FOX", "THE QUICK GREEN FOX", "THA QUICK BROWN FOX"]
+    "course_id": "CS101",
+    "topic": "Arrays in C",
+    "difficulty": "easy",
+    "question": "What is the index of the first element in a C array?",
+    "correct": "0",
+    "wrong": ["1", "-1", "Null"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "What shift key would transform 'SECURE' into 'XJHZWJ'?",
-    "correct": "5",
-    "wrong": ["3", "7", "9", "11"]
+    "course_id": "CS101",
+    "topic": "Arrays in C",
+    "difficulty": "easy",
+    "question": "How are array elements stored in memory?",
+    "correct": "Contiguously",
+    "wrong": ["Randomly", "In reverse order", "In separate pages"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "Using the Caesar Cipher, encrypt 'password' with a shift of 8. What is the ciphertext?",
-    "correct": "xiaebzva",
-    "wrong": ["password", "xiaebzvb", "xiaebzwa", "xhaebzva"]
+    "course_id": "CS101",
+    "topic": "Arrays in C",
+    "difficulty": "easy",
+    "question": "What is a Variable Length Array (VLA)?",
+    "correct": "Array whose size is determined at runtime",
+    "wrong": ["Array that can change size after declaration", "Dynamic array on heap", "Array with no fixed type"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Caesar Cipher",
-    "question": "How many possible shift keys (including 0) exist for the classic Caesar cipher on the English alphabet?",
-    "correct": "26",
-    "wrong": ["25", "24", "52", "10"]
+    "course_id": "CS101",
+    "topic": "Strings in C",
+    "difficulty": "easy",
+    "question": "What character terminates a string in C?",
+    "correct": "Null character '\\0'",
+    "wrong": ["Newline '\\n'", "Space", "Tab '\\t'"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Vigenère Cipher",
-    "question": "Using the Vigenère Cipher, encrypt 'COMPUTER' with key 'BYTE'. What is the ciphertext?",
-    "correct": "DQOCVXGT",
-    "wrong": ["COMPUTER", "DQOCVXGS", "DQOCVXGU", "DPOCVXGT"]
+    "course_id": "CS101",
+    "topic": "Error Types",
+    "difficulty": "easy",
+    "question": "What type of error violates the grammatical rules of the language?",
+    "correct": "Syntax error",
+    "wrong": ["Semantic error", "Runtime error", "Logic error"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Vigenère Cipher",
-    "question": "Using the Vigenère Cipher, decrypt 'RIJVS' with key 'KEY'. What is the plaintext?",
-    "correct": "HELLO",
-    "wrong": ["WORLD", "HELLP", "HELLN", "HALLO"]
+    "course_id": "CS101",
+    "topic": "Error Types",
+    "difficulty": "easy",
+    "question": "What type of error occurs during program execution?",
+    "correct": "Runtime error",
+    "wrong": ["Syntax error", "Compilation error", "Semantic error"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Vigenère Cipher",
-    "question": "What is the ciphertext when encrypting 'DATA' with key 'KEY' using the Vigenère Cipher?",
-    "correct": "NEAL",
-    "wrong": ["DATA", "NEAM", "NEAL", "NDAL"]
+    "course_id": "CS101",
+    "topic": "Structures in C",
+    "difficulty": "easy",
+    "question": "Which operator is used to access structure members?",
+    "correct": "Dot (.) operator",
+    "wrong": ["Arrow (->)", "Colon (:)", "Ampersand (&)"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Vigenère Cipher",
-    "question": "If the Vigenère key is longer than the plaintext, what happens to the extra key characters?",
-    "correct": "They are ignored (only the first n characters matching plaintext length are used)",
-    "wrong": ["The plaintext is padded to match the key", "The cipher wraps around", "An error occurs", "The key is truncated automatically"]
+    "course_id": "CS101",
+    "topic": "Functions in C",
+    "difficulty": "easy",
+    "question": "What is a function prototype?",
+    "correct": "Declaration of a function before its definition",
+    "wrong": ["The actual function body", "A function with no parameters", "A macro"]
   },
   {
-    "course_id": "CS301",
-    "topic": "Cryptography Basics",
-    "question": "What is the process of converting ciphertext back into plaintext called?",
-    "correct": "Decryption",
-    "wrong": ["Encryption", "Coding", "Hashing", "Encoding"]
+    "course_id": "CS101",
+    "topic": "Recursion in C",
+    "difficulty": "easy",
+    "question": "What is required to prevent infinite recursion?",
+    "correct": "A base case",
+    "wrong": ["A global counter", "A static variable", "A return statement"]
   },
-  {
-    "course_id": "CS301",
-    "topic": "Cryptography Basics",
-    "question": "What is a 'key' in the context of cryptography?",
-    "correct": "A piece of information that determines the output of an encryption algorithm",
-    "wrong": ["The password to log into a computer", "The encrypted message itself", "The algorithm used to encrypt data", "The user's username"]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Data Privacy",
-    "question": "What is 'phishing'?",
-    "correct": "A fraudulent attempt to obtain sensitive information by disguising as a trustworthy entity",
-    "wrong": ["A type of computer virus", "A fishing game on social media", "A hardware security device", "A backup storage method"]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Data Privacy",
-    "question": "What does 'two-factor authentication' (2FA) require?",
-    "correct": "Two different forms of verification (e.g., password + code from phone)",
-    "wrong": ["Two different passwords", "Two separate accounts", "Two different devices both logged in", "Two people to approve access"]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Social Engineering",
-    "question": "Which of the following is an example of social engineering?",
-    "correct": "Calling an employee pretending to be IT support to get their password",
-    "wrong": ["Brute-forcing a password", "Installing malware via email attachment", "Hacking a database directly", "Using a stolen laptop"]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Password Security",
-    "question": "What is a 'password manager'?",
-    "correct": "A software application that stores and manages passwords in an encrypted database",
-    "wrong": ["A person who manages company passwords", "A hardware device that types passwords automatically", "A built-in Windows feature only", "A type of antivirus software"]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Data Breaches",
-    "question": "What is a 'data breach'?",
-    "correct": "An incident where sensitive information is accessed or disclosed without authorization",
-    "wrong": ["A slow internet connection", "A hardware failure that loses data", "A software bug that deletes files", "Accidentally deleting a file"]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Public Wi-Fi Security",
-    "question": "Why is public Wi-Fi often considered insecure?",
-    "correct": "Data transmitted can be intercepted by others on the same network",
-    "wrong": ["The Wi-Fi signal is too weak", "Public Wi-Fi is always slower", "Viruses are transmitted through Wi-Fi signals", "Only the government can access public Wi-Fi"]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "VPN",
-    "question": "What is the primary purpose of a VPN (Virtual Private Network)?",
-    "correct": "To encrypt internet traffic and hide the user's IP address",
-    "wrong": ["To increase internet speed", "To block all advertisements", "To install antivirus software", "To backup files to the cloud"]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Malware",
-    "question": "What type of malware disguises itself as legitimate software?",
-    "correct": "Trojan horse",
-    "wrong": ["Worm", "Virus", "Ransomware", "Spyware"]
-  },
-  {
-    "course_id": "CS301",
-    "topic": "Ransomware",
-    "question": "What is the primary goal of ransomware?",
-    "correct": "To encrypt the victim's files and demand payment for decryption",
-    "wrong": ["To steal passwords", "To delete system files", "To display unwanted advertisements", "To slow down the computer"]
-  }
-,
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   {
     "course_id": "CS101",
     "topic": "Problem-Solving",
-    "question": "In the 5 Whys technique, what is the primary goal after asking 'Why?' five times?",
-    "correct": "To uncover the fundamental root cause of the problem",
-    "wrong": [
-      "To assign blame to a specific team member",
-      "To generate at least five possible solutions",
-      "To document every symptom in detail"
-    ]
+    "difficulty": "medium",
+    "question": "What is the difference between an algorithm and a program?",
+    "correct": "Algorithm is the logic plan; program is the code implementation",
+    "wrong": ["They are the same thing", "Program is the plan; algorithm is code", "Algorithm requires a computer; program does not"]
   },
   {
     "course_id": "CS101",
-    "topic": "Flowcharts",
-    "question": "Which flowchart symbol is used to represent a decision point that branches the flow based on a condition?",
-    "correct": "Diamond",
-    "wrong": [
-      "Rectangle",
-      "Parallelogram",
-      "Oval"
-    ]
+    "topic": "Problem-Solving",
+    "difficulty": "medium",
+    "question": "What does SWOT analysis stand for?",
+    "correct": "Strengths, Weaknesses, Opportunities, Threats",
+    "wrong": ["Situation, Work, Objective, Task", "System, Way, Output, Time", "Structure, Writing, Operation, Testing"]
   },
   {
     "course_id": "CS101",
-    "topic": "Algorithms",
-    "question": "An algorithm must have the characteristic of 'definiteness'. What does this mean?",
-    "correct": "Each step must be clear, precise, and unambiguous",
-    "wrong": [
-      "The algorithm must finish in a finite number of steps",
-      "The algorithm must have at least one input and one output",
-      "The algorithm must be written in a programming language"
-    ]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "C Language Basics",
-    "question": "Which of the following statements about a C compiler is TRUE?",
-    "correct": "It translates the entire source code into machine code before execution",
-    "wrong": [
-      "It executes code line by line, stopping at the first error",
-      "It does not produce an intermediate object file",
-      "It is mainly used for debugging syntax errors at runtime"
-    ]
+    "topic": "C Programming",
+    "difficulty": "medium",
+    "question": "What is the difference between a compiler and an interpreter?",
+    "correct": "Compiler translates entire code; interpreter executes line by line",
+    "wrong": ["Compiler executes line by line; interpreter translates entire code", "Both do the same thing", "Compiler is for C only; interpreter is for Java only"]
   },
   {
     "course_id": "CS101",
     "topic": "Data Types",
-    "question": "What is the size (in bytes) of a `double` data type on most modern 64-bit systems?",
-    "correct": "8 bytes",
-    "wrong": [
-      "4 bytes",
-      "2 bytes",
-      "16 bytes"
-    ]
+    "difficulty": "medium",
+    "question": "What is implicit type conversion in C?",
+    "correct": "Automatic conversion performed by the compiler",
+    "wrong": ["Manual conversion using cast", "Conversion that causes data loss", "Conversion that always rounds up"]
   },
   {
     "course_id": "CS101",
-    "topic": "Type Conversion",
-    "question": "What will be the output of `int x = 5 / 2; printf(\"%d\", x);`?",
-    "correct": "2 (integer division truncates the decimal)",
-    "wrong": [
-      "2.5",
-      "2.0",
-      "Compilation error"
-    ]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Constants",
-    "question": "What happens if you try to modify a `const` variable after it has been initialized?",
-    "correct": "The compiler will generate an error (or warning, depending on settings)",
-    "wrong": [
-      "The variable's value will change silently",
-      "The program will crash at runtime",
-      "The const qualifier is ignored; modification is allowed"
-    ]
+    "topic": "Data Types",
+    "difficulty": "medium",
+    "question": "What is explicit type conversion in C?",
+    "correct": "Manual conversion using cast operator",
+    "wrong": ["Automatic conversion by compiler", "Conversion that cannot lose data", "Conversion that only works with integers"]
   },
   {
     "course_id": "CS101",
     "topic": "Operators",
-    "question": "What is the value of `result` after executing `int a = 10, b = 3, result = a % b;`?",
+    "difficulty": "medium",
+    "question": "What is the difference between prefix and postfix increment?",
+    "correct": "Prefix increments then uses value; postfix uses then increments",
+    "wrong": ["They are identical", "Prefix works only with integers", "Postfix is faster than prefix"]
+  },
+  {
+    "course_id": "CS101",
+    "topic": "Operators",
+    "difficulty": "medium",
+    "question": "What is the value of (5 > 3) && (2 < 1)?",
+    "correct": "0 (false)",
+    "wrong": ["1 (true)", "5", "3"]
+  },
+  {
+    "course_id": "CS101",
+    "topic": "Operators",
+    "difficulty": "medium",
+    "question": "What is the value of (5 > 3) || (2 < 1)?",
+    "correct": "1 (true)",
+    "wrong": ["0 (false)", "5", "3"]
+  },
+  {
+    "course_id": "CS101",
+    "topic": "Bitwise Operators",
+    "difficulty": "medium",
+    "question": "What is the result of 5 & 3 in C?",
     "correct": "1",
-    "wrong": [
-      "3",
-      "0",
-      "3.33"
-    ]
+    "wrong": ["5", "3", "7"]
   },
   {
     "course_id": "CS101",
-    "topic": "Increment/Decrement",
-    "question": "Given `int x = 5; int y = ++x + x++;` what are the final values of `x` and `y`?",
-    "correct": "x = 7, y = 12",
-    "wrong": [
-      "x = 6, y = 11",
-      "x = 7, y = 13",
-      "x = 6, y = 12"
-    ]
+    "topic": "Bitwise Operators",
+    "difficulty": "medium",
+    "question": "What is the result of 5 | 3 in C?",
+    "correct": "7",
+    "wrong": ["1", "5", "3"]
   },
   {
     "course_id": "CS101",
-    "topic": "Switch Statement",
-    "question": "What is the term for the behavior when a `break` is omitted in a `switch` case and execution continues into the next case?",
-    "correct": "Fall-through",
-    "wrong": [
-      "Short-circuiting",
-      "Default propagation",
-      "Switch cascade"
-    ]
+    "topic": "Bitwise Operators",
+    "difficulty": "medium",
+    "question": "What is the result of 5 ^ 3 in C?",
+    "correct": "6",
+    "wrong": ["1", "7", "5"]
+  },
+  {
+    "course_id": "CS101",
+    "topic": "Shift Operators",
+    "difficulty": "medium",
+    "question": "What is the result of 5 << 1 in C?",
+    "correct": "10",
+    "wrong": ["2", "5", "15"]
+  },
+  {
+    "course_id": "CS101",
+    "topic": "Shift Operators",
+    "difficulty": "medium",
+    "question": "What is the result of 5 >> 1 in C?",
+    "correct": "2",
+    "wrong": ["10", "5", "1"]
+  },
+  {
+    "course_id": "CS101",
+    "topic": "User Input",
+    "difficulty": "medium",
+    "question": "Why is the address-of operator (&) required in scanf?",
+    "correct": "scanf needs the memory address to store the value",
+    "wrong": ["scanf returns the address", "scanf only works with pointers", "It's optional in modern C"]
+  },
+  {
+    "course_id": "CS101",
+    "topic": "Control Statements",
+    "difficulty": "medium",
+    "question": "What is the ternary operator in C?",
+    "correct": "? :",
+    "wrong": ["??", "? ?", "::"]
   },
   {
     "course_id": "CS101",
     "topic": "Loops",
-    "question": "Which loop guarantees that the body will execute at least once, regardless of the condition?",
-    "correct": "do...while",
-    "wrong": [
-      "while",
-      "for",
-      "All loops guarantee at least one execution"
-    ]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Break and Continue",
-    "question": "What is the difference between `break` and `continue` inside a loop?",
-    "correct": "break terminates the entire loop; continue skips the current iteration and moves to the next",
-    "wrong": [
-      "break skips one iteration; continue terminates the loop",
-      "Both terminate the loop but in different conditions",
-      "break is used only in switch; continue is used only in loops"
-    ]
+    "difficulty": "medium",
+    "question": "How many times will for(i=0; i<10; i+=2) execute?",
+    "correct": "5 times",
+    "wrong": ["10 times", "9 times", "4 times"]
   },
   {
     "course_id": "CS101",
     "topic": "Arrays",
-    "question": "Given `int arr[5] = {10, 20, 30};`, what is the value of `arr[3]`?",
-    "correct": "0 (partially initialized elements default to 0)",
-    "wrong": [
-      "30",
-      "Undefined (garbage value)",
-      "Compilation error"
-    ]
+    "difficulty": "medium",
+    "question": "What happens if you access arr[5] when array size is 5?",
+    "correct": "Buffer overflow - undefined behavior",
+    "wrong": ["Compilation error", "Returns the last element", "Creates a new element"]
   },
   {
     "course_id": "CS101",
-    "topic": "Arrays",
-    "question": "What is the index of the last element in an array declared as `int numbers[10];`?",
-    "correct": "9",
-    "wrong": [
-      "10",
-      "0",
-      "1"
-    ]
+    "topic": "Pointers",
+    "difficulty": "medium",
+    "question": "If int *p = &x, what does *p represent?",
+    "correct": "Value of variable x",
+    "wrong": ["Address of x", "Address of p", "Value of p"]
   },
   {
     "course_id": "CS101",
-    "topic": "Multidimensional Arrays",
-    "question": "How many elements does the array `int matrix[3][4];` contain?",
+    "topic": "Pointers",
+    "difficulty": "medium",
+    "question": "If int *p = &arr[0], what does p+1 point to?",
+    "correct": "arr[1]",
+    "wrong": ["arr[0] + 1 byte", "arr[0] + 4 bytes", "arr[2]"]
+  },
+  {
+    "course_id": "CS101",
+    "topic": "Multi-dimensional Arrays",
+    "difficulty": "medium",
+    "question": "How many elements in int arr[3][4]?",
     "correct": "12",
-    "wrong": [
-      "7",
-      "3",
-      "4"
-    ]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Variable Length Arrays",
-    "question": "What is a Variable Length Array (VLA) in C?",
-    "correct": "An array whose size is determined at runtime (e.g., using a variable)",
-    "wrong": [
-      "An array that can change size after declaration",
-      "A dynamic array allocated on the heap using malloc",
-      "An array with no fixed data type"
-    ]
+    "wrong": ["7", "3", "4"]
   },
   {
     "course_id": "CS101",
     "topic": "Strings",
-    "question": "What character automatically terminates a string in C?",
-    "correct": "Null character '\\0'",
-    "wrong": [
-      "Newline '\\n'",
-      "Space ' '",
-      "Carriage return '\\r'"
-    ]
+    "difficulty": "medium",
+    "question": "What is the length of 'Hello' including null terminator?",
+    "correct": "6",
+    "wrong": ["5", "4", "7"]
   },
   {
     "course_id": "CS101",
-    "topic": "Strings",
-    "question": "Why is `gets()` considered dangerous and removed from the C standard?",
-    "correct": "It does not check buffer size, leading to buffer overflow vulnerabilities",
-    "wrong": [
-      "It cannot read strings with spaces",
-      "It is slower than fgets",
-      "It requires the string.h header"
-    ]
+    "topic": "String Functions",
+    "difficulty": "medium",
+    "question": "Which function copies a string from source to destination?",
+    "correct": "strcpy()",
+    "wrong": ["strcat()", "strcmp()", "strlen()"]
   },
   {
     "course_id": "CS101",
-    "topic": "Pointers",
-    "question": "What does the `*` operator do when used on a pointer variable (e.g., `*ptr`)?",
-    "correct": "It dereferences the pointer, accessing the value stored at the address it holds",
-    "wrong": [
-      "It returns the memory address of the pointer itself",
-      "It declares a pointer variable",
-      "It multiplies the pointer by a value"
-    ]
+    "topic": "String Functions",
+    "difficulty": "medium",
+    "question": "Which function compares two strings?",
+    "correct": "strcmp()",
+    "wrong": ["strcpy()", "strcat()", "strlen()"]
   },
   {
     "course_id": "CS101",
-    "topic": "Pointers",
-    "question": "If `int *ptr = &x;` and `int x = 10;`, what does `ptr` store?",
-    "correct": "The memory address of variable x",
-    "wrong": [
-      "The value 10",
-      "The address of the pointer itself",
-      "A copy of x's value"
-    ]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Pointer Arithmetic",
-    "question": "If `int *p = &arr[0];` and `int` is 4 bytes, what is the effect of `p += 3;`?",
-    "correct": "p points to arr[3] (address advanced by 12 bytes)",
-    "wrong": [
-      "p points to arr[3] (address advanced by 3 bytes)",
-      "p now holds the value of arr[3]",
-      "Compilation error"
-    ]
+    "topic": "String Functions",
+    "difficulty": "medium",
+    "question": "Which function appends one string to another?",
+    "correct": "strcat()",
+    "wrong": ["strcpy()", "strcmp()", "strlen()"]
   },
   {
     "course_id": "CS101",
     "topic": "Structures",
-    "question": "How do you access a member named `age` of a structure variable `student1`?",
-    "correct": "student1.age",
-    "wrong": [
-      "student1->age",
-      "age.student1",
-      "&student1.age"
-    ]
+    "difficulty": "medium",
+    "question": "How do you access a structure member via a pointer?",
+    "correct": "ptr->member",
+    "wrong": ["ptr.member", "(*ptr).member", "Both ptr->member and (*ptr).member"]
   },
   {
     "course_id": "CS101",
-    "topic": "Structures",
-    "question": "In C, can you assign one structure variable to another using the `=` operator?",
-    "correct": "Yes, structure variables can be copied directly (memberwise)",
-    "wrong": [
-      "No, you must use memcpy()",
-      "Only if the structure has no pointers",
-      "Yes, but only for structures with integer members"
-    ]
+    "topic": "Storage Classes",
+    "difficulty": "medium",
+    "question": "What is the default storage class for local variables?",
+    "correct": "auto",
+    "wrong": ["static", "register", "extern"]
   },
   {
     "course_id": "CS101",
-    "topic": "Functions",
-    "question": "What is the purpose of a function prototype (declaration) in C?",
-    "correct": "To inform the compiler about the function's name, return type, and parameters before its definition",
-    "wrong": [
-      "To define the actual body of the function",
-      "To allocate memory for the function",
-      "To execute the function at compile time"
-    ]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Recursion",
-    "question": "What is required to prevent infinite recursion?",
-    "correct": "A base case that stops the recursive calls",
-    "wrong": [
-      "A global counter variable",
-      "Using static variables only",
-      "The function must return void"
-    ]
+    "topic": "Storage Classes",
+    "difficulty": "medium",
+    "question": "Which storage class retains value between function calls?",
+    "correct": "static",
+    "wrong": ["auto", "register", "extern"]
   },
   {
     "course_id": "CS101",
     "topic": "File Handling",
-    "question": "What does the file opening mode `\"a\"` do?",
-    "correct": "Opens a file for appending; writes are added to the end without erasing existing content",
-    "wrong": [
-      "Opens a file for reading only",
-      "Opens a file for writing and erases all previous content",
-      "Opens a file for binary reading"
-    ]
+    "difficulty": "medium",
+    "question": "Which mode opens a file for reading in C?",
+    "correct": "r",
+    "wrong": ["w", "a", "rb"]
   },
   {
     "course_id": "CS101",
     "topic": "File Handling",
-    "question": "Why is it important to check if `fopen()` returns `NULL`?",
-    "correct": "To verify that the file opened successfully (e.g., file exists, permissions are correct)",
-    "wrong": [
-      "To check if the file is empty",
-      "To determine the file size",
-      "To avoid memory leaks"
-    ]
+    "difficulty": "medium",
+    "question": "Which mode opens a file for writing (overwrites existing)?",
+    "correct": "w",
+    "wrong": ["r", "a", "rb"]
   },
   {
     "course_id": "CS101",
     "topic": "File Handling",
-    "question": "Which function is safest for reading a line of text from a file, including spaces?",
-    "correct": "fgets()",
-    "wrong": [
-      "fscanf()",
-      "gets()",
-      "fread()"
-    ]
+    "difficulty": "medium",
+    "question": "Which mode opens a file for appending?",
+    "correct": "a",
+    "wrong": ["r", "w", "rb"]
   },
+
   {
     "course_id": "CS101",
-    "topic": "Memory Management",
-    "question": "What is a common consequence of accessing an array out of bounds in C?",
-    "correct": "Undefined behavior (may crash, corrupt data, or appear to work)",
-    "wrong": [
-      "Compilation error",
-      "Automatic array resizing",
-      "The program always throws a segmentation fault"
-    ]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Semantic Errors",
-    "question": "Which of the following is an example of a semantic error?",
-    "correct": "Using `=` instead of `==` in an if condition",
-    "wrong": [
-      "Missing semicolon at the end of a statement",
-      "Using an undeclared variable",
-      "Mismatched parentheses"
-    ]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Dynamic Memory Allocation",
-    "question": "Which function is used to dynamically allocate memory for an array of `n` integers in C?",
-    "correct": "malloc(n * sizeof(int))",
-    "wrong": [
-      "alloc(n * sizeof(int))",
-      "new int[n]",
-      "create_array(n, int)"
-    ]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Dynamic Memory Allocation",
-    "question": "What is the difference between `calloc()` and `malloc()`?",
-    "correct": "calloc() initializes allocated memory to zero, malloc() leaves it uninitialized",
-    "wrong": [
-      "calloc() allocates contiguous memory, malloc() does not",
-      "malloc() is faster than calloc() always",
-      "calloc() can only allocate for arrays, malloc() only for single variables"
-    ]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Pointers to Pointers",
-    "question": "What does `int **ptr;` declare?",
-    "correct": "A pointer to a pointer to an integer",
-    "wrong": [
-      "A double integer variable",
-      "A pointer to an integer array",
-      "A two-dimensional array"
-    ]
+    "topic": "Pointers Advanced",
+    "difficulty": "hard",
+    "question": "What does int (**ptr)[10] declare?",
+    "correct": "A pointer to a pointer to an array of 10 integers",
+    "wrong": ["A pointer to an array of 10 pointers", "A 2D array of pointers", "An array of 10 pointers to pointers"]
   },
   {
     "course_id": "CS101",
     "topic": "Function Pointers",
-    "question": "What is a function pointer in C?",
-    "correct": "A variable that stores the address of a function",
-    "wrong": [
-      "A pointer that points to a function's return value",
-      "A function that returns a pointer",
-      "A macro that expands to a function call"
-    ]
+    "difficulty": "hard",
+    "question": "What is the syntax for declaring a function pointer to a function returning int with two int parameters?",
+    "correct": "int (*funcPtr)(int, int)",
+    "wrong": ["int *funcPtr(int, int)", "int (*funcPtr(int, int))", "funcPtr int(*)(int, int)"]
   },
   {
     "course_id": "CS101",
-    "topic": "Storage Classes",
-    "question": "What is the default storage class for a local variable inside a function?",
-    "correct": "auto",
-    "wrong": [
-      "static",
-      "register",
-      "extern"
-    ]
+    "topic": "Pointers to Pointers",
+    "difficulty": "hard",
+    "question": "What is the use case for a pointer to a pointer (int **ptr)?",
+    "correct": "To modify a pointer in a function or create 2D arrays dynamically",
+    "wrong": ["To store a single integer", "To create a 1D array", "To store a float value"]
   },
   {
     "course_id": "CS101",
-    "topic": "Storage Classes",
-    "question": "When a variable is declared with `static` inside a function, what is its lifetime?",
-    "correct": "It retains its value between function calls (exists for the entire program run)",
-    "wrong": [
-      "It exists only while the function is executing",
-      "It is stored in a CPU register",
-      "It can be accessed from any other function"
-    ]
+    "topic": "Dynamic Memory",
+    "difficulty": "hard",
+    "question": "What is the difference between malloc() and calloc()?",
+    "correct": "calloc() initializes memory to zero; malloc() leaves it uninitialized",
+    "wrong": ["malloc() initializes to zero; calloc() leaves uninitialized", "calloc() is faster than malloc()", "malloc() works only for arrays"]
   },
   {
     "course_id": "CS101",
-    "topic": "Preprocessor Directives",
-    "question": "What is the purpose of `#ifndef HEADER_H` and `#define HEADER_H` in a header file?",
-    "correct": "To prevent multiple inclusions of the same header file (include guard)",
-    "wrong": [
-      "To define a macro for debugging",
-      "To conditionally compile code based on header existence",
-      "To declare external variables"
-    ]
+    "topic": "Dynamic Memory",
+    "difficulty": "hard",
+    "question": "What is a memory leak in C?",
+    "correct": "Dynamically allocated memory that is not freed after use",
+    "wrong": ["Accessing memory out of bounds", "Using a pointer before initialization", "Stack overflow"]
   },
   {
     "course_id": "CS101",
-    "topic": "Macros",
-    "question": "Given `#define SQUARE(x) x*x`, what is the result of `SQUARE(2+3)`?",
-    "correct": "11 (because it expands to 2+3*2+3 = 2+6+3)",
-    "wrong": [
-      "25",
-      "13",
-      "Compilation error"
-    ]
+    "topic": "Preprocessor",
+    "difficulty": "hard",
+    "question": "What is the problem with #define SQUARE(x) x*x when called as SQUARE(2+3)?",
+    "correct": "It expands to 2+3*2+3 = 11, not 25",
+    "wrong": ["Compilation error", "Runtime error", "It works correctly as 25"]
   },
   {
     "course_id": "CS101",
-    "topic": "Command Line Arguments",
-    "question": "In `int main(int argc, char *argv[])`, what does `argc` represent?",
-    "correct": "The number of command-line arguments passed to the program (including program name)",
-    "wrong": [
-      "The argument count of the last function call",
-      "The size of the argv array in bytes",
-      "The number of environment variables"
-    ]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Unions",
-    "question": "What is the key difference between a `union` and a `struct` in C?",
-    "correct": "In a union, all members share the same memory location; a struct allocates separate memory for each member",
-    "wrong": [
-      "Unions can only hold one data type at a time",
-      "Unions are larger than structs",
-      "Unions cannot contain pointers"
-    ]
+    "topic": "Preprocessor",
+    "difficulty": "hard",
+    "question": "How do you fix the SQUARE macro to work correctly?",
+    "correct": "#define SQUARE(x) ((x)*(x))",
+    "wrong": ["#define SQUARE(x) (x*x)", "#define SQUARE(x) x^2", "#define SQUARE(x) pow(x,2)"]
   },
   {
     "course_id": "CS101",
     "topic": "Bit Fields",
-    "question": "What is a bit field in C?",
-    "correct": "A member of a structure that occupies a specified number of bits (used for memory-efficient flags)",
-    "wrong": [
-      "An array of bits",
-      "A pointer to a bit",
-      "A macro that manipulates bits"
-    ]
+    "difficulty": "hard",
+    "question": "What is a bit field in C used for?",
+    "correct": "To pack multiple members into fewer bytes (memory-efficient flags)",
+    "wrong": ["To perform bitwise operations", "To store floating point numbers", "To create dynamic arrays"]
   },
   {
     "course_id": "CS101",
-    "topic": "Typedef",
-    "question": "What does `typedef int (*funcPtr)(int, int);` declare?",
-    "correct": "funcPtr is a type alias for a pointer to a function that takes two ints and returns an int",
-    "wrong": [
-      "funcPtr is a function that returns an integer pointer",
-      "funcPtr is an array of function pointers",
-      "funcPtr is a pointer to an integer array"
-    ]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Recursion vs Iteration",
-    "question": "Which of the following is a disadvantage of recursion compared to iteration?",
-    "correct": "Higher memory usage due to function call stack",
-    "wrong": [
-      "Recursion cannot solve problems that iteration can",
-      "Recursion always produces slower code",
-      "Recursion cannot return values"
-    ]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Linked Lists Basics",
-    "question": "What is the main advantage of a singly linked list over an array?",
-    "correct": "Dynamic size and efficient insertion/deletion at any point (no shifting)",
-    "wrong": [
-      "Faster random access",
-      "Less memory overhead per element",
-      "Direct indexing by position"
-    ]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Memory Leak",
-    "question": "What is a memory leak in C?",
-    "correct": "When dynamically allocated memory is not freed after it is no longer needed, causing memory usage to grow",
-    "wrong": [
-      "A buffer overflow that corrupts memory",
-      "When a pointer is assigned NULL",
-      "When the stack overflows due to deep recursion"
-    ]
+    "topic": "Unions",
+    "difficulty": "hard",
+    "question": "What is the key difference between a union and a struct?",
+    "correct": "Union members share memory; struct members have separate memory",
+    "wrong": ["Union can only hold one type; struct can hold multiple", "Union is faster than struct", "Struct members share memory"]
   },
   {
     "course_id": "CS101",
     "topic": "Volatile Keyword",
-    "question": "When should you use the `volatile` qualifier in C?",
-    "correct": "For variables that may change outside the program's control (e.g., hardware registers, signal handlers)",
-    "wrong": [
-      "To make a variable constant",
-      "To speed up variable access",
-      "To declare a variable as thread-local"
-    ]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Setjmp and Longjmp",
-    "question": "What is the purpose of `setjmp()` and `longjmp()` in C?",
-    "correct": "To perform non-local jumps (bypass normal function call/return), similar to exception handling",
-    "wrong": [
-      "To allocate and free memory",
-      "To jump between different loops",
-      "To convert between integer and pointer types"
-    ]
+    "difficulty": "hard",
+    "question": "When should you use the 'volatile' keyword in C?",
+    "correct": "For variables that may change outside program control (hardware registers, signal handlers)",
+    "wrong": ["To make a variable constant", "To speed up variable access", "To declare a global variable"]
   },
   {
     "course_id": "CS101",
     "topic": "Restrict Keyword",
-    "question": "What does the `restrict` keyword indicate to the compiler?",
-    "correct": "That a pointer is the only reference to the data it points to, allowing better optimization",
-    "wrong": [
-      "That the pointer cannot be modified",
-      "That the pointer points to read-only memory",
-      "That the pointer is restricted to a certain memory area"
-    ]
+    "difficulty": "hard",
+    "question": "What does the 'restrict' keyword indicate to the compiler?",
+    "correct": "Pointer is the only reference to the data, allowing better optimization",
+    "wrong": ["Pointer cannot be modified", "Pointer points to read-only memory", "Pointer is restricted to certain memory area"]
   },
   {
     "course_id": "CS101",
     "topic": "Inline Functions",
-    "question": "What is the effect of declaring a function as `inline` in C?",
-    "correct": "It suggests to the compiler to expand the function code at the call site to avoid function call overhead",
-    "wrong": [
-      "It forces the compiler to always inline the function",
-      "It makes the function static",
-      "It prevents the function from being called recursively"
-    ]
-  },
- {
-    "course_id": "CS101",
-    "topic": "Problem-Solving",
-    "question": "You are using the 5 Whys technique to investigate why a program crashed. After asking 'Why?' three times, you discover a null pointer dereference. What should you do next?",
-    "correct": "Continue asking 'Why?' until you find the root cause (e.g., why the pointer was null)",
-    "wrong": [
-      "Stop immediately and fix the null pointer dereference",
-      "Assign blame to the developer who wrote that line",
-      "Rewrite the entire program from scratch"
-    ]
+    "difficulty": "hard",
+    "question": "What does 'inline' suggest to the compiler?",
+    "correct": "Expand function code at call site to avoid call overhead",
+    "wrong": ["Force the function to be inlined always", "Make the function static", "Prevent recursion"]
   },
   {
     "course_id": "CS101",
-    "topic": "Flowcharts",
-    "question": "In a flowchart, what symbol is used to represent input/output operations (e.g., reading a value or printing a result)?",
-    "correct": "Parallelogram",
-    "wrong": [
-      "Rectangle",
-      "Diamond",
-      "Oval"
-    ]
+    "topic": "Setjmp/Longjmp",
+    "difficulty": "hard",
+    "question": "What is the purpose of setjmp() and longjmp() in C?",
+    "correct": "To perform non-local jumps (exception-like behavior)",
+    "wrong": ["To allocate memory", "To handle file operations", "To perform string operations"]
   },
   {
     "course_id": "CS101",
-    "topic": "C Language Basics",
-    "question": "What is the correct order of steps from writing C code to execution?",
-    "correct": "Source code → Preprocessor → Compiler → Assembler → Linker → Executable",
-    "wrong": [
-      "Source code → Compiler → Linker → Preprocessor → Executable",
-      "Source code → Interpreter → Executable",
-      "Source code → Assembler → Compiler → Linker"
-    ]
+    "topic": "Command Line Arguments",
+    "difficulty": "hard",
+    "question": "What does argv[0] represent in int main(int argc, char *argv[])?",
+    "correct": "The program name or path",
+    "wrong": ["The first command line argument", "The number of arguments", "The last command line argument"]
   },
   {
     "course_id": "CS101",
-    "topic": "Data Types",
-    "question": "What is the size (in bytes) of a `long int` on a typical 32-bit system?",
-    "correct": "4 bytes",
-    "wrong": [
-      "2 bytes",
-      "8 bytes",
-      "Depends on the compiler, but typically 4"
-    ]
+    "topic": "Recursion vs Iteration",
+    "difficulty": "hard",
+    "question": "What is a disadvantage of recursion compared to iteration?",
+    "correct": "Higher memory usage due to function call stack",
+    "wrong": ["Recursion cannot solve complex problems", "Recursion always slower", "Recursion cannot return values"]
   },
   {
     "course_id": "CS101",
-    "topic": "Type Conversion",
-    "question": "What will be the output of `printf(\"%f\", 5 / 2);`?",
-    "correct": "Undefined behavior (format specifier mismatch) or garbage value",
-    "wrong": [
-      "2.500000",
-      "2.000000",
-      "2"
-    ]
+    "topic": "Linked Lists",
+    "difficulty": "hard",
+    "question": "What is the main advantage of a linked list over an array?",
+    "correct": "Dynamic size and efficient insertion/deletion at any point",
+    "wrong": ["Faster random access", "Less memory overhead", "Direct indexing"]
   },
   {
     "course_id": "CS101",
-    "topic": "Constants",
-    "question": "Which of the following correctly defines a symbolic constant for PI in C?",
-    "correct": "#define PI 3.14159",
-    "wrong": [
-      "const float PI = 3.14159;",
-      "constant float PI = 3.14159;",
-      "PI = 3.14159;"
-    ]
+    "topic": "Linked Lists",
+    "difficulty": "hard",
+    "question": "What is a disadvantage of a singly linked list?",
+    "correct": "Cannot traverse backwards; finding previous node requires从头遍历",
+    "wrong": ["Too much memory", "Cannot delete nodes", "Cannot insert at beginning"]
   },
   {
     "course_id": "CS101",
-    "topic": "Operators",
-    "question": "What is the value of `result` after `int a = 7, b = 2, result = a / b + a % b;`?",
-    "correct": "4 (3 + 1 = 4)",
-    "wrong": [
-      "3",
-      "5",
-      "3.5"
-    ]
+    "topic": "Memory Layout",
+    "difficulty": "hard",
+    "question": "Which segment stores local variables in C?",
+    "correct": "Stack",
+    "wrong": ["Heap", "Data segment", "Code segment"]
   },
   {
     "course_id": "CS101",
-    "topic": "Increment/Decrement",
-    "question": "What is the output of `int x = 3; printf(\"%d %d\", x++, ++x);`?",
-    "correct": "3 5 (undefined behavior between sequence points; common result shown)",
-    "wrong": [
-      "3 4",
-      "4 5",
-      "4 4"
-    ]
+    "topic": "Memory Layout",
+    "difficulty": "hard",
+    "question": "Which segment stores dynamically allocated memory (malloc/calloc)?",
+    "correct": "Heap",
+    "wrong": ["Stack", "Data segment", "Code segment"]
   },
   {
     "course_id": "CS101",
-    "topic": "Switch Statement",
-    "question": "If no `break` statement is present in a `switch` case, what happens when that case matches?",
-    "correct": "Execution continues into the next case(s) until a break or end of switch is reached (fall-through)",
-    "wrong": [
-      "The program terminates immediately",
-      "Only that case executes and then the switch ends",
-      "The default case executes automatically"
-    ]
+    "topic": "Memory Layout",
+    "difficulty": "hard",
+    "question": "Which segment stores global and static variables?",
+    "correct": "Data segment",
+    "wrong": ["Stack", "Heap", "Code segment"]
   },
   {
     "course_id": "CS101",
-    "topic": "Loops",
-    "question": "What is the output of `for(int i=0; i<3; i++) { for(int j=0; j<2; j++) { printf(\"%d%d \", i, j); } }`?",
-    "correct": "00 01 10 11 20 21",
-    "wrong": [
-      "00 01 02 10 11 12 20 21 22",
-      "0 1 0 1 0 1",
-      "01 01 01"
-    ]
+    "topic": "Typedef",
+    "difficulty": "hard",
+    "question": "What does typedef int (*funcPtr)(int, int); declare?",
+    "correct": "funcPtr is a type alias for a pointer to a function returning int with two int params",
+    "wrong": ["funcPtr is a function returning int pointer", "funcPtr is an array of function pointers", "funcPtr is a pointer to integer array"]
   },
   {
     "course_id": "CS101",
-    "topic": "Arrays",
-    "question": "What is wrong with the following code? `int n; scanf(\"%d\", &n); int arr[n];`",
-    "correct": "Nothing is wrong if the compiler supports Variable Length Arrays (C99 or later)",
-    "wrong": [
-      "Array size must be a compile-time constant",
-      "scanf cannot read into n used for array size",
-      "The array will be allocated on the heap"
-    ]
-  }
-,{
-    "course_id": "CS101",
-    "topic": "Problem-Solving",
-    "question": "What is the first step in any problem-solving process according to standard computer science methodology?",
-    "correct": "Understanding and defining the problem clearly",
-    "wrong": [
-      "Writing code immediately",
-      "Choosing a programming language",
-      "Hiring a developer"
-    ]
+    "topic": "Variable Arguments",
+    "difficulty": "hard",
+    "question": "Which header file is required for variable argument functions (like printf)?",
+    "correct": "#include <stdarg.h>",
+    "wrong": ["#include <stdio.h>", "#include <stdlib.h>", "#include <string.h>"]
   },
   {
     "course_id": "CS101",
-    "topic": "Flowcharts",
-    "question": "Which flowchart symbol is represented by an oval shape?",
-    "correct": "Start or End (Terminal)",
-    "wrong": [
-      "Process",
-      "Decision",
-      "Input/Output"
-    ]
+    "topic": "Variable Arguments",
+    "difficulty": "hard",
+    "question": "Which macro starts variable argument list access?",
+    "correct": "va_start",
+    "wrong": ["va_arg", "va_end", "va_list"]
   },
   {
     "course_id": "CS101",
-    "topic": "Algorithms",
-    "question": "An algorithm must have the characteristic of 'finiteness'. What does this mean?",
-    "correct": "The algorithm must terminate after a finite number of steps",
-    "wrong": [
-      "Each step must be clear and unambiguous",
-      "The algorithm must have zero or more inputs",
-      "The algorithm must produce at least one output"
-    ]
+    "topic": "Preprocessor Directives",
+    "difficulty": "hard",
+    "question": "What is the purpose of #ifndef HEADER_H / #define HEADER_H in header files?",
+    "correct": "Include guard to prevent multiple inclusions",
+    "wrong": ["To define a macro for debugging", "To conditionally compile code", "To declare external variables"]
   },
   {
     "course_id": "CS101",
-    "topic": "C Language Basics",
-    "question": "What is the extension of a C source code file?",
-    "correct": ".c",
-    "wrong": [".cpp", ".java", ".py", ".h"]
+    "topic": "Assertions",
+    "difficulty": "hard",
+    "question": "What does the assert() macro do in C?",
+    "correct": "Checks a condition and terminates if false (debugging)",
+    "wrong": ["Checks memory allocation", "Validates user input", "Logs errors to file"]
   },
   {
     "course_id": "CS101",
-    "topic": "Data Types",
-    "question": "Which data type is used to store a single character in C?",
-    "correct": "char",
-    "wrong": ["string", "int", "float", "byte"]
+    "topic": "Error Handling",
+    "difficulty": "hard",
+    "question": "What is the value of the global variable errno?",
+    "correct": "Last error code set by system calls or library functions",
+    "wrong": ["Current line number", "Process ID", "Exit status"]
   },
   {
     "course_id": "CS101",
-    "topic": "Type Conversion",
-    "question": "What is the output of `printf(\"%d\", (int)3.9);`?",
-    "correct": "3 (truncation, not rounding)",
-    "wrong": ["4", "3.9", "Compilation error", "3.0"]
+    "topic": "Perror Function",
+    "difficulty": "hard",
+    "question": "What does perror() function do?",
+    "correct": "Prints a descriptive error message to stderr",
+    "wrong": ["Prints error to stdout", "Exits the program", "Clears error flags"]
   },
   {
     "course_id": "CS101",
-    "topic": "Constants",
-    "question": "Which of the following is a valid way to define a constant in C?",
-    "correct": "#define MAX 100",
-    "wrong": ["constant MAX = 100", "const MAX = 100", "let MAX = 100", "var MAX = 100"]
+    "topic": "Const Pointer",
+    "difficulty": "hard",
+    "question": "What is the difference between const int *ptr and int *const ptr?",
+    "correct": "const int *ptr: value constant; int *const ptr: pointer constant",
+    "wrong": ["Both are the same", "First makes pointer constant; second makes value constant", "Neither can be modified"]
   },
   {
     "course_id": "CS101",
-    "topic": "Operators",
-    "question": "What is the value of `result` after `int a = 15, b = 4, result = a / b;`?",
-    "correct": "3 (integer division truncates toward zero)",
-    "wrong": ["3.75", "4", "2", "3.5"]
+    "topic": "Assignment vs Comparison",
+    "difficulty": "hard",
+    "question": "Why is if(x = 5) valid in C but often a bug?",
+    "correct": "Assignment returns 5 (true), not comparison; intended as if(x == 5)",
+    "wrong": ["Compilation error", "Runtime error", "It works correctly as comparison"]
   },
   {
     "course_id": "CS101",
-    "topic": "Increment/Decrement",
-    "question": "What is the value of `x` after `int x = 5; x = x++ + ++x;`?",
-    "correct": "12 (undefined behavior, but typical result: 5 + 7 = 12)",
-    "wrong": ["11", "13", "10", "14"]
+    "topic": "Short-circuit Evaluation",
+    "difficulty": "hard",
+    "question": "What is short-circuit evaluation in logical operators?",
+    "correct": "Second operand evaluated only if first doesn't determine result",
+    "wrong": ["Both operands always evaluated", "No evaluation occurs", "Only one operand evaluated"]
   },
-  {
-    "course_id": "CS101",
-    "topic": "Switch Statement",
-    "question": "What happens if no `case` matches and there is no `default` in a `switch` statement?",
-    "correct": "Nothing executes; program continues after the switch block",
-    "wrong": [
-      "Compilation error",
-      "Runtime error",
-      "The first case executes by default",
-      "The program crashes"
-    ]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Loops",
-    "question": "What is the output of `int i = 0; while(i < 3) { printf(\"%d \", i); i++; }`?",
-    "correct": "0 1 2",
-    "wrong": ["0 1 2 3", "1 2 3", "0 1 2 3 4", "1 2"]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Break and Continue",
-    "question": "What is the output of `for(int i=0; i<5; i++) { if(i==2) continue; printf(\"%d \", i); }`?",
-    "correct": "0 1 3 4",
-    "wrong": ["0 1 2 3 4", "0 1 2", "0 1 3", "0 1 2 4"]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Arrays",
-    "question": "What is the output of `int arr[] = {1,2,3}; printf(\"%d\", sizeof(arr)/sizeof(arr[0]));`?",
-    "correct": "3",
-    "wrong": ["4", "2", "1", "Compilation error"]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Multidimensional Arrays",
-    "question": "How would you access the element in the 3rd row and 2nd column of a 2D array `int matrix[5][5];`?",
-    "correct": "matrix[2][1] (0-indexed)",
-    "wrong": ["matrix[3][2]", "matrix[1][2]", "matrix[2,1]", "matrix(2,1)"]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Strings",
-    "question": "Which header file must be included to use string functions like `strlen()`, `strcpy()`, and `strcmp()`?",
-    "correct": "#include <string.h>",
-    "wrong": ["#include <stdio.h>", "#include <stdlib.h>", "#include <ctype.h>", "#include <math.h>"]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Pointers",
-    "question": "What is the output of `int x = 10; int *ptr = &x; printf(\"%d\", *ptr);`?",
-    "correct": "10",
-    "wrong": ["Address of x", "0", "Compilation error", "Garbage value"]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Structures",
-    "question": "How do you access a member named `salary` of a structure pointer `empPtr`?",
-    "correct": "empPtr->salary",
-    "wrong": ["empPtr.salary", "*empPtr.salary", "&empPtr.salary", "salary.empPtr"]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Functions",
-    "question": "What is the default return type of a function in C if no return type is specified?",
-    "correct": "int",
-    "wrong": ["void", "float", "char", "double"]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "Recursion",
-    "question": "What is the base case in the factorial function `fact(n) = n * fact(n-1)`?",
-    "correct": "fact(0) = 1 or fact(1) = 1",
-    "wrong": ["fact(2) = 2", "fact(-1) = -1", "There is no base case", "fact(n) = n"]
-  },
-  {
-    "course_id": "CS101",
-    "topic": "File Handling",
-    "question": "What does the file opening mode `\"r\"` do?",
-    "correct": "Opens a file for reading only",
-    "wrong": [
-      "Opens a file for writing",
-      "Opens a file for appending",
-      "Opens a file for reading and writing",
-      "Opens a file for binary reading"
-    ]
-  },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  {
+{
     "course_id": "CS201",
     "topic": "Word Interface",
-    "question": "Which tab in Microsoft Word contains the Backstage View where you can create, save, and print documents?",
+    "difficulty": "easy",
+    "question": "Which tab in Word contains the Backstage View?",
     "correct": "File tab",
     "wrong": ["Home tab", "Insert tab", "View tab"]
   },
   {
     "course_id": "CS201",
     "topic": "Word Interface",
-    "question": "What is the name of the toolbar located above the Ribbon that provides quick access to frequently used commands like Save, Undo, and Redo?",
+    "difficulty": "easy",
+    "question": "What is the toolbar above the Ribbon with Save, Undo, Redo called?",
     "correct": "Quick Access Toolbar",
     "wrong": ["Status Bar", "Title Bar", "Command Bar"]
   },
   {
     "course_id": "CS201",
     "topic": "Keyboard Shortcuts",
-    "question": "Which keyboard shortcut opens the 'Save As' dialog box in Microsoft Word?",
-    "correct": "F12",
-    "wrong": ["Ctrl+S", "Ctrl+Shift+S", "Alt+F12"]
+    "difficulty": "easy",
+    "question": "Which shortcut saves a document in Word?",
+    "correct": "Ctrl+S",
+    "wrong": ["Ctrl+P", "Ctrl+O", "Ctrl+N"]
   },
   {
     "course_id": "CS201",
     "topic": "Keyboard Shortcuts",
-    "question": "What is the keyboard shortcut for making selected text bold in Microsoft Word?",
-    "correct": "Ctrl + B",
-    "wrong": ["Ctrl + Bold", "Alt + B", "Ctrl + Shift + B"]
+    "difficulty": "easy",
+    "question": "Which shortcut prints a document?",
+    "correct": "Ctrl+P",
+    "wrong": ["Ctrl+S", "Ctrl+O", "Ctrl+N"]
   },
   {
     "course_id": "CS201",
     "topic": "Keyboard Shortcuts",
-    "question": "Which shortcut is used to paste content from the clipboard in Microsoft Office applications?",
-    "correct": "Ctrl + V",
-    "wrong": ["Ctrl + C", "Ctrl + X", "Ctrl + P"]
+    "difficulty": "easy",
+    "question": "Which shortcut opens a new document?",
+    "correct": "Ctrl+N",
+    "wrong": ["Ctrl+O", "Ctrl+S", "Ctrl+P"]
   },
   {
     "course_id": "CS201",
     "topic": "Keyboard Shortcuts",
-    "question": "To select all content in a Word document, which shortcut should you use?",
-    "correct": "Ctrl + A",
-    "wrong": ["Ctrl + S", "Ctrl + Shift + A", "Alt + A"]
+    "difficulty": "easy",
+    "question": "Which shortcut opens an existing document?",
+    "correct": "Ctrl+O",
+    "wrong": ["Ctrl+N", "Ctrl+S", "Ctrl+P"]
   },
   {
     "course_id": "CS201",
     "topic": "Keyboard Shortcuts",
-    "question": "Which shortcut closes the current document window without exiting the Word program?",
-    "correct": "Ctrl + W",
-    "wrong": ["Alt + F4", "Ctrl + F4", "Ctrl + Q"]
+    "difficulty": "easy",
+    "question": "Which shortcut closes the current document?",
+    "correct": "Ctrl+W",
+    "wrong": ["Ctrl+C", "Ctrl+X", "Ctrl+Z"]
+  },
+  {
+    "course_id": "CS201",
+    "topic": "Keyboard Shortcuts",
+    "difficulty": "easy",
+    "question": "Which shortcut undoes the last action?",
+    "correct": "Ctrl+Z",
+    "wrong": ["Ctrl+Y", "Ctrl+X", "Ctrl+C"]
   },
   {
     "course_id": "CS201",
     "topic": "Font Formatting",
-    "question": "Where is the Font dialog box launcher located in Microsoft Word?",
-    "correct": "Bottom-right corner of the Font group on the Home tab",
-    "wrong": ["Top-right corner of the Paragraph group", "In the Insert tab", "In the File menu"]
+    "difficulty": "easy",
+    "question": "Which shortcut makes text bold in Word?",
+    "correct": "Ctrl+B",
+    "wrong": ["Ctrl+I", "Ctrl+U", "Ctrl+Shift+B"]
+  },
+  {
+    "course_id": "CS201",
+    "topic": "Font Formatting",
+    "difficulty": "easy",
+    "question": "Which shortcut makes text italic in Word?",
+    "correct": "Ctrl+I",
+    "wrong": ["Ctrl+B", "Ctrl+U", "Ctrl+Shift+I"]
+  },
+  {
+    "course_id": "CS201",
+    "topic": "Font Formatting",
+    "difficulty": "easy",
+    "question": "Which shortcut underlines text in Word?",
+    "correct": "Ctrl+U",
+    "wrong": ["Ctrl+B", "Ctrl+I", "Ctrl+Shift+U"]
   },
   {
     "course_id": "CS201",
     "topic": "Paragraph Formatting",
-    "question": "Which group on the Home tab contains options for text alignment, line spacing, and indentation?",
-    "correct": "Paragraph group",
-    "wrong": ["Font group", "Styles group", "Editing group"]
+    "difficulty": "easy",
+    "question": "Which shortcut left-aligns text?",
+    "correct": "Ctrl+L",
+    "wrong": ["Ctrl+E", "Ctrl+R", "Ctrl+J"]
+  },
+  {
+    "course_id": "CS201",
+    "topic": "Paragraph Formatting",
+    "difficulty": "easy",
+    "question": "Which shortcut centers text?",
+    "correct": "Ctrl+E",
+    "wrong": ["Ctrl+L", "Ctrl+R", "Ctrl+J"]
+  },
+  {
+    "course_id": "CS201",
+    "topic": "Paragraph Formatting",
+    "difficulty": "easy",
+    "question": "Which shortcut right-aligns text?",
+    "correct": "Ctrl+R",
+    "wrong": ["Ctrl+L", "Ctrl+E", "Ctrl+J"]
+  },
+  {
+    "course_id": "CS201",
+    "topic": "Paragraph Formatting",
+    "difficulty": "easy",
+    "question": "Which shortcut justifies text (both margins)?",
+    "correct": "Ctrl+J",
+    "wrong": ["Ctrl+L", "Ctrl+E", "Ctrl+R"]
+  },
+  {
+    "course_id": "CS201",
+    "topic": "Clipboard",
+    "difficulty": "easy",
+    "question": "Which shortcut copies selected content?",
+    "correct": "Ctrl+C",
+    "wrong": ["Ctrl+X", "Ctrl+V", "Ctrl+Z"]
+  },
+  {
+    "course_id": "CS201",
+    "topic": "Clipboard",
+    "difficulty": "easy",
+    "question": "Which shortcut cuts selected content?",
+    "correct": "Ctrl+X",
+    "wrong": ["Ctrl+C", "Ctrl+V", "Ctrl+Z"]
+  },
+  {
+    "course_id": "CS201",
+    "topic": "Clipboard",
+    "difficulty": "easy",
+    "question": "Which shortcut pastes clipboard content?",
+    "correct": "Ctrl+V",
+    "wrong": ["Ctrl+C", "Ctrl+X", "Ctrl+Z"]
   },
   {
     "course_id": "CS201",
     "topic": "Navigation",
-    "question": "Which feature allows you to search for a specific word or phrase and replace it with another in a Word document?",
-    "correct": "Find and Replace",
-    "wrong": ["Go To", "Spell Check", "Thesaurus"]
+    "difficulty": "easy",
+    "question": "Which shortcut opens the Find dialog?",
+    "correct": "Ctrl+F",
+    "wrong": ["Ctrl+H", "Ctrl+G", "Ctrl+A"]
   },
   {
     "course_id": "CS201",
-    "topic": "Page Layout",
-    "question": "On which tab would you click to change the page margins in Microsoft Word?",
-    "correct": "Layout tab (or Page Layout tab)",
-    "wrong": ["Home tab", "Insert tab", "Design tab"]
+    "topic": "Navigation",
+    "difficulty": "easy",
+    "question": "Which shortcut opens Find and Replace?",
+    "correct": "Ctrl+H",
+    "wrong": ["Ctrl+F", "Ctrl+G", "Ctrl+A"]
   },
   {
     "course_id": "CS201",
-    "topic": "Insert Tab",
-    "question": "Which tab in Word contains the command to insert a table?",
-    "correct": "Insert tab",
-    "wrong": ["Home tab", "Design tab", "Layout tab"]
+    "topic": "Navigation",
+    "difficulty": "easy",
+    "question": "Which shortcut selects all content?",
+    "correct": "Ctrl+A",
+    "wrong": ["Ctrl+C", "Ctrl+X", "Ctrl+V"]
   },
   {
     "course_id": "CS201",
-    "topic": "Tables",
-    "question": "What is the maximum size table you can create using the grid method (Table menu drop-down) in Word?",
-    "correct": "10x8 (10 columns by 8 rows)",
-    "wrong": ["8x10", "Unlimited", "5x5"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Tables",
-    "question": "Which contextual tab appears when you click inside a table and contains options for splitting cells, merging cells, and inserting rows?",
-    "correct": "Table Tools - Layout tab",
-    "wrong": ["Table Tools - Design tab", "Home tab", "Insert tab"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Tables",
-    "question": "How do you combine two or more adjacent cells into a single cell in a Word table?",
-    "correct": "Select the cells and click 'Merge Cells' in the Table Tools Layout tab",
-    "wrong": ["Press Ctrl+M", "Right-click and choose 'Join Cells'", "Use the 'Combine Cells' command in the Home tab"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Tables",
-    "question": "What is the small icon that appears outside the table when you hover between two columns or rows, allowing quick addition of rows or columns?",
-    "correct": "Insert Control",
-    "wrong": ["Table Handle", "Resize Handle", "Merge Control"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Pictures",
-    "question": "Which tab is used to insert a picture from your computer into a Word document?",
-    "correct": "Insert tab -> Pictures button",
-    "wrong": ["Design tab -> Pictures", "Home tab -> Graphics", "File tab -> Insert Picture"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Pictures",
-    "question": "After inserting a picture, which contextual tab provides tools to modify brightness, contrast, and apply picture styles?",
-    "correct": "Picture Tools - Format tab",
-    "wrong": ["Table Tools - Design", "Drawing Tools - Format", "Insert - Illustrations"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Pictures",
-    "question": "To freely drag a picture to a new location on the page, what must first be changed from 'In Line with Text'?",
-    "correct": "Text wrapping",
-    "wrong": ["Picture style", "Picture brightness", "Picture size"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Mail Merge",
-    "question": "What are the three files involved in the mail merge process?",
-    "correct": "Main document, mailing list (data source), merged document",
-    "wrong": ["Letter, envelope, label", "Template, spreadsheet, PDF", "Header, footer, body"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Mail Merge",
-    "question": "On which tab would you click 'Start Mail Merge' to begin creating form letters?",
-    "correct": "Mailings tab",
-    "wrong": ["References tab", "Insert tab", "Review tab"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Mail Merge",
-    "question": "What should you click after inserting merge fields to see how the merged document will look with real data?",
-    "correct": "Preview Results",
-    "wrong": ["Finish & Merge", "Select Recipients", "Insert Merge Field"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Spreadsheet Basics",
-    "question": "In Excel, what is the entire file called?",
+    "topic": "Excel Basics",
+    "difficulty": "easy",
+    "question": "What is an Excel file called?",
     "correct": "Workbook",
     "wrong": ["Worksheet", "Spreadsheet", "Document"]
   },
   {
     "course_id": "CS201",
-    "topic": "Spreadsheet Basics",
-    "question": "What is the intersection of a row and a column in Excel called?",
+    "topic": "Excel Basics",
+    "difficulty": "easy",
+    "question": "What is the intersection of a row and column called?",
     "correct": "Cell",
     "wrong": ["Table", "Grid", "Box"]
   },
   {
     "course_id": "CS201",
-    "topic": "Spreadsheet Basics",
-    "question": "What is the maximum row number in an Excel worksheet?",
-    "correct": "1,048,576",
-    "wrong": ["65,536", "16,384", "1,000,000"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Spreadsheet Basics",
-    "question": "What is the last column letter in an Excel worksheet?",
-    "correct": "XFD",
-    "wrong": ["IV", "ZZ", "Z"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Excel Home Tab",
-    "question": "Which panel on the Home ribbon is used for formatting numeric values (e.g., currency, percentage, decimal places)?",
-    "correct": "Number panel",
-    "wrong": ["Font panel", "Alignment panel", "Cells panel"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Excel Data Tab",
-    "question": "Which command on the Data ribbon removes duplicate values from a list?",
-    "correct": "Remove Duplicates",
-    "wrong": ["Delete Duplicates", "Unique Values", "Data Validation"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Excel Data Tab",
-    "question": "Which command splits the contents of a single column into multiple columns based on a delimiter (e.g., comma or space)?",
-    "correct": "Text to Columns",
-    "wrong": ["Split Cells", "Concatenate", "Flash Fill"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Excel Formulas",
+    "topic": "Excel Basics",
+    "difficulty": "easy",
     "question": "What symbol must every Excel formula begin with?",
     "correct": "=",
     "wrong": ["+", "@", "$"]
   },
   {
     "course_id": "CS201",
-    "topic": "Excel Formulas",
-    "question": "In Excel, what is the feature called when you drag the fill handle to automatically continue a series (e.g., 1,2,3 or Monday, Tuesday)?",
-    "correct": "AutoFill",
-    "wrong": ["AutoComplete", "Flash Fill", "Series Fill"]
+    "topic": "Excel Functions",
+    "difficulty": "easy",
+    "question": "What does the SUM function do?",
+    "correct": "Adds all numbers in a range",
+    "wrong": ["Finds average", "Counts cells", "Finds maximum"]
   },
   {
     "course_id": "CS201",
-    "topic": "Excel Freeze Panes",
-    "question": "Which ribbon contains the Freeze Panes command in Excel?",
-    "correct": "View ribbon",
-    "wrong": ["Home ribbon", "Data ribbon", "Page Layout ribbon"]
+    "topic": "Excel Functions",
+    "difficulty": "easy",
+    "question": "What does the AVERAGE function do?",
+    "correct": "Calculates the mean of selected cells",
+    "wrong": ["Adds numbers", "Finds maximum", "Counts cells"]
   },
   {
     "course_id": "CS201",
-    "topic": "Excel Freeze Panes",
-    "question": "If you select cell C5 and then click Freeze Panes, which rows and columns will remain frozen (visible while scrolling)?",
-    "correct": "Rows 1-4 and columns A-B",
-    "wrong": ["Row 5 and column C", "Rows above row 5 and columns to the left of column C", "Only row 1 and column A"]
+    "topic": "Excel Functions",
+    "difficulty": "easy",
+    "question": "What does the COUNT function do?",
+    "correct": "Counts cells containing numbers",
+    "wrong": ["Counts all non-empty cells", "Adds numbers", "Finds average"]
+  },
+  {
+    "course_id": "CS201",
+    "topic": "Excel Functions",
+    "difficulty": "easy",
+    "question": "What does the MAX function do?",
+    "correct": "Finds the largest value in a range",
+    "wrong": ["Finds smallest value", "Adds numbers", "Counts cells"]
+  },
+  {
+    "course_id": "CS201",
+    "topic": "Excel Functions",
+    "difficulty": "easy",
+    "question": "What does the MIN function do?",
+    "correct": "Finds the smallest value in a range",
+    "wrong": ["Finds largest value", "Adds numbers", "Counts cells"]
   },
   {
     "course_id": "CS201",
     "topic": "Google Docs",
-    "question": "Which permission level allows a user to view and add comments or suggestions, but not edit the original file content?",
+    "difficulty": "easy",
+    "question": "Which permission allows viewing and commenting but not editing?",
     "correct": "Commenter",
-    "wrong": ["Viewer", "Editor", "Suggester"]
+    "wrong": ["Viewer", "Editor", "Owner"]
+  },
+
+  {
+    "course_id": "CS201",
+    "topic": "Word Tables",
+    "difficulty": "medium",
+    "question": "What is the maximum table size using the grid method in Word?",
+    "correct": "10x8",
+    "wrong": ["8x10", "Unlimited", "5x5"]
   },
   {
     "course_id": "CS201",
-    "topic": "Google Docs",
-    "question": "Which cloud-based word processor allows multiple users to edit a document in real-time and is free with a Google account?",
-    "correct": "Google Docs",
-    "wrong": ["Microsoft Word Online", "OneDrive", "Dropbox Paper"]
+    "topic": "Word Tables",
+    "difficulty": "medium",
+    "question": "Which contextual tab appears when clicking a table in Word?",
+    "correct": "Table Tools",
+    "wrong": ["Layout Tools", "Design Tools", "Format Tools"]
   },
   {
     "course_id": "CS201",
-    "topic": "Microsoft 365",
-    "question": "What is the name of the paid subscription service that provides full desktop Office apps, 1TB of cloud storage, and ongoing updates?",
-    "correct": "Microsoft 365 (formerly Office 365)",
-    "wrong": ["Microsoft Office 2019", "OneDrive Premium", "Windows 365"]
+    "topic": "Word Tables",
+    "difficulty": "medium",
+    "question": "How do you merge cells in a Word table?",
+    "correct": "Select cells → Merge Cells (Layout tab)",
+    "wrong": ["Right-click → Join", "Ctrl+M", "Insert → Merge"]
   },
   {
     "course_id": "CS201",
-    "topic": "File Types",
-    "question": "What is the default file extension for a Microsoft Word document?",
-    "correct": ".docx",
-    "wrong": [".doc", ".txt", ".pdf"]
+    "topic": "Word Pictures",
+    "difficulty": "medium",
+    "question": "What must be changed to freely drag a picture in Word?",
+    "correct": "Text wrapping",
+    "wrong": ["Picture style", "Picture size", "Picture brightness"]
   },
   {
     "course_id": "CS201",
-    "topic": "Saving Documents",
-    "question": "What is the difference between 'Save' and 'Save As'?",
-    "correct": "Save updates the existing file; Save As creates a new file or saves in a different location/format",
-    "wrong": ["Save creates a new file; Save As updates the existing file", "Both do the same thing", "Save As only works for PDF files"]
+    "topic": "Mail Merge",
+    "difficulty": "medium",
+    "question": "What are the three files in Mail Merge?",
+    "correct": "Main document, mailing list, merged document",
+    "wrong": ["Letter, envelope, label", "Template, spreadsheet, PDF", "Header, footer, body"]
   },
   {
     "course_id": "CS201",
-    "topic": "Clipboard",
-    "question": "What is the system clipboard?",
-    "correct": "Temporary storage for copied or cut items that can be pasted elsewhere",
-    "wrong": ["A permanent folder for documents", "A tool for deleting files", "A hardware device"]
+    "topic": "Mail Merge",
+    "difficulty": "medium",
+    "question": "Which tab contains the Start Mail Merge command?",
+    "correct": "Mailings tab",
+    "wrong": ["References tab", "Insert tab", "Review tab"]
   },
   {
     "course_id": "CS201",
-    "topic": "Ribbon",
-    "question": "What is the name of the small arrow in the bottom-right corner of some groups (like Font or Paragraph) that opens a dialog box with more options?",
-    "correct": "Dialog Box Launcher",
-    "wrong": ["Expand Arrow", "More Options", "Group Launcher"]
+    "topic": "Mail Merge",
+    "difficulty": "medium",
+    "question": "What does 'Preview Results' do in Mail Merge?",
+    "correct": "Shows merged document with real data",
+    "wrong": ["Prints the merge", "Saves the merge", "Selects recipients"]
   },
   {
     "course_id": "CS201",
     "topic": "Word Web App",
-    "question": "Which permission level can edit, delete, modify file content, accept/reject suggestions, and share the file with new people?",
+    "difficulty": "medium",
+    "question": "Which permission can edit, delete, and share files in Word Web App?",
     "correct": "Editor",
     "wrong": ["Viewer", "Commenter", "Owner"]
   },
   {
     "course_id": "CS201",
-    "topic": "Contextual Tabs",
-    "question": "What are contextual tabs in Microsoft Office?",
-    "correct": "Tabs that appear only when a specific object (like a picture or table) is selected",
-    "wrong": ["Tabs that are always visible", "Tabs in the Backstage View", "Tabs for macros"]
+    "topic": "Excel Cell References",
+    "difficulty": "medium",
+    "question": "What is a relative cell reference?",
+    "correct": "Changes when copied to another cell",
+    "wrong": ["Stays fixed when copied", "Uses $ symbol", "Refers to another worksheet"]
   },
   {
     "course_id": "CS201",
-    "topic": "Hardware - Input",
-    "question": "Which device is used to read printed text character by character and convert it into machine-readable code?",
-    "correct": "Optical Character Reader (OCR)",
-    "wrong": ["MICR", "Bar Code Reader", "Scanner"]
+    "topic": "Excel Cell References",
+    "difficulty": "medium",
+    "question": "What symbol creates an absolute cell reference?",
+    "correct": "$",
+    "wrong": ["#", "@", "&"]
   },
   {
     "course_id": "CS201",
-    "topic": "Hardware - Input",
-    "question": "Which input device is commonly used in banks to read cheque numbers printed with magnetic ink?",
-    "correct": "Magnetic Ink Card Reader (MICR)",
-    "wrong": ["OCR", "Scanner", "Digitizer"]
+    "topic": "Excel AutoFill",
+    "difficulty": "medium",
+    "question": "What is AutoFill in Excel?",
+    "correct": "Drag fill handle to continue a series automatically",
+    "wrong": ["Automatically saves files", "Auto-corrects formulas", "Fills background color"]
   },
   {
     "course_id": "CS201",
-    "topic": "Hardware - Output",
-    "question": "Which type of monitor is known for being slim, bright, flicker-free, and having lower power consumption?",
-    "correct": "LED monitor",
-    "wrong": ["CRT monitor", "LCD monitor", "Plasma monitor"]
+    "topic": "Excel Freeze Panes",
+    "difficulty": "medium",
+    "question": "Which ribbon contains Freeze Panes?",
+    "correct": "View ribbon",
+    "wrong": ["Home ribbon", "Data ribbon", "Page Layout ribbon"]
   },
   {
     "course_id": "CS201",
-    "topic": "Hardware - Output",
-    "question": "Which printer uses laser lights to produce dots and is known for high speed and high quality output?",
+    "topic": "Excel Text to Columns",
+    "difficulty": "medium",
+    "question": "Which ribbon contains Text to Columns command?",
+    "correct": "Data ribbon",
+    "wrong": ["Home ribbon", "Formulas ribbon", "View ribbon"]
+  },
+  {
+    "course_id": "CS201",
+    "topic": "Excel Remove Duplicates",
+    "difficulty": "medium",
+    "question": "Which ribbon contains Remove Duplicates?",
+    "correct": "Data ribbon",
+    "wrong": ["Home ribbon", "Formulas ribbon", "View ribbon"]
+  },
+  {
+    "course_id": "CS201",
+    "topic": "Excel IF Function",
+    "difficulty": "medium",
+    "question": "What is the correct IF function syntax?",
+    "correct": "=IF(logical_test, value_if_true, value_if_false)",
+    "wrong": ["=IF(logical_test, value_if_false, value_if_true)", "=IF(condition, then, else)", "=IF{condition}{then}{else}"]
+  },
+  {
+    "course_id": "CS201",
+    "topic": "Input Devices",
+    "difficulty": "medium",
+    "question": "Which device reads printed text and converts to machine code?",
+    "correct": "OCR (Optical Character Reader)",
+    "wrong": ["MICR", "Scanner", "Bar Code Reader"]
+  },
+  {
+    "course_id": "CS201",
+    "topic": "Input Devices",
+    "difficulty": "medium",
+    "question": "Which device reads magnetic ink on cheques?",
+    "correct": "MICR (Magnetic Ink Character Reader)",
+    "wrong": ["OCR", "Scanner", "Bar Code Reader"]
+  },
+  {
+    "course_id": "CS201",
+    "topic": "Output Devices",
+    "difficulty": "medium",
+    "question": "Which printer uses laser technology for high quality?",
     "correct": "Laser printer",
     "wrong": ["Inkjet printer", "Dot matrix printer", "Plotter"]
   },
   {
     "course_id": "CS201",
-    "topic": "Hardware - Output",
-    "question": "Which output device is used to print vector graphics using one or more automated pens?",
+    "topic": "Output Devices",
+    "difficulty": "medium",
+    "question": "Which output device prints vector graphics with pens?",
     "correct": "Plotter",
-    "wrong": ["Laser printer", "Inkjet printer", "Thermal printer"]
+    "wrong": ["Laser printer", "Inkjet printer", "Dot matrix printer"]
+  },
+  {
+    "course_id": "CS201",
+    "topic": "Monitors",
+    "difficulty": "medium",
+    "question": "Which monitor type is slim, bright, and energy efficient?",
+    "correct": "LED monitor",
+    "wrong": ["CRT monitor", "LCD monitor", "Plasma monitor"]
   },
   {
     "course_id": "CS201",
     "topic": "Word Design Tab",
-    "question": "Which tab contains options for adding a watermark or page border to a document?",
+    "difficulty": "medium",
+    "question": "Which tab contains watermark and page border options?",
     "correct": "Design tab",
     "wrong": ["Layout tab", "Insert tab", "Format tab"]
   },
   {
     "course_id": "CS201",
     "topic": "Word References Tab",
-    "question": "Which tab is used for adding citations, footnotes, and endnotes?",
+    "difficulty": "medium",
+    "question": "Which tab contains citations, footnotes, and endnotes?",
     "correct": "References tab",
     "wrong": ["Mailings tab", "Review tab", "Insert tab"]
   },
   {
     "course_id": "CS201",
     "topic": "Word Review Tab",
-    "question": "Which feature on the Review tab allows multiple people to make edits that can be accepted or rejected?",
+    "difficulty": "medium",
+    "question": "Which feature allows multiple people to edit with accept/reject?",
     "correct": "Track Changes",
     "wrong": ["Spelling & Grammar", "Comments", "Compare"]
   },
   {
     "course_id": "CS201",
+    "topic": "Word Review Tab",
+    "difficulty": "medium",
+    "question": "Which feature provides synonyms for selected words?",
+    "correct": "Thesaurus",
+    "wrong": ["Spelling & Grammar", "Word Count", "Translate"]
+  },
+  {
+    "course_id": "CS201",
     "topic": "Excel Formulas Ribbon",
-    "question": "Which ribbon contains categories of pre-built formulas (functions) like Financial, Logical, and Text?",
+    "difficulty": "medium",
+    "question": "Which ribbon contains function categories like Financial, Logical?",
     "correct": "Formulas ribbon",
     "wrong": ["Data ribbon", "Home ribbon", "Insert ribbon"]
   },
   {
     "course_id": "CS201",
-    "topic": "Productivity Software",
-    "question": "What is a software suite?",
-    "correct": "A collection of individual programs that perform related tasks (e.g., Microsoft Office)",
-    "wrong": ["A single program with many features", "An operating system", "A type of hardware"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Word Views",
-    "question": "Which ribbon allows you to change the document view (e.g., Print Layout, Read Mode, Web Layout)?",
-    "correct": "View ribbon",
-    "wrong": ["Home ribbon", "Design ribbon", "Layout ribbon"]
-  },
-  {
-    "course_id": "CS201",
     "topic": "Cloud Storage",
-    "question": "What is the name of Microsoft's cloud storage system integrated with Windows and Office?",
+    "difficulty": "medium",
+    "question": "What is Microsoft's cloud storage called?",
     "correct": "OneDrive",
     "wrong": ["Google Drive", "iCloud", "Dropbox"]
   },
   {
     "course_id": "CS201",
     "topic": "Word Insert Tab",
-    "question": "Where can you find commands to add a header, footer, or page number in Word?",
+    "difficulty": "medium",
+    "question": "Where do you find commands to add header and footer?",
     "correct": "Insert tab",
     "wrong": ["Design tab", "Layout tab", "Home tab"]
   },
   {
     "course_id": "CS201",
-    "topic": "Spelling and Grammar",
-    "question": "Which tab contains the Spelling & Grammar command to review a document before submission?",
-    "correct": "Review tab",
-    "wrong": ["Home tab", "File tab", "View tab"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Table of Contents",
-    "question": "To automatically generate a table of contents, which tab should you use?",
-    "correct": "References tab",
-    "wrong": ["Insert tab", "Layout tab", "Home tab"]
-  }
-, {
-    "course_id": "CS201",
-    "topic": "Word Interface",
-    "question": "What is the purpose of the Status Bar at the bottom of the Word window?",
-    "correct": "It displays document information like page number, word count, and zoom level",
-    "wrong": [
-      "It contains the main formatting tools",
-      "It shows recently opened documents",
-      "It provides quick access to save and print"
-    ]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Keyboard Shortcuts",
-    "question": "Which keyboard shortcut is used to undo the last action in Microsoft Word?",
-    "correct": "Ctrl + Z",
-    "wrong": ["Ctrl + Y", "Ctrl + U", "Alt + Backspace"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Font Formatting",
-    "question": "What is the keyboard shortcut to apply italic formatting to selected text in Word?",
-    "correct": "Ctrl + I",
-    "wrong": ["Ctrl + T", "Alt + I", "Ctrl + Shift + I"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Paragraph Formatting",
-    "question": "Which keyboard shortcut increases the indent of a paragraph in Word?",
-    "correct": "Ctrl + M",
-    "wrong": ["Ctrl + Shift + M", "Tab", "Ctrl + T"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Page Layout",
-    "question": "How do you change the orientation of a document from portrait to landscape in Word?",
+    "topic": "Word Layout Tab",
+    "difficulty": "medium",
+    "question": "How do you change page orientation to landscape?",
     "correct": "Layout tab → Orientation → Landscape",
-    "wrong": [
-      "Home tab → Paragraph → Landscape",
-      "Insert tab → Pages → Landscape",
-      "Design tab → Document Formatting → Landscape"
-    ]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Tables",
-    "question": "What happens when you press Tab while the cursor is in the last cell of a Word table?",
-    "correct": "A new row is added to the bottom of the table",
-    "wrong": [
-      "The cursor moves to the first cell of the next page",
-      "A new column is added",
-      "The table is split into two tables"
-    ]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Mail Merge",
-    "question": "Which button on the Mailings tab is used to create individual documents, emails, or printed labels after setting up the merge?",
-    "correct": "Finish & Merge",
-    "wrong": ["Preview Results", "Match Fields", "Insert Merge Field"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Excel Basics",
-    "question": "In Excel, a group of selected cells is called a:",
-    "correct": "Range",
-    "wrong": ["Cluster", "Block", "Array"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Excel Formulas",
-    "question": "Which function in Excel adds all numbers in a selected range?",
-    "correct": "SUM",
-    "wrong": ["ADD", "TOTAL", "COUNT"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Hardware - Input",
-    "question": "Which input device converts physical documents into digital images for storage or editing?",
-    "correct": "Scanner",
-    "wrong": ["OCR", "Webcam", "Digitizer"]
-  }, {
-    "course_id": "CS201",
-    "topic": "Word Interface",
-    "question": "What is the name of the area at the top of the Word window that displays the document name and program name?",
-    "correct": "Title Bar",
-    "wrong": ["Status Bar", "Menu Bar", "Tool Bar", "Ribbon"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Keyboard Shortcuts",
-    "question": "Which keyboard shortcut is used to redo the last undone action in Microsoft Word?",
-    "correct": "Ctrl + Y",
-    "wrong": ["Ctrl + Z", "Ctrl + R", "Alt + Y", "Ctrl + Shift + Z"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Keyboard Shortcuts",
-    "question": "What is the keyboard shortcut to copy selected text or objects to the clipboard?",
-    "correct": "Ctrl + C",
-    "wrong": ["Ctrl + X", "Ctrl + V", "Ctrl + P", "Ctrl + D"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Font Formatting",
-    "question": "Which keyboard shortcut underlines selected text in Microsoft Word?",
-    "correct": "Ctrl + U",
-    "wrong": ["Ctrl + L", "Alt + U", "Ctrl + Shift + U", "Ctrl + D"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Paragraph Formatting",
-    "question": "Which keyboard shortcut centers selected text in a Word document?",
-    "correct": "Ctrl + E",
-    "wrong": ["Ctrl + L", "Ctrl + R", "Ctrl + J", "Ctrl + C"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Paragraph Formatting",
-    "question": "Which keyboard shortcut left-aligns selected text in Word?",
-    "correct": "Ctrl + L",
-    "wrong": ["Ctrl + E", "Ctrl + R", "Ctrl + J", "Ctrl + A"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Paragraph Formatting",
-    "question": "Which keyboard shortcut right-aligns selected text in Word?",
-    "correct": "Ctrl + R",
-    "wrong": ["Ctrl + L", "Ctrl + E", "Ctrl + J", "Ctrl + Shift + R"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Paragraph Formatting",
-    "question": "Which keyboard shortcut justifies text (aligns to both left and right margins) in Word?",
-    "correct": "Ctrl + J",
-    "wrong": ["Ctrl + L", "Ctrl + R", "Ctrl + E", "Ctrl + Shift + J"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Navigation",
-    "question": "Which keyboard shortcut opens the Navigation pane in Word?",
-    "correct": "Ctrl + F",
-    "wrong": ["Ctrl + H", "Ctrl + G", "Alt + F", "Ctrl + N"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Navigation",
-    "question": "Which keyboard shortcut opens the Find and Replace dialog box with the Replace tab active?",
-    "correct": "Ctrl + H",
-    "wrong": ["Ctrl + F", "Ctrl + R", "Ctrl + G", "Ctrl + Shift + H"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Insert Tab",
-    "question": "Which command on the Insert tab is used to add predefined document parts like cover pages and text boxes?",
-    "correct": "Quick Parts",
-    "wrong": ["Shapes", "SmartArt", "WordArt", "Text Box"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Insert Tab",
-    "question": "Which feature on the Insert tab allows you to add visual diagrams like flowcharts and organizational charts?",
-    "correct": "SmartArt",
-    "wrong": ["Shapes", "Chart", "Picture", "Screenshot"]
-  },
-  {
-    "course_id": "CS201",
-    "topic": "Word Design Tab",
-    "question": "Which command on the Design tab applies a coordinated set of colors, fonts, and effects to a document?",
-    "correct": "Themes",
-    "wrong": ["Document Formatting", "Colors", "Fonts", "Page Background"]
+    "wrong": ["Home tab → Paragraph → Landscape", "Insert tab → Pages → Landscape", "Design tab → Document Formatting → Landscape"]
   },
   {
     "course_id": "CS201",
     "topic": "Word Layout Tab",
-    "question": "Which command on the Layout tab is used to break text into multiple columns (like a newspaper)?",
-    "correct": "Columns",
-    "wrong": ["Page Setup", "Spacing", "Indent", "Arrange"]
+    "difficulty": "medium",
+    "question": "How do you change page margins?",
+    "correct": "Layout tab → Margins",
+    "wrong": ["Home tab → Paragraph", "Insert tab → Pages", "Design tab → Document Formatting"]
   },
   {
     "course_id": "CS201",
-    "topic": "Word Review Tab",
-    "question": "Which feature on the Review tab checks the document against a dictionary and grammar rules?",
-    "correct": "Spelling & Grammar",
-    "wrong": ["Thesaurus", "Word Count", "Read Aloud", "Translate"]
+    "topic": "Table of Contents",
+    "difficulty": "medium",
+    "question": "Which tab automatically generates a Table of Contents?",
+    "correct": "References tab",
+    "wrong": ["Insert tab", "Layout tab", "Home tab"]
+  },
+
+  {
+    "course_id": "CS201",
+    "topic": "Excel VLOOKUP",
+    "difficulty": "hard",
+    "question": "What does VLOOKUP stand for?",
+    "correct": "Vertical Lookup",
+    "wrong": ["Variable Lookup", "Vector Lookup", "Value Lookup"]
   },
   {
     "course_id": "CS201",
-    "topic": "Word Review Tab",
-    "question": "Which feature on the Review tab provides synonyms and antonyms for selected words?",
-    "correct": "Thesaurus",
-    "wrong": ["Spelling & Grammar", "Word Count", "Translate", "Smart Lookup"]
+    "topic": "Excel VLOOKUP",
+    "difficulty": "hard",
+    "question": "What is the correct VLOOKUP syntax?",
+    "correct": "=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])",
+    "wrong": ["=VLOOKUP(lookup_value, table_array, range_lookup, col_index_num)", "=VLOOKUP(table_array, lookup_value, col_index_num)", "=VLOOKUP(col_index_num, table_array, lookup_value)"]
   },
   {
     "course_id": "CS201",
-    "topic": "Excel Basics",
-    "question": "What is the name of an individual page within an Excel workbook?",
-    "correct": "Worksheet",
-    "wrong": ["Workbook", "Spreadsheet", "Table", "SheetTab"]
+    "topic": "Excel Pivot Tables",
+    "difficulty": "hard",
+    "question": "What is the primary purpose of a Pivot Table?",
+    "correct": "Summarize and analyze large datasets interactively",
+    "wrong": ["Create charts", "Sort data alphabetically", "Remove duplicates"]
   },
   {
     "course_id": "CS201",
-    "topic": "Excel Formulas",
-    "question": "Which function in Excel returns the average of the numbers in a selected range?",
-    "correct": "AVERAGE",
-    "wrong": ["MEAN", "AVG", "MEDIAN", "SUM"]
+    "topic": "Excel Pivot Tables",
+    "difficulty": "hard",
+    "question": "Which ribbon contains PivotTable command?",
+    "correct": "Insert tab",
+    "wrong": ["Data tab", "Formulas tab", "View tab"]
   },
   {
     "course_id": "CS201",
-    "topic": "Excel Formulas",
-    "question": "Which function in Excel counts the number of cells that contain numbers in a selected range?",
-    "correct": "COUNT",
-    "wrong": ["COUNTA", "COUNTBLANK", "COUNTIF", "SUM"]
+    "topic": "Excel COUNT vs COUNTA",
+    "difficulty": "hard",
+    "question": "What is the difference between COUNT and COUNTA?",
+    "correct": "COUNT counts numbers; COUNTA counts all non-empty cells",
+    "wrong": ["COUNT counts all cells; COUNTA counts text", "COUNT is for rows; COUNTA for columns", "They are identical"]
   },
   {
     "course_id": "CS201",
-    "topic": "Hardware - Output",
-    "question": "Which output device produces hard copies of digital documents on paper?",
-    "correct": "Printer",
-    "wrong": ["Monitor", "Plotter", "Speaker", "Projector"]
-  },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "The opposite of open source software is closed source hardware.",
-    "correct": "false",
-    "wrong": ["true"]
+    "topic": "Excel SUMIF",
+    "difficulty": "hard",
+    "question": "What does SUMIF function do?",
+    "correct": "Adds values meeting specific criteria",
+    "wrong": ["Counts values meeting criteria", "Finds average of values meeting criteria", "Returns maximum value meeting criteria"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "Money is the most important reason that pushes organizations to use open source software.",
-    "correct": "false",
-    "wrong": ["true"]
+    "course_id": "CS201",
+    "topic": "Excel COUNTIF",
+    "difficulty": "hard",
+    "question": "What does COUNTIF function do?",
+    "correct": "Counts cells meeting specific criteria",
+    "wrong": ["Adds cells meeting criteria", "Finds average of cells meeting criteria", "Returns maximum value meeting criteria"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "In open source software, organizations must follow the vendor's decisions.",
-    "correct": "false",
-    "wrong": ["true"]
+    "course_id": "CS201",
+    "topic": "Excel Order of Operations",
+    "difficulty": "hard",
+    "question": "What is the order of operations in Excel formulas (PEMDAS)?",
+    "correct": "Parentheses, Exponents, Multiplication/Division, Addition/Subtraction",
+    "wrong": ["Addition, Subtraction, Multiplication, Division", "Left to right only", "Multiplication, Addition, Division, Subtraction"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "In proprietary software, vendors control software updates.",
-    "correct": "true",
-    "wrong": ["false"]
+    "course_id": "CS201",
+    "topic": "Excel Mixed References",
+    "difficulty": "hard",
+    "question": "What does $A1 reference mean?",
+    "correct": "Column A absolute, row 1 relative",
+    "wrong": ["Row 1 absolute, column A relative", "Both absolute", "Both relative"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "Users can add features to proprietary software.",
-    "correct": "false",
-    "wrong": ["true"]
+    "course_id": "CS201",
+    "topic": "Excel Mixed References",
+    "difficulty": "hard",
+    "question": "What does A$1 reference mean?",
+    "correct": "Row 1 absolute, column A relative",
+    "wrong": ["Column A absolute, row 1 relative", "Both absolute", "Both relative"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "Users can add features to open source software.",
-    "correct": "true",
-    "wrong": ["false"]
+    "course_id": "CS201",
+    "topic": "Excel CONCATENATE",
+    "difficulty": "hard",
+    "question": "Which operator concatenates text in Excel?",
+    "correct": "&",
+    "wrong": ["+", "|", "."]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "Open source software stores data in special ways that only the vendor understands.",
-    "correct": "false",
-    "wrong": ["true"]
+    "course_id": "CS201",
+    "topic": "Excel UPPER/LOWER",
+    "difficulty": "hard",
+    "question": "Which function converts text to uppercase?",
+    "correct": "UPPER",
+    "wrong": ["LOWER", "PROPER", "TRIM"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "With open source software, organizations have more control over their data.",
-    "correct": "true",
-    "wrong": ["false"]
+    "course_id": "CS201",
+    "topic": "Excel TRIM",
+    "difficulty": "hard",
+    "question": "What does the TRIM function do?",
+    "correct": "Removes extra spaces from text",
+    "wrong": ["Removes all spaces", "Truncates text to specific length", "Changes text case"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "Moving data isn't a problem in open source as well as proprietary software.",
-    "correct": "false",
-    "wrong": ["true"]
+    "course_id": "CS201",
+    "topic": "Excel DATE Function",
+    "difficulty": "hard",
+    "question": "What is the DATE function syntax?",
+    "correct": "=DATE(year, month, day)",
+    "wrong": ["=DATE(day, month, year)", "=DATE(month, day, year)", "=DATE(year, day, month)"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "A LAN can be a part of a WAN.",
-    "correct": "true",
-    "wrong": ["false"]
+    "course_id": "CS201",
+    "topic": "Excel TIME Function",
+    "difficulty": "hard",
+    "question": "What is the TIME function syntax?",
+    "correct": "=TIME(hour, minute, second)",
+    "wrong": ["=TIME(minute, hour, second)", "=TIME(second, minute, hour)", "=TIME(hour, second, minute)"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "LAN stands for Large Area Network.",
-    "correct": "false",
-    "wrong": ["true"]
+    "course_id": "CS201",
+    "topic": "Excel ROUND Function",
+    "difficulty": "hard",
+    "question": "What is the ROUND function syntax?",
+    "correct": "=ROUND(number, num_digits)",
+    "wrong": ["=ROUND(num_digits, number)", "=ROUND(number)", "=ROUND(number, decimal_places)"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "In LANs, computers are close together. In contrast, WANs cover a larger area.",
-    "correct": "true",
-    "wrong": ["false"]
+    "course_id": "CS201",
+    "topic": "Excel Financial Functions",
+    "difficulty": "hard",
+    "question": "Which function calculates loan payments in Excel?",
+    "correct": "PMT",
+    "wrong": ["FV", "PV", "RATE"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "In a ring system, there is a central cable and each computer is linked to it.",
-    "correct": "false",
-    "wrong": ["true"]
+    "course_id": "CS201",
+    "topic": "Excel Financial Functions",
+    "difficulty": "hard",
+    "question": "Which function calculates future value of an investment?",
+    "correct": "FV",
+    "wrong": ["PV", "PMT", "RATE"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "In a star system, each computer is connected to a central server.",
-    "correct": "true",
-    "wrong": ["false"]
+    "course_id": "CS201",
+    "topic": "Excel Engineering Functions",
+    "difficulty": "hard",
+    "question": "Which function converts binary to decimal in Excel?",
+    "correct": "BIN2DEC",
+    "wrong": ["DEC2BIN", "BIN2HEX", "HEX2BIN"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "It is difficult to break a mesh network.",
-    "correct": "true",
-    "wrong": ["false"]
+    "course_id": "CS201",
+    "topic": "Excel Engineering Functions",
+    "difficulty": "hard",
+    "question": "Which function converts decimal to hexadecimal?",
+    "correct": "DEC2HEX",
+    "wrong": ["HEX2DEC", "BIN2HEX", "DEC2BIN"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "A network is a group of linked computers or other devices.",
-    "correct": "true",
-    "wrong": ["false"]
+    "course_id": "CS201",
+    "topic": "Word Macros",
+    "difficulty": "hard",
+    "question": "What is VBA in Microsoft Office?",
+    "correct": "Visual Basic for Applications - programming language for automation",
+    "wrong": ["Virtual Basic Application", "Visual Basic Access", "Virtual Basic Automation"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "The big advantage in a star system is that if one connection breaks, the data can use other connections.",
-    "correct": "false",
-    "wrong": ["true"]
+    "course_id": "CS201",
+    "topic": "Word Developer Tab",
+    "difficulty": "hard",
+    "question": "Which tab contains Macro recording commands?",
+    "correct": "Developer tab",
+    "wrong": ["View tab", "Review tab", "Insert tab"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "'Tera' is a prefix that means 1,000,000,000,000.",
-    "correct": "true",
-    "wrong": ["false"]
+    "course_id": "CS201",
+    "topic": "Excel Array Formulas",
+    "difficulty": "hard",
+    "question": "How do you enter an array formula in Excel?",
+    "correct": "Ctrl+Shift+Enter",
+    "wrong": ["Ctrl+Enter", "Shift+Enter", "Alt+Enter"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "Giga is a prefix which means a million.",
-    "correct": "false",
-    "wrong": ["true"]
+    "course_id": "CS201",
+    "topic": "Excel What-If Analysis",
+    "difficulty": "hard",
+    "question": "Which tool finds input value to achieve desired result?",
+    "correct": "Goal Seek",
+    "wrong": ["Scenario Manager", "Data Table", "Solver"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "Nano is a prefix which means 1,000.",
-    "correct": "false",
-    "wrong": ["true"]
+    "course_id": "CS201",
+    "topic": "Excel Data Validation",
+    "difficulty": "hard",
+    "question": "Which ribbon contains Data Validation command?",
+    "correct": "Data tab",
+    "wrong": ["Formulas tab", "Home tab", "View tab"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "A keyboard and a monitor are peripherals.",
-    "correct": "true",
-    "wrong": ["false"]
+    "course_id": "CS201",
+    "topic": "Excel Conditional Formatting",
+    "difficulty": "hard",
+    "question": "Which ribbon contains Conditional Formatting?",
+    "correct": "Home tab",
+    "wrong": ["Data tab", "Formulas tab", "View tab"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "Storage keeps data after switching off, but memory loses it.",
-    "correct": "true",
-    "wrong": ["false"]
+    "course_id": "CS201",
+    "topic": "Word Styles",
+    "difficulty": "hard",
+    "question": "What is the benefit of using Word Styles?",
+    "correct": "Consistent formatting and easy document-wide updates",
+    "wrong": ["Faster typing", "Automatic spell check", "Better printing quality"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "A USB flash drive is an internal component.",
-    "correct": "false",
-    "wrong": ["true"]
+    "course_id": "CS201",
+    "topic": "Word Cross-reference",
+    "difficulty": "hard",
+    "question": "Which tab contains Cross-reference command?",
+    "correct": "References tab",
+    "wrong": ["Insert tab", "Layout tab", "Review tab"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "A hard disk drive can be an internal component and a peripheral.",
-    "correct": "true",
-    "wrong": ["false"]
+    "course_id": "CS201",
+    "topic": "Word Captions",
+    "difficulty": "hard",
+    "question": "Which tab contains Insert Caption for figures/tables?",
+    "correct": "References tab",
+    "wrong": ["Insert tab", "Layout tab", "Design tab"]
   },
   {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "The simplest database object is a table.",
-    "correct": "true",
-    "wrong": ["false"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "A database has several parts; these are called fields.",
-    "correct": "false",
-    "wrong": ["true"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "A table, a report, and a form are database objects.",
-    "correct": "true",
-    "wrong": ["false"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "One field in each record must be unique. This field is called the primary key.",
-    "correct": "true",
-    "wrong": ["false"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "Each row in a table is a spreadsheet.",
-    "correct": "false",
-    "wrong": ["true"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "To retrieve a record is to enter data into tables.",
-    "correct": "false",
-    "wrong": ["true"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "Uptime is the time when the service is not working.",
-    "correct": "false",
-    "wrong": ["true"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "Shared hosting provides better security for websites than dedicated hosting.",
-    "correct": "false",
-    "wrong": ["true"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "A system in which each server has only one client's websites on it is shared hosting.",
-    "correct": "false",
-    "wrong": ["true"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "A unique number to identify a computer on the internet is an IP address.",
-    "correct": "true",
-    "wrong": ["false"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "When you see a figure with a central cable and each computer linked to it, this refers to a bus system.",
-    "correct": "true",
-    "wrong": ["false"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "In a ring network, if one connection breaks, the whole network fails easily.",
-    "correct": "false",
-    "wrong": ["true"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "A database query is used to enter data, not to retrieve it.",
-    "correct": "false",
-    "wrong": ["true"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "An operating system can be reinstalled by first setting the boot drive to DVD in the BIOS.",
-    "correct": "true",
-    "wrong": ["false"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "BIOS stands for Basic Input/Output System and controls how a computer starts up.",
-    "correct": "true",
-    "wrong": ["false"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "To 'partition' a hard drive means to copy data to another location for safety.",
-    "correct": "false",
-    "wrong": ["true"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "In spreadsheet terminology, '8+2=10' is read as 'eight plus two is ten'.",
-    "correct": "true",
-    "wrong": ["false"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "In a database, a form is used for printing data in a visually appealing way, not for entering data.",
-    "correct": "false",
-    "wrong": ["true"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "A stylus is a pen-shaped device sometimes used with touch screens.",
-    "correct": "true",
-    "wrong": ["false"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "A projector is an input device because it sends signals to the computer.",
-    "correct": "false",
-    "wrong": ["true"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "Freemium pricing means the lowest level of software is free.",
-    "correct": "true",
-    "wrong": ["false"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "With subscription pricing, the user pays a one-time fee and gets free updates forever.",
-    "correct": "false",
-    "wrong": ["true"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "In a client-server system, the client requests data and the server sends it back.",
-    "correct": "true",
-    "wrong": ["false"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "Cookies are small files that websites put on a user's computer to track items in a shopping basket.",
-    "correct": "true",
-    "wrong": ["false"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "EDI (Electronic Data Interchange) makes it harder for accounting systems to accept data from e-commerce systems.",
-    "correct": "false",
-    "wrong": ["true"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "A VPN (Virtual Private Network) is less secure than a regular internet connection.",
-    "correct": "false",
-    "wrong": ["true"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "Optical character recognition (OCR) can read text from images, such as a car's registration number from a photograph.",
-    "correct": "true",
-    "wrong": ["false"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "An accelerometer in a mobile device can automatically send a message if it detects a fall.",
-    "correct": "true",
-    "wrong": ["false"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "In the past simple tense, regular verbs add '-ed' and irregular verbs do not change form.",
-    "correct": "false",
-    "wrong": ["true"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "The past simple of 'can' is 'could'.",
-    "correct": "true",
-    "wrong": ["false"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "Superlative adjectives like 'the most dangerous' are used to compare two things.",
-    "correct": "false",
-    "wrong": ["true"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "We use 'How much' with uncountable nouns and 'How many' with countable plural nouns.",
-    "correct": "true",
-    "wrong": ["false"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "The expression 'going to' is used only for predictions, not for plans.",
-    "correct": "false",
-    "wrong": ["true"]
-  },
-  {
-    "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "In English, comparative adjectives like 'bigger' are formed by adding '-er' to one-syllable adjectives, doubling the consonant if needed.",
-    "correct": "true",
-    "wrong": ["false"]
+    "course_id": "CS201",
+    "topic": "Excel Sparklines",
+    "difficulty": "hard",
+    "question": "Which tab contains Sparklines (mini charts in cells)?",
+    "correct": "Insert tab",
+    "wrong": ["Data tab", "Formulas tab", "View tab"]
   },
 
   {
+    "course_id": "CS301",
+    "topic": "Cybersecurity Definition",
+    "difficulty": "easy",
+    "question": "What are the three levels of cybersecurity protection?",
+    "correct": "Personal, organizational, governmental",
+    "wrong": ["Local, national, international", "Hardware, software, network", "Physical, digital, cloud"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "CIA Triad",
+    "difficulty": "easy",
+    "question": "What does CIA stand for in cybersecurity?",
+    "correct": "Confidentiality, Integrity, Availability",
+    "wrong": ["Central Intelligence Agency", "Confidentiality, Information, Access", "Control, Identity, Authentication"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Confidentiality",
+    "difficulty": "easy",
+    "question": "Which security principle prevents unauthorized disclosure of information?",
+    "correct": "Confidentiality",
+    "wrong": ["Integrity", "Availability", "Authentication"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Integrity",
+    "difficulty": "easy",
+    "question": "Which security principle protects against unauthorized modification?",
+    "correct": "Integrity",
+    "wrong": ["Confidentiality", "Availability", "Authentication"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Availability",
+    "difficulty": "easy",
+    "question": "Which security principle ensures information is accessible when needed?",
+    "correct": "Availability",
+    "wrong": ["Confidentiality", "Integrity", "Authentication"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Personal Data",
+    "difficulty": "easy",
+    "question": "Which of these is considered Personally Identifiable Information (PII)?",
+    "correct": "Social Security Number",
+    "wrong": ["Favorite color", "Pet name", "Hobby"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Medical Data",
+    "difficulty": "easy",
+    "question": "What type of data does a fitness tracker collect?",
+    "correct": "Heart rate and blood sugar",
+    "wrong": ["Social Security Number", "Bank account details", "Home address"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Educational Records",
+    "difficulty": "easy",
+    "question": "What is found in educational records?",
+    "correct": "Attendance and disciplinary reports",
+    "wrong": ["Bank statements", "Medical prescriptions", "Shopping history"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Tax Records",
+    "difficulty": "easy",
+    "question": "What information do tax returns contain?",
+    "correct": "Income and bank account details",
+    "wrong": ["Medical history", "Social media passwords", "Favorite websites"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Caesar Cipher",
+    "difficulty": "easy",
+    "question": "What is the ciphertext for 'ABC' with Caesar shift 3?",
+    "correct": "DEF",
+    "wrong": ["ABC", "BCD", "CDE"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Caesar Cipher",
+    "difficulty": "easy",
+    "question": "What is the ciphertext for 'HELLO' with Caesar shift 3?",
+    "correct": "KHOOR",
+    "wrong": ["URYYB", "HELLO", "IFMMP"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Caesar Cipher",
+    "difficulty": "easy",
+    "question": "What is ROT13?",
+    "correct": "Caesar cipher with shift 13",
+    "wrong": ["Caesar cipher with shift 3", "Vigenère cipher", "AES encryption"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Online Identity",
+    "difficulty": "easy",
+    "question": "When does online identity begin?",
+    "correct": "Simply by using the web",
+    "wrong": ["Only with social media", "Only with email", "Only with online shopping"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Username Security",
+    "difficulty": "easy",
+    "question": "What should you avoid in a username?",
+    "correct": "Birth year and department name",
+    "wrong": ["Random letters", "Numbers", "Special characters"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Password Security",
+    "difficulty": "easy",
+    "question": "What is a strong password characteristic?",
+    "correct": "Mix of uppercase, lowercase, numbers, symbols",
+    "wrong": ["Only lowercase", "Dictionary word", "Short length"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Phishing",
+    "difficulty": "easy",
+    "question": "What is phishing?",
+    "correct": "Fraudulent attempt to obtain sensitive information",
+    "wrong": ["A type of computer virus", "A fishing game", "A hardware device"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Two-Factor Authentication",
+    "difficulty": "easy",
+    "question": "What does 2FA require?",
+    "correct": "Two different forms of verification",
+    "wrong": ["Two passwords", "Two accounts", "Two devices"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Malware Types",
+    "difficulty": "easy",
+    "question": "Which malware disguises itself as legitimate software?",
+    "correct": "Trojan horse",
+    "wrong": ["Worm", "Virus", "Spyware"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Ransomware",
+    "difficulty": "easy",
+    "question": "What does ransomware do?",
+    "correct": "Encrypts files and demands payment",
+    "wrong": ["Steals passwords", "Deletes files", "Slows down computer"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Firewall",
+    "difficulty": "easy",
+    "question": "What does a firewall do?",
+    "correct": "Blocks unauthorized network access",
+    "wrong": ["Speeds up internet", "Installs updates", "Scans for viruses"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "VPN",
+    "difficulty": "easy",
+    "question": "What does VPN stand for?",
+    "correct": "Virtual Private Network",
+    "wrong": ["Virtual Public Network", "Very Private Network", "Virtual Protected Network"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Encryption",
+    "difficulty": "easy",
+    "question": "What is plaintext?",
+    "correct": "Original unencrypted message",
+    "wrong": ["Encrypted message", "Secret key", "Decoded text"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Encryption",
+    "difficulty": "easy",
+    "question": "What is ciphertext?",
+    "correct": "Encrypted message",
+    "wrong": ["Original message", "Secret key", "Decoded text"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Data Breach",
+    "difficulty": "easy",
+    "question": "What is a data breach?",
+    "correct": "Unauthorized access to sensitive information",
+    "wrong": ["Slow internet connection", "Hardware failure", "Software bug"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Social Engineering",
+    "difficulty": "easy",
+    "question": "Which is an example of social engineering?",
+    "correct": "Pretending to be IT support to get password",
+    "wrong": ["Brute-forcing a password", "Installing malware", "Hacking a database"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Cookies",
+    "difficulty": "easy",
+    "question": "What do cookies do?",
+    "correct": "Create data trail for tracking",
+    "wrong": ["Encrypt data", "Block ads", "Increase speed"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "ISP Tracking",
+    "difficulty": "easy",
+    "question": "What can ISPs do with browsing data?",
+    "correct": "Sell to advertisers (where permitted)",
+    "wrong": ["Delete immediately", "Share with employer", "Donate to research"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Identity Theft",
+    "difficulty": "easy",
+    "question": "What can thieves do with stolen PII?",
+    "correct": "Impersonate the victim",
+    "wrong": ["Format hard drive", "Delete internet history", "Change citizenship"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Offline Identity",
+    "difficulty": "easy",
+    "question": "What is offline identity based on?",
+    "correct": "Physical face-to-face interactions",
+    "wrong": ["Usernames", "Social media posts", "Email addresses"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Public Wi-Fi",
+    "difficulty": "easy",
+    "question": "Why is public Wi-Fi insecure?",
+    "correct": "Data can be intercepted by others",
+    "wrong": ["Signal is weak", "Always slow", "Transmits viruses"]
+  },
+
+  {
+    "course_id": "CS301",
+    "topic": "McCumber Cube",
+    "difficulty": "medium",
+    "question": "What are the three dimensions of the McCumber Cube?",
+    "correct": "Principles, Data States, Security Measures",
+    "wrong": ["Confidentiality, Integrity, Availability", "People, Process, Technology", "Physical, Network, Application"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Data States",
+    "difficulty": "medium",
+    "question": "What are the three states of data in the McCumber Cube?",
+    "correct": "At rest, in process, in transit",
+    "wrong": ["Encrypted, decrypted, hashed", "Local, cloud, hybrid", "Personal, organizational, governmental"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Organizational Data Types",
+    "difficulty": "medium",
+    "question": "Which data type includes patents and trade secrets?",
+    "correct": "Intellectual property",
+    "wrong": ["Transactional data", "Financial data", "Personal data"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Organizational Data Types",
+    "difficulty": "medium",
+    "question": "Which data type includes income statements and balance sheets?",
+    "correct": "Financial data",
+    "wrong": ["Transactional data", "Intellectual property", "Personal data"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Medical Identity Theft",
+    "difficulty": "medium",
+    "question": "What is a consequence of medical identity theft?",
+    "correct": "Fraudulent procedures added to medical records",
+    "wrong": ["Credit score drop", "Social media hacked", "Email compromised"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Caesar Cipher Math",
+    "difficulty": "medium",
+    "question": "What is the Caesar cipher encryption formula?",
+    "correct": "E(x) = (x + n) mod 26",
+    "wrong": ["E(x) = (x - n) mod 26", "E(x) = x * n", "E(x) = x ^ n"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Caesar Cipher Math",
+    "difficulty": "medium",
+    "question": "What is the Caesar cipher decryption formula?",
+    "correct": "D(x) = (x - n) mod 26",
+    "wrong": ["D(x) = (x + n) mod 26", "D(x) = x * n", "D(x) = x / n"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Vigenère Cipher",
+    "difficulty": "medium",
+    "question": "What type of cipher is the Vigenère cipher?",
+    "correct": "Polyalphabetic substitution cipher",
+    "wrong": ["Monoalphabetic substitution cipher", "Transposition cipher", "Stream cipher"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Vigenère Cipher",
+    "difficulty": "medium",
+    "question": "What does Vigenère become when key has one letter?",
+    "correct": "Caesar cipher",
+    "wrong": ["Unaffected", "More secure", "Unbreakable"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Bug Types",
+    "difficulty": "medium",
+    "question": "Which error has incorrect logic producing wrong output?",
+    "correct": "Logic error",
+    "wrong": ["Syntax error", "Runtime error", "Security bug"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Bug Types",
+    "difficulty": "medium",
+    "question": "Which error occurs during execution (e.g., division by zero)?",
+    "correct": "Runtime error",
+    "wrong": ["Syntax error", "Logic error", "Security bug"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Malware Types",
+    "difficulty": "medium",
+    "question": "Which malware self-replicates across networks without user action?",
+    "correct": "Worm",
+    "wrong": ["Virus", "Trojan", "Ransomware"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Malware Types",
+    "difficulty": "medium",
+    "question": "Which malware secretly monitors user activity?",
+    "correct": "Spyware",
+    "wrong": ["Adware", "Ransomware", "Trojan"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "E-commerce Security",
+    "difficulty": "medium",
+    "question": "What is e-skimming?",
+    "correct": "Injecting malicious JavaScript to steal credit card data",
+    "wrong": ["Phishing emails", "DDoS attack", "Ransomware attack"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "E-commerce Security",
+    "difficulty": "medium",
+    "question": "What is tokenization?",
+    "correct": "Replacing sensitive data with non-sensitive placeholder",
+    "wrong": ["Encrypting all data", "Creating tokens for login", "Digital signature"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Username Security",
+    "difficulty": "medium",
+    "question": "Why avoid reusing 'super-odd' usernames across platforms?",
+    "correct": "Makes tracking easier across internet",
+    "wrong": ["Hard to remember", "Slows down login", "Flagged as spam"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "MFA Factors",
+    "difficulty": "medium",
+    "question": "What are the three authentication factors in MFA?",
+    "correct": "Something you know, have, are",
+    "wrong": ["Password, PIN, security question", "Username, email, phone", "Login, logout, session"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Caesar Cipher",
+    "difficulty": "medium",
+    "question": "Decrypt 'KHOOR' with shift 3: what is plaintext?",
+    "correct": "HELLO",
+    "wrong": ["WORLD", "KHOOR", "HELLP"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Caesar Cipher",
+    "difficulty": "medium",
+    "question": "Encrypt 'XYZ' with shift 3 (wrap-around): what is ciphertext?",
+    "correct": "ABC",
+    "wrong": ["XYZ", "YZA", "ZAB"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Vigenère Cipher",
+    "difficulty": "medium",
+    "question": "Encrypt 'HELLO' with key 'KEY' using Vigenère: result?",
+    "correct": "RIJVS",
+    "wrong": ["HELLO", "WORLD", "RIJVT"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Cybersecurity Levels",
+    "difficulty": "medium",
+    "question": "Which level is NOT one of the three cybersecurity levels?",
+    "correct": "International level",
+    "wrong": ["Personal level", "Organizational level", "Governmental level"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Data Tracking",
+    "difficulty": "medium",
+    "question": "How do hackers use personal data vs advertisers?",
+    "correct": "Hackers seek financial gain; advertisers target marketing",
+    "wrong": ["Both seek financial gain", "Both do targeted marketing", "Hackers do marketing; advertisers steal identity"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Social Media Data",
+    "difficulty": "medium",
+    "question": "What do platforms collect from search histories?",
+    "correct": "Political and religious ideologies",
+    "wrong": ["Physical address only", "Credit card numbers", "Biometric data"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Educational Records",
+    "difficulty": "medium",
+    "question": "What is an IEP (Individualized Education Program)?",
+    "correct": "Special education record",
+    "wrong": ["Medical record", "Financial record", "Employment record"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Password Managers",
+    "difficulty": "medium",
+    "question": "What does a password manager do?",
+    "correct": "Stores passwords in encrypted database",
+    "wrong": ["Generates random numbers", "Encrypts files", "Scans for viruses"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Data Brokers",
+    "difficulty": "medium",
+    "question": "How do advertisers get data from social media?",
+    "correct": "Platforms sell/share with marketing partners",
+    "wrong": ["Hack into servers", "Users donate data", "Government mandate"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Medical Data",
+    "difficulty": "medium",
+    "question": "Why are fitness tracker data considered sensitive?",
+    "correct": "Collects clinical data stored in cloud",
+    "wrong": ["Contains home address", "Contains SSN", "Contains bank details"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Financial Fraud",
+    "difficulty": "medium",
+    "question": "How do criminals use stolen bank data long-term?",
+    "correct": "Take out loans in victim's name",
+    "wrong": ["Pay off victim's debts", "Improve security settings", "Donate to charity"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Tax Fraud",
+    "difficulty": "medium",
+    "question": "What can thieves do with tax returns?",
+    "correct": "File fraudulent returns for refunds",
+    "wrong": ["Change citizenship", "Delete internet history", "Format hard drive"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Data Classification",
+    "difficulty": "medium",
+    "question": "Which records contain wealth of identifying info beyond academics?",
+    "correct": "Educational records",
+    "wrong": ["Medical records", "Employment records", "Financial records"]
+  },
+
+  {
+    "course_id": "CS301",
+    "topic": "McCumber Cube",
+    "difficulty": "hard",
+    "question": "Which security measures dimension includes awareness training?",
+    "correct": "People (Awareness/Training/Education)",
+    "wrong": ["Technology", "Policy and procedure", "Physical security"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "McCumber Cube",
+    "difficulty": "hard",
+    "question": "Which technology provides confidentiality in data transit?",
+    "correct": "Encryption",
+    "wrong": ["Hashing", "Checksums", "Backups"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Integrity Protection",
+    "difficulty": "hard",
+    "question": "Which method protects data integrity?",
+    "correct": "Hashing and checksums",
+    "wrong": ["Encryption", "Firewalls", "Antivirus"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Availability Protection",
+    "difficulty": "hard",
+    "question": "Which practice ensures availability?",
+    "correct": "Regular backups and updates",
+    "wrong": ["Encryption", "Two-factor authentication", "Firewalls"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Vigenère Cipher Math",
+    "difficulty": "hard",
+    "question": "What is the Vigenère encryption formula?",
+    "correct": "Ei = (Pi + Ki) mod 26",
+    "wrong": ["Ei = (Pi - Ki) mod 26", "Ei = (Pi * Ki) mod 26", "Ei = Pi ^ Ki"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Vigenère Cipher Math",
+    "difficulty": "hard",
+    "question": "How is -22 mod 26 calculated?",
+    "correct": "4 (add 26 to -22)",
+    "wrong": ["-22", "0", "26"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Modular Arithmetic",
+    "difficulty": "hard",
+    "question": "What is -5 mod 26?",
+    "correct": "21",
+    "wrong": ["-5", "5", "0"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Vigenère Cipher",
+    "difficulty": "hard",
+    "question": "Decrypt 'LXFOPVEFRNHR' with key 'LEMON': plaintext?",
+    "correct": "ATTACKATDAWN",
+    "wrong": ["ATTACKATDAWZ", "ATTACKATDAVO", "ATTACKATDAWL"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Caesar Cipher Analysis",
+    "difficulty": "hard",
+    "question": "What shift transforms 'SECURE' to 'XJHZWJ'?",
+    "correct": "5",
+    "wrong": ["3", "7", "9"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Caesar Cipher",
+    "difficulty": "hard",
+    "question": "Encrypt 'NETWORK' with shift 11: ciphertext?",
+    "correct": "YPEHZCV",
+    "wrong": ["YPEHZBW", "YPEHZCU", "YOEHZCV"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Vigenère Cipher",
+    "difficulty": "hard",
+    "question": "Encrypt 'COMPUTER' with key 'BYTE': ciphertext?",
+    "correct": "DQOCVXGT",
+    "wrong": ["DQOCVXGS", "DQOCVXGU", "DPOCVXGT"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Vigenère Cipher",
+    "difficulty": "hard",
+    "question": "Encrypt 'PYTHON' with key 'CODE': ciphertext?",
+    "correct": "RZVVSR",
+    "wrong": ["RZVWSR", "RZVVSP", "RZVVQR"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "E-skimming Attack",
+    "difficulty": "hard",
+    "question": "What is the correct sequence of e-skimming attack?",
+    "correct": "Infiltration → Code injection → Skimming",
+    "wrong": ["Skimming → Infiltration → Code injection", "Code injection → Skimming → Infiltration", "Infiltration → Skimming → Code injection"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "PCI DSS",
+    "difficulty": "hard",
+    "question": "What is PCI DSS?",
+    "correct": "Payment Card Industry Data Security Standard",
+    "wrong": ["Personal Computer Identity Security Standard", "Public Cybersecurity Framework", "Private Data Storage Standard"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "CSP in Security",
+    "difficulty": "hard",
+    "question": "What does Content Security Policy (CSP) protect against?",
+    "correct": "Cross-site scripting (XSS) and code injection",
+    "wrong": ["DDoS attacks", "Phishing emails", "Ransomware"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "SRI in Security",
+    "difficulty": "hard",
+    "question": "What does Subresource Integrity (SRI) verify?",
+    "correct": "External resources haven't been modified",
+    "wrong": ["User identity", "Network connection", "Backup integrity"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Cryptojacking",
+    "difficulty": "hard",
+    "question": "What does cryptojacking malware do?",
+    "correct": "Mines cryptocurrency without consent",
+    "wrong": ["Encrypts files for ransom", "Steals passwords", "Displays ads"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Online Identity Tracking",
+    "difficulty": "hard",
+    "question": "Why does reusing 'super-odd' usernames enable tracking?",
+    "correct": "Unique identifier across platforms connects profiles",
+    "wrong": ["Slows down computers", "Increases spam", "Causes login errors"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Medical Identity Theft",
+    "difficulty": "hard",
+    "question": "What permanent damage can medical identity theft cause?",
+    "correct": "Fake procedures added to permanent records",
+    "wrong": ["Credit score ruined", "Social media hacked", "Email compromised"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Long-term Identity Theft",
+    "difficulty": "hard",
+    "question": "How can identity theft affect credit rating long-term?",
+    "correct": "Loans taken in victim's name create bad credit",
+    "wrong": ["Immediate credit increase", "No credit impact", "Credit frozen automatically"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "MFA Implementation",
+    "difficulty": "hard",
+    "question": "Which factor combination is strongest for MFA?",
+    "correct": "Password + biometric + hardware token",
+    "wrong": ["Password + password", "Two SMS codes", "Two security questions"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Biometric Security",
+    "difficulty": "hard",
+    "question": "What is a disadvantage of biometric authentication?",
+    "correct": "Cannot be changed if compromised",
+    "wrong": ["Too slow", "Too expensive", "Not secure enough"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Password Security",
+    "difficulty": "hard",
+    "question": "What makes 'C0rrectH0rseBatteryStaple' strong?",
+    "correct": "Length and character variety",
+    "wrong": ["Contains dictionary word", "Short length", "No numbers"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Brute Force Attack",
+    "difficulty": "hard",
+    "question": "How does password length affect brute force attacks?",
+    "correct": "Each character exponentially increases combinations",
+    "wrong": ["Minimal effect", "Linear increase", "No effect"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Credential Stuffing",
+    "difficulty": "hard",
+    "question": "What is credential stuffing?",
+    "correct": "Using stolen passwords from one site on other sites",
+    "wrong": ["Brute-forcing passwords", "Phishing for credentials", "Keylogging passwords"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Data in Transit",
+    "difficulty": "hard",
+    "question": "Which state is data when sent between systems?",
+    "correct": "Data in transit",
+    "wrong": ["Data at rest", "Data in process", "Data in memory"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Data at Rest",
+    "difficulty": "hard",
+    "question": "Which state is data stored on hard drive?",
+    "correct": "Data at rest",
+    "wrong": ["Data in transit", "Data in process", "Data in memory"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Data in Process",
+    "difficulty": "hard",
+    "question": "Which state is data being actively manipulated?",
+    "correct": "Data in process",
+    "wrong": ["Data at rest", "Data in transit", "Data in storage"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Intellectual Property Risk",
+    "difficulty": "hard",
+    "question": "Why is IP loss considered disastrous?",
+    "correct": "Provides economic advantage to competitors",
+    "wrong": ["Difficult to recover", "Expensive to replace", "Legal consequences"]
+  },
+  {
+    "course_id": "CS301",
+    "topic": "Security Bugs",
+    "difficulty": "hard",
+    "question": "What characterizes a security bug?",
+    "correct": "Vulnerability allowing unauthorized access",
+    "wrong": ["Syntax error", "Logic error causing wrong output", "Runtime crash"]
+  },
+
+
+  {
     "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "In a mesh network, each computer is linked to only one other computer.",
-    "correct": "false",
-    "wrong": ["true"]
+    "topic": "IT Roles",
+    "difficulty": "easy",
+    "question": "Who manages and secures databases?",
+    "correct": "Database Administrator (DBA)",
+    "wrong": ["Systems Administrator", "Project Manager", "Helpdesk Supervisor"]
   },
   {
     "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "A multi-function printer can scan and copy documents in addition to printing.",
-    "correct": "true",
-    "wrong": ["false"]
+    "topic": "IT Roles",
+    "difficulty": "easy",
+    "question": "Who oversees IT projects and teams?",
+    "correct": "Project Manager",
+    "wrong": ["DBA", "Systems Administrator", "Support Technician"]
   },
   {
     "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "In a database, a report is used only for entering new data, not for viewing existing data.",
-    "correct": "false",
-    "wrong": ["true"]
+    "topic": "IT Roles",
+    "difficulty": "easy",
+    "question": "Who manages computer systems and servers?",
+    "correct": "Systems Administrator",
+    "wrong": ["DBA", "Project Manager", "Helpdesk Supervisor"]
   },
   {
     "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "Dedicated hosting means your website shares a server with many other clients' websites.",
-    "correct": "false",
-    "wrong": ["true"]
+    "topic": "Hardware",
+    "difficulty": "easy",
+    "question": "What does CPU stand for?",
+    "correct": "Central Processing Unit",
+    "wrong": ["Computer Processing Unit", "Central Program Unit", "Core Processing Unit"]
   },
   {
     "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "A GPU (graphics card) is typically installed on the motherboard to handle visual output.",
-    "correct": "true",
-    "wrong": ["false"]
+    "topic": "Hardware",
+    "difficulty": "easy",
+    "question": "What does RAM stand for?",
+    "correct": "Random Access Memory",
+    "wrong": ["Read Access Memory", "Random Available Memory", "Rapid Access Memory"]
   },
   {
     "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "The BIOS is software that is installed after the operating system is loaded.",
-    "correct": "false",
-    "wrong": ["true"]
+    "topic": "Hardware",
+    "difficulty": "easy",
+    "question": "What does SSD stand for?",
+    "correct": "Solid State Drive",
+    "wrong": ["Super Speed Drive", "System Storage Device", "Secure Storage Drive"]
   },
   {
     "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "In a star network topology, if the central server fails, all connected devices lose connection.",
-    "correct": "true",
-    "wrong": ["false"]
+    "topic": "Hardware",
+    "difficulty": "easy",
+    "question": "What does HDD stand for?",
+    "correct": "Hard Disk Drive",
+    "wrong": ["High Density Drive", "Hard Data Drive", "Hybrid Disk Drive"]
   },
   {
     "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "Open source software vendors do not explain their data storage methods clearly, making data migration difficult.",
-    "correct": "false",
-    "wrong": ["true"]
+    "topic": "Peripherals",
+    "difficulty": "easy",
+    "question": "Which device is NOT a peripheral?",
+    "correct": "CPU",
+    "wrong": ["Mouse", "Keyboard", "Printer"]
   },
   {
     "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "A URL (uniform resource locator) is another name for a web address.",
-    "correct": "true",
-    "wrong": ["false"]
+    "topic": "Input Devices",
+    "difficulty": "easy",
+    "question": "Which is an input device?",
+    "correct": "Keyboard",
+    "wrong": ["Monitor", "Printer", "Speaker"]
   },
   {
     "course_id": "CS302",
-    "topic": "ICT Fundamentals",
-    "question": "In a spreadsheet, a formula always begins with a plus sign (+) followed by the calculation.",
-    "correct": "false",
-    "wrong": ["true"]
+    "topic": "Output Devices",
+    "difficulty": "easy",
+    "question": "Which is an output device?",
+    "correct": "Monitor",
+    "wrong": ["Mouse", "Keyboard", "Scanner"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Networking",
+    "difficulty": "easy",
+    "question": "What does LAN stand for?",
+    "correct": "Local Area Network",
+    "wrong": ["Large Area Network", "Long Area Network", "Limited Area Network"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Networking",
+    "difficulty": "easy",
+    "question": "What does WAN stand for?",
+    "correct": "Wide Area Network",
+    "wrong": ["Wireless Area Network", "Web Area Network", "Weak Area Network"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Networking",
+    "difficulty": "easy",
+    "question": "What does IP stand for?",
+    "correct": "Internet Protocol",
+    "wrong": ["Internal Protocol", "International Protocol", "Inter-Process Protocol"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Networking",
+    "difficulty": "easy",
+    "question": "What does DNS stand for?",
+    "correct": "Domain Name System",
+    "wrong": ["Digital Network Service", "Domain Network Server", "Data Name System"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Web",
+    "difficulty": "easy",
+    "question": "What does URL stand for?",
+    "correct": "Uniform Resource Locator",
+    "wrong": ["Universal Resource Link", "Uniform Resource Link", "Universal Resource Locator"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Web",
+    "difficulty": "easy",
+    "question": "What does HTML stand for?",
+    "correct": "HyperText Markup Language",
+    "wrong": ["High Text Markup Language", "HyperText Multi Language", "High Tech Markup Language"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Software",
+    "difficulty": "easy",
+    "question": "Which is an example of open source software?",
+    "correct": "Linux",
+    "wrong": ["Microsoft Windows", "Adobe Photoshop", "Microsoft Office"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Software Licensing",
+    "difficulty": "easy",
+    "question": "What is freemium pricing?",
+    "correct": "Basic free, premium paid",
+    "wrong": ["One-time payment", "Monthly subscription", "Ad-supported only"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Databases",
+    "difficulty": "easy",
+    "question": "What does SQL stand for?",
+    "correct": "Structured Query Language",
+    "wrong": ["Simple Query Language", "Standard Query Language", "Sequential Query Language"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Databases",
+    "difficulty": "easy",
+    "question": "What uniquely identifies each record in a database?",
+    "correct": "Primary Key",
+    "wrong": ["Foreign Key", "Index", "Query"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Cloud Computing",
+    "difficulty": "easy",
+    "question": "Which is NOT cloud storage?",
+    "correct": "External USB drive",
+    "wrong": ["Google Drive", "OneDrive", "Dropbox"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Security",
+    "difficulty": "easy",
+    "question": "What does VPN stand for?",
+    "correct": "Virtual Private Network",
+    "wrong": ["Virtual Public Network", "Very Private Network", "Verified Private Network"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Security",
+    "difficulty": "easy",
+    "question": "What does MFA stand for?",
+    "correct": "Multifactor Authentication",
+    "wrong": ["Multi-File Access", "Multi-Form Authorization", "Main Factor Authentication"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Acronyms",
+    "difficulty": "easy",
+    "question": "What does BIOS stand for?",
+    "correct": "Basic Input/Output System",
+    "wrong": ["Binary Input/Output System", "Basic Internal Operating System", "Built-in Operating System"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Acronyms",
+    "difficulty": "easy",
+    "question": "What does GUI stand for?",
+    "correct": "Graphical User Interface",
+    "wrong": ["General User Interface", "Graphics User Input", "Graphical Unit Interface"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Acronyms",
+    "difficulty": "easy",
+    "question": "What does OCR stand for?",
+    "correct": "Optical Character Recognition",
+    "wrong": ["Optical Code Reader", "Optical Character Reader", "Optical Code Recognition"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Acronyms",
+    "difficulty": "easy",
+    "question": "What does UPS stand for?",
+    "correct": "Uninterruptible Power Supply",
+    "wrong": ["Universal Power Supply", "Unified Power System", "Universal Power Source"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Grammar",
+    "difficulty": "easy",
+    "question": "Which adverb means 100% of the time?",
+    "correct": "Always",
+    "wrong": ["Usually", "Sometimes", "Never"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Grammar",
+    "difficulty": "easy",
+    "question": "Which adverb means 0% of the time?",
+    "correct": "Never",
+    "wrong": ["Always", "Usually", "Sometimes"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Grammar",
+    "difficulty": "easy",
+    "question": "What is the past simple of 'can'?",
+    "correct": "could",
+    "wrong": ["caned", "canned", "coulded"]
+  },
+
+  {
+    "course_id": "CS302",
+    "topic": "IT Roles",
+    "difficulty": "medium",
+    "question": "Who is NOT responsible for programming or fixing hardware?",
+    "correct": "Helpdesk Supervisor",
+    "wrong": ["DBA", "Systems Administrator", "Support Technician"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "IT Roles",
+    "difficulty": "medium",
+    "question": "Who answers helpdesk calls and resets passwords?",
+    "correct": "Support Technician",
+    "wrong": ["DBA", "Project Manager", "Systems Administrator"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Hardware Comparison",
+    "difficulty": "medium",
+    "question": "Why is SSD faster than HDD?",
+    "correct": "No moving parts",
+    "wrong": ["More cache memory", "Faster rotation speed", "Larger capacity"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Connectors",
+    "difficulty": "medium",
+    "question": "Which connector is used for Ethernet?",
+    "correct": "RJ45",
+    "wrong": ["HDMI", "USB-C", "VGA"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Connectors",
+    "difficulty": "medium",
+    "question": "Which connector transmits video/audio to monitor?",
+    "correct": "HDMI",
+    "wrong": ["RJ45", "USB-C", "VGA"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Power Supply",
+    "difficulty": "medium",
+    "question": "What does UPS provide during power outage?",
+    "correct": "Emergency power and surge protection",
+    "wrong": ["Internet connection", "Data backup", "Faster processing"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Network Topologies",
+    "difficulty": "medium",
+    "question": "Which topology has all devices connected to central server?",
+    "correct": "Star topology",
+    "wrong": ["Bus topology", "Ring topology", "Mesh topology"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Network Topologies",
+    "difficulty": "medium",
+    "question": "Which topology is most reliable but most expensive?",
+    "correct": "Mesh topology",
+    "wrong": ["Star topology", "Bus topology", "Ring topology"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Network Devices",
+    "difficulty": "medium",
+    "question": "What connects different networks (e.g., home to internet)?",
+    "correct": "Router",
+    "wrong": ["Switch", "Hub", "Modem"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Network Devices",
+    "difficulty": "medium",
+    "question": "What connects devices within the same network?",
+    "correct": "Switch",
+    "wrong": ["Router", "Modem", "Gateway"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Protocols",
+    "difficulty": "medium",
+    "question": "Which protocol transfers files between computers?",
+    "correct": "FTP (File Transfer Protocol)",
+    "wrong": ["HTTP", "SMTP", "TCP/IP"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Protocols",
+    "difficulty": "medium",
+    "question": "Which protocol sends emails?",
+    "correct": "SMTP (Simple Mail Transfer Protocol)",
+    "wrong": ["HTTP", "FTP", "TCP/IP"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Bandwidth",
+    "difficulty": "medium",
+    "question": "What does Mbps measure?",
+    "correct": "Megabits per second (network speed)",
+    "wrong": ["Megabytes per second", "Mega-pixels per second", "Millions of bits per second"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Cloud Models",
+    "difficulty": "medium",
+    "question": "What does IaaS stand for?",
+    "correct": "Infrastructure as a Service",
+    "wrong": ["Internet as a Service", "Information as a Service", "Integration as a Service"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Cloud Models",
+    "difficulty": "medium",
+    "question": "What does PaaS stand for?",
+    "correct": "Platform as a Service",
+    "wrong": ["Program as a Service", "Product as a Service", "Process as a Service"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Cloud Models",
+    "difficulty": "medium",
+    "question": "What does SaaS stand for?",
+    "correct": "Software as a Service",
+    "wrong": ["System as a Service", "Security as a Service", "Storage as a Service"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Virtual Machines",
+    "difficulty": "medium",
+    "question": "What is a Virtual Machine (VM)?",
+    "correct": "Software emulating a complete computer system",
+    "wrong": ["Physical computer with no OS", "Cloud storage service", "Network security device"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Patches",
+    "difficulty": "medium",
+    "question": "What is a software patch?",
+    "correct": "Small update fixing specific bugs or vulnerabilities",
+    "wrong": ["New software version", "Hardware upgrade", "Security cable"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Database Query",
+    "difficulty": "medium",
+    "question": "What does this SQL do: SELECT * FROM Students WHERE Age > 18",
+    "correct": "Retrieves all students older than 18",
+    "wrong": ["Deletes students older than 18", "Updates students older than 18", "Creates a table of older students"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Email Fields",
+    "difficulty": "medium",
+    "question": "Which email field hides recipients from others?",
+    "correct": "Bcc (Blind Carbon Copy)",
+    "wrong": ["To", "Cc", "Subject"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Video Conferencing",
+    "difficulty": "medium",
+    "question": "What is the main benefit of video conferencing?",
+    "correct": "Reduces travel costs",
+    "wrong": ["Better video quality", "More secure than in-person", "Faster decision making"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Adverbs of Frequency",
+    "difficulty": "medium",
+    "question": "What does 'hardly ever' mean?",
+    "correct": "Almost never (5-10%)",
+    "wrong": ["50% of the time", "Always", "Usually"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Modal Verbs",
+    "difficulty": "medium",
+    "question": "Which modal expresses strong prohibition?",
+    "correct": "mustn't",
+    "wrong": ["don't have to", "could", "should"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Modal Verbs",
+    "difficulty": "medium",
+    "question": "Which modal expresses no requirement?",
+    "correct": "don't have to",
+    "wrong": ["mustn't", "must", "should"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Polite Requests",
+    "difficulty": "medium",
+    "question": "Which is the most polite request?",
+    "correct": "Could you tell me the password?",
+    "wrong": ["Give me the password", "Tell me the password", "Password, now!"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Making Suggestions",
+    "difficulty": "medium",
+    "question": "Which is NOT a polite suggestion form?",
+    "correct": "Do it now!",
+    "wrong": ["Shall we...?", "Could we...?", "Why don't we...?"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Conditional Sentences",
+    "difficulty": "medium",
+    "question": "Which conditional describes general truths?",
+    "correct": "Zero Conditional (if + present, present)",
+    "wrong": ["First Conditional", "Second Conditional", "Third Conditional"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Conditional Sentences",
+    "difficulty": "medium",
+    "question": "Which conditional describes real future possibilities?",
+    "correct": "First Conditional (if + present, will + verb)",
+    "wrong": ["Zero Conditional", "Second Conditional", "Third Conditional"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Conditional Sentences",
+    "difficulty": "medium",
+    "question": "Which conditional describes imaginary situations?",
+    "correct": "Second Conditional (if + past, would + verb)",
+    "wrong": ["Zero Conditional", "First Conditional", "Third Conditional"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Task Manager",
+    "difficulty": "medium",
+    "question": "What shortcut opens Task Manager directly?",
+    "correct": "Ctrl+Shift+Esc",
+    "wrong": ["Ctrl+Alt+Del", "Alt+F4", "Win+R"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "IT Roles Responsibilities",
+    "difficulty": "hard",
+    "question": "Who is responsible for meeting Service Level Agreements (SLAs)?",
+    "correct": "Helpdesk Supervisor",
+    "wrong": ["Support Technician", "DBA", "Systems Administrator"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Storage Capacity",
+    "difficulty": "hard",
+    "question": "Order from largest to smallest capacity: 4TB HDD, 256GB SSD, 16GB RAM, DVD",
+    "correct": "4TB HDD > 256GB SSD > 16GB RAM > DVD",
+    "wrong": ["256GB SSD > 4TB HDD > 16GB RAM > DVD", "DVD > 16GB RAM > 256GB SSD > 4TB HDD", "16GB RAM > 256GB SSD > 4TB HDD > DVD"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Prefix Meanings",
+    "difficulty": "hard",
+    "question": "What does 'Tera' mean?",
+    "correct": "1,000,000,000,000",
+    "wrong": ["1,000,000", "1,000,000,000", "1,000"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Prefix Meanings",
+    "difficulty": "hard",
+    "question": "What does 'Giga' mean?",
+    "correct": "1,000,000,000",
+    "wrong": ["1,000,000", "1,000,000,000,000", "1,000"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Prefix Meanings",
+    "difficulty": "hard",
+    "question": "What does 'Nano' mean?",
+    "correct": "1/1,000,000,000 (one billionth)",
+    "wrong": ["1,000", "1/1,000", "1,000,000"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Storage Interfaces",
+    "difficulty": "hard",
+    "question": "What does SATA stand for?",
+    "correct": "Serial Advanced Technology Attachment",
+    "wrong": ["Simple ATA", "System ATA", "Synchronous ATA"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Network Security",
+    "difficulty": "hard",
+    "question": "What is stateful inspection in firewalls?",
+    "correct": "Tracks connection state to make filtering decisions",
+    "wrong": ["Inspects only packet headers", "Blocks all incoming traffic", "Requires user authentication"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Firewall Types",
+    "difficulty": "hard",
+    "question": "What is a next-generation firewall (NGFW)?",
+    "correct": "Inspects application data in addition to packets",
+    "wrong": ["Faster than traditional firewalls", "Only hardware-based", "Only software-based"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Open Source vs Proprietary",
+    "difficulty": "hard",
+    "question": "Which statement about open source is FALSE?",
+    "correct": "Open source software stores data in special vendor-only formats",
+    "wrong": ["Users can add features to open source", "Open source gives more control over data", "Organizations don't follow vendor decisions"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Open Source vs Proprietary",
+    "difficulty": "hard",
+    "question": "Which statement about proprietary software is TRUE?",
+    "correct": "Vendors control software updates",
+    "wrong": ["Users can add features", "Source code is available", "Data formats are always open"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Shared vs Dedicated Hosting",
+    "difficulty": "hard",
+    "question": "Which hosting is more secure?",
+    "correct": "Dedicated hosting",
+    "wrong": ["Shared hosting", "Both are same", "Neither is secure"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Hosting Types",
+    "difficulty": "hard",
+    "question": "What is shared hosting?",
+    "correct": "Multiple clients' websites on one server",
+    "wrong": ["One client per server", "Server owned by client", "Cloud-based hosting"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Hosting Types",
+    "difficulty": "hard",
+    "question": "What is dedicated hosting?",
+    "correct": "Server has only one client's websites",
+    "wrong": ["Multiple clients per server", "Client owns the server", "Free hosting service"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Uptime",
+    "difficulty": "hard",
+    "question": "What does uptime measure?",
+    "correct": "Time when service is working",
+    "wrong": ["Time when service is not working", "Total server age", "Processing speed"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Network Terms",
+    "difficulty": "hard",
+    "question": "What is a hyperlink?",
+    "correct": "Clickable text/image linking to another page",
+    "wrong": ["Encrypted connection", "Server address", "Email attachment"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Operating Systems",
+    "difficulty": "hard",
+    "question": "Which OS is NOT open source?",
+    "correct": "macOS",
+    "wrong": ["Linux", "Android", "Ubuntu"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Operating Systems",
+    "difficulty": "hard",
+    "question": "Which OS is based on open source but has proprietary components?",
+    "correct": "Android",
+    "wrong": ["Linux", "Ubuntu", "Debian"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Boot Process",
+    "difficulty": "hard",
+    "question": "What is the correct boot order to reinstall OS from DVD?",
+    "correct": "Set DVD as first boot device in BIOS",
+    "wrong": ["Set HDD as first boot", "Disable BIOS", "Remove all boot devices"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Partitioning",
+    "difficulty": "hard",
+    "question": "What does partitioning a hard drive mean?",
+    "correct": "Dividing drive into separate logical sections",
+    "wrong": ["Copying data for backup", "Formatting the drive", "Installing an OS"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Database Objects",
+    "difficulty": "hard",
+    "question": "Which is NOT a database object?",
+    "correct": "Spreadsheet",
+    "wrong": ["Table", "Form", "Report"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Database Forms",
+    "difficulty": "hard",
+    "question": "What is a form in a database used for?",
+    "correct": "Data entry and viewing",
+    "wrong": ["Printing reports", "Creating tables", "Running queries"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Database Reports",
+    "difficulty": "hard",
+    "question": "What is a report in a database used for?",
+    "correct": "Printing data in visually appealing format",
+    "wrong": ["Data entry", "Creating tables", "Running queries"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Primary Key Properties",
+    "difficulty": "hard",
+    "question": "Which is NOT a property of a primary key?",
+    "correct": "Can be NULL",
+    "wrong": ["Unique value", "Never changes", "One per record"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Query Purpose",
+    "difficulty": "hard",
+    "question": "What is a database query used for?",
+    "correct": "Retrieving specific data",
+    "wrong": ["Entering data", "Deleting tables", "Creating forms"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Grammar - Irregular Verbs",
+    "difficulty": "hard",
+    "question": "Which sentence uses past simple correctly?",
+    "correct": "She fixed the bug yesterday",
+    "wrong": ["She fix the bug yesterday", "She has fix the bug yesterday", "She fixing the bug yesterday"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Grammar - Future Tense",
+    "difficulty": "hard",
+    "question": "Which sentence expresses a planned future action?",
+    "correct": "We will deploy the patch tomorrow",
+    "wrong": ["We deploy the patch tomorrow", "We deployed the patch tomorrow", "We are deploying the patch now"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Grammar - Comparative/Superlative",
+    "difficulty": "hard",
+    "question": "What is the comparative form of 'dangerous'?",
+    "correct": "more dangerous",
+    "wrong": ["dangerouser", "most dangerous", "dangerousest"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Grammar - How much vs How many",
+    "difficulty": "hard",
+    "question": "Which is correct for uncountable nouns?",
+    "correct": "How much",
+    "wrong": ["How many", "How lots", "How count"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Grammar - Going to",
+    "difficulty": "hard",
+    "question": "What is 'going to' used for?",
+    "correct": "Plans and predictions",
+    "wrong": ["Only predictions", "Only past actions", "Only completed actions"]
+  },
+  {
+    "course_id": "CS302",
+    "topic": "Exam Tips",
+    "difficulty": "hard",
+    "question": "Which adverb means 'almost never' according to the tips?",
+    "correct": "Hardly ever",
+    "wrong": ["Rarely", "Occasionally", "Never"]
   }
-
 ]
