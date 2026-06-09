@@ -84,6 +84,6 @@ var CONFIG = struct {
 
 // إضافة دالة لتهيئة القيم (يتم استدعاؤها في main)
 func InitConfig() {
-	CONFIG.AI_API_KEY = os.Getenv("OPENROUTER_API_KEY")
-	CONFIG.AI_PROVIDER = "openrouter"
+	CONFIG.AI_API_KEY = os.Getenv("GEMINI_API_KEY")
+	CONFIG.AI_PROVIDER = "gemini"
 }
