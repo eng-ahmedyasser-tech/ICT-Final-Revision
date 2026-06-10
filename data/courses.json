@@ -13,10 +13,5 @@
     "id": "CS301",
     "name": "Cybersecurity",
     "description": "Cybersecurity protection, data privacy, cryptographic encryption"
-  },
-  {
-    "id": "CS302",
-    "name": "Technical English",
-    "description": "Technical terminology, professional workplace communication, and IT-related language proficiency."
   }
 ]
